@@ -1,0 +1,142 @@
+{
+  "overall": {
+    "errors": 351,
+    "substitutions": 225,
+    "deletions": 27,
+    "insertions": 99,
+    "reference_words": 3016,
+    "items": 120,
+    "scored_items": 120,
+    "exceptional_items": 0,
+    "wer": 0.11637931034482758,
+    "deletion_rate": 0.008952254641909815,
+    "insertion_rate": 0.03282493368700265,
+    "substitution_rate": 0.07460212201591512,
+    "stop_reasons": {
+      "eos": 119,
+      "output_limit": 1
+    },
+    "truncation_rate": 0.008333333333333333,
+    "exception_rate": 0.0,
+    "generation_seconds": 612.8696838342585,
+    "audio_seconds": 1196.0,
+    "asr_seconds": 415.76475378545
+  },
+  "by_length": {
+    "short": {
+      "errors": 53,
+      "substitutions": 36,
+      "deletions": 0,
+      "insertions": 17,
+      "reference_words": 316,
+      "items": 40,
+      "scored_items": 40,
+      "exceptional_items": 0,
+      "wer": 0.16772151898734178,
+      "deletion_rate": 0.0,
+      "insertion_rate": 0.05379746835443038,
+      "substitution_rate": 0.11392405063291139,
+      "stop_reasons": {
+        "eos": 40
+      },
+      "truncation_rate": 0.0,
+      "exception_rate": 0.0,
+      "generation_seconds": 88.94415091816336,
+      "audio_seconds": 147.74,
+      "asr_seconds": 98.9501481661573
+    },
+    "medium": {
+      "errors": 92,
+      "substitutions": 53,
+      "deletions": 8,
+      "insertions": 31,
+      "reference_words": 836,
+      "items": 40,
+      "scored_items": 40,
+      "exceptional_items": 0,
+      "wer": 0.11004784688995216,
+      "deletion_rate": 0.009569377990430622,
+      "insertion_rate": 0.03708133971291866,
+      "substitution_rate": 0.06339712918660287,
+      "stop_reasons": {
+        "eos": 40
+      },
+      "truncation_rate": 0.0,
+      "exception_rate": 0.0,
+      "generation_seconds": 171.05677345953882,
+      "audio_seconds": 328.5,
+      "asr_seconds": 129.19901174725965
+    },
+    "long": {
+      "errors": 206,
+      "substitutions": 136,
+      "deletions": 19,
+      "insertions": 51,
+      "reference_words": 1864,
+      "items": 40,
+      "scored_items": 40,
+      "exceptional_items": 0,
+      "wer": 0.11051502145922747,
+      "deletion_rate": 0.0101931330472103,
+      "insertion_rate": 0.02736051502145923,
+      "substitution_rate": 0.07296137339055794,
+      "stop_reasons": {
+        "eos": 39,
+        "output_limit": 1
+      },
+      "truncation_rate": 0.025,
+      "exception_rate": 0.0,
+      "generation_seconds": 352.8687594565563,
+      "audio_seconds": 719.76,
+      "asr_seconds": 187.61559387203306
+    }
+  },
+  "by_seed": {
+    "17": {
+      "errors": 183,
+      "substitutions": 109,
+      "deletions": 16,
+      "insertions": 58,
+      "reference_words": 1508,
+      "items": 60,
+      "scored_items": 60,
+      "exceptional_items": 0,
+      "wer": 0.1213527851458886,
+      "deletion_rate": 0.010610079575596816,
+      "insertion_rate": 0.038461538461538464,
+      "substitution_rate": 0.07228116710875332,
+      "stop_reasons": {
+        "eos": 59,
+        "output_limit": 1
+      },
+      "truncation_rate": 0.016666666666666666,
+      "exception_rate": 0.0,
+      "generation_seconds": 312.0598206236027,
+      "audio_seconds": 612.64,
+      "asr_seconds": 207.92465799301863
+    },
+    "42": {
+      "errors": 168,
+      "substitutions": 116,
+      "deletions": 11,
+      "insertions": 41,
+      "reference_words": 1508,
+      "items": 60,
+      "scored_items": 60,
+      "exceptional_items": 0,
+      "wer": 0.11140583554376658,
+      "deletion_rate": 0.007294429708222812,
+      "insertion_rate": 0.027188328912466843,
+      "substitution_rate": 0.07692307692307693,
+      "stop_reasons": {
+        "eos": 60
+      },
+      "truncation_rate": 0.0,
+      "exception_rate": 0.0,
+      "generation_seconds": 300.80986321065575,
+      "audio_seconds": 583.36,
+      "asr_seconds": 207.84009579243138
+    }
+  },
+  "interpretation": "WER is ASR disagreement; edits are not human-verified omissions/repetitions. Human listening and MOS have not been performed."
+}

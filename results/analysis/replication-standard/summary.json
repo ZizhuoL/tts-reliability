@@ -1,0 +1,1399 @@
+{
+  "normalizer": "transformers-whisper-EnglishTextNormalizer-unicode-quotes-empty-spelling-map-v2",
+  "baseline": "B183",
+  "systems": {
+    "B183": {
+      "overall": {
+        "items": 90,
+        "text_clusters": 45,
+        "scored_items": 90,
+        "failed_items": 0,
+        "pending_items": 0,
+        "score_errors": 0,
+        "scored_rate": 1.0,
+        "exception_rate": 0.0,
+        "exception_stages": {},
+        "stop_reasons": {
+          "eos": 88,
+          "output_limit": 2
+        },
+        "truncation_rate": 0.022222222222222223,
+        "eos_audio_success_rate": 0.9777777777777777,
+        "normalized_exact_match_rate": 0.2111111111111111,
+        "scored": {
+          "errors": 444,
+          "substitutions": 232,
+          "deletions": 117,
+          "insertions": 95,
+          "reference_words": 2320,
+          "wer": 0.19137931034482758,
+          "substitution_rate": 0.1,
+          "deletion_rate": 0.05043103448275862,
+          "insertion_rate": 0.040948275862068964
+        },
+        "unscored_as_full_deletions": {
+          "errors": 444,
+          "substitutions": 232,
+          "deletions": 117,
+          "insertions": 95,
+          "reference_words": 2320,
+          "wer": 0.19137931034482758,
+          "substitution_rate": 0.1,
+          "deletion_rate": 0.05043103448275862,
+          "insertion_rate": 0.040948275862068964
+        },
+        "imputed_items": 0,
+        "generation_seconds": 525.2797128362581,
+        "asr_seconds": 327.9291272861883,
+        "audio_seconds": 921.4399999999999,
+        "aggregate_generation_rtf": 0.570063935618443
+      },
+      "by_length": {
+        "long": {
+          "items": 30,
+          "text_clusters": 15,
+          "scored_items": 30,
+          "failed_items": 0,
+          "pending_items": 0,
+          "score_errors": 0,
+          "scored_rate": 1.0,
+          "exception_rate": 0.0,
+          "exception_stages": {},
+          "stop_reasons": {
+            "eos": 28,
+            "output_limit": 2
+          },
+          "truncation_rate": 0.06666666666666667,
+          "eos_audio_success_rate": 0.9333333333333333,
+          "normalized_exact_match_rate": 0.16666666666666666,
+          "scored": {
+            "errors": 303,
+            "substitutions": 133,
+            "deletions": 94,
+            "insertions": 76,
+            "reference_words": 1406,
+            "wer": 0.2155049786628734,
+            "substitution_rate": 0.0945945945945946,
+            "deletion_rate": 0.06685633001422475,
+            "insertion_rate": 0.05405405405405406
+          },
+          "unscored_as_full_deletions": {
+            "errors": 303,
+            "substitutions": 133,
+            "deletions": 94,
+            "insertions": 76,
+            "reference_words": 1406,
+            "wer": 0.2155049786628734,
+            "substitution_rate": 0.0945945945945946,
+            "deletion_rate": 0.06685633001422475,
+            "insertion_rate": 0.05405405405405406
+          },
+          "imputed_items": 0,
+          "generation_seconds": 336.0383496223949,
+          "asr_seconds": 152.740165123716,
+          "audio_seconds": 548.52,
+          "aggregate_generation_rtf": 0.6126273419791346
+        },
+        "medium": {
+          "items": 30,
+          "text_clusters": 15,
+          "scored_items": 30,
+          "failed_items": 0,
+          "pending_items": 0,
+          "score_errors": 0,
+          "scored_rate": 1.0,
+          "exception_rate": 0.0,
+          "exception_stages": {},
+          "stop_reasons": {
+            "eos": 30
+          },
+          "truncation_rate": 0.0,
+          "eos_audio_success_rate": 1.0,
+          "normalized_exact_match_rate": 0.1,
+          "scored": {
+            "errors": 107,
+            "substitutions": 75,
+            "deletions": 17,
+            "insertions": 15,
+            "reference_words": 660,
+            "wer": 0.1621212121212121,
+            "substitution_rate": 0.11363636363636363,
+            "deletion_rate": 0.025757575757575757,
+            "insertion_rate": 0.022727272727272728
+          },
+          "unscored_as_full_deletions": {
+            "errors": 107,
+            "substitutions": 75,
+            "deletions": 17,
+            "insertions": 15,
+            "reference_words": 660,
+            "wer": 0.1621212121212121,
+            "substitution_rate": 0.11363636363636363,
+            "deletion_rate": 0.025757575757575757,
+            "insertion_rate": 0.022727272727272728
+          },
+          "imputed_items": 0,
+          "generation_seconds": 129.32823900086805,
+          "asr_seconds": 101.10403533047065,
+          "audio_seconds": 268.44,
+          "aggregate_generation_rtf": 0.481777078680033
+        },
+        "short": {
+          "items": 30,
+          "text_clusters": 15,
+          "scored_items": 30,
+          "failed_items": 0,
+          "pending_items": 0,
+          "score_errors": 0,
+          "scored_rate": 1.0,
+          "exception_rate": 0.0,
+          "exception_stages": {},
+          "stop_reasons": {
+            "eos": 30
+          },
+          "truncation_rate": 0.0,
+          "eos_audio_success_rate": 1.0,
+          "normalized_exact_match_rate": 0.36666666666666664,
+          "scored": {
+            "errors": 34,
+            "substitutions": 24,
+            "deletions": 6,
+            "insertions": 4,
+            "reference_words": 254,
+            "wer": 0.13385826771653545,
+            "substitution_rate": 0.09448818897637795,
+            "deletion_rate": 0.023622047244094488,
+            "insertion_rate": 0.015748031496062992
+          },
+          "unscored_as_full_deletions": {
+            "errors": 34,
+            "substitutions": 24,
+            "deletions": 6,
+            "insertions": 4,
+            "reference_words": 254,
+            "wer": 0.13385826771653545,
+            "substitution_rate": 0.09448818897637795,
+            "deletion_rate": 0.023622047244094488,
+            "insertion_rate": 0.015748031496062992
+          },
+          "imputed_items": 0,
+          "generation_seconds": 59.91312421299517,
+          "asr_seconds": 74.08492683200166,
+          "audio_seconds": 104.48,
+          "aggregate_generation_rtf": 0.573441081671087
+        }
+      },
+      "by_seed": {
+        "17": {
+          "items": 45,
+          "text_clusters": 45,
+          "scored_items": 45,
+          "failed_items": 0,
+          "pending_items": 0,
+          "score_errors": 0,
+          "scored_rate": 1.0,
+          "exception_rate": 0.0,
+          "exception_stages": {},
+          "stop_reasons": {
+            "eos": 44,
+            "output_limit": 1
+          },
+          "truncation_rate": 0.022222222222222223,
+          "eos_audio_success_rate": 0.9777777777777777,
+          "normalized_exact_match_rate": 0.2,
+          "scored": {
+            "errors": 227,
+            "substitutions": 123,
+            "deletions": 55,
+            "insertions": 49,
+            "reference_words": 1160,
+            "wer": 0.1956896551724138,
+            "substitution_rate": 0.1060344827586207,
+            "deletion_rate": 0.04741379310344827,
+            "insertion_rate": 0.04224137931034483
+          },
+          "unscored_as_full_deletions": {
+            "errors": 227,
+            "substitutions": 123,
+            "deletions": 55,
+            "insertions": 49,
+            "reference_words": 1160,
+            "wer": 0.1956896551724138,
+            "substitution_rate": 0.1060344827586207,
+            "deletion_rate": 0.04741379310344827,
+            "insertion_rate": 0.04224137931034483
+          },
+          "imputed_items": 0,
+          "generation_seconds": 262.8842328367755,
+          "asr_seconds": 160.36727899685502,
+          "audio_seconds": 463.44,
+          "aggregate_generation_rtf": 0.5672454532124449
+        },
+        "42": {
+          "items": 45,
+          "text_clusters": 45,
+          "scored_items": 45,
+          "failed_items": 0,
+          "pending_items": 0,
+          "score_errors": 0,
+          "scored_rate": 1.0,
+          "exception_rate": 0.0,
+          "exception_stages": {},
+          "stop_reasons": {
+            "eos": 44,
+            "output_limit": 1
+          },
+          "truncation_rate": 0.022222222222222223,
+          "eos_audio_success_rate": 0.9777777777777777,
+          "normalized_exact_match_rate": 0.2222222222222222,
+          "scored": {
+            "errors": 217,
+            "substitutions": 109,
+            "deletions": 62,
+            "insertions": 46,
+            "reference_words": 1160,
+            "wer": 0.1870689655172414,
+            "substitution_rate": 0.0939655172413793,
+            "deletion_rate": 0.05344827586206897,
+            "insertion_rate": 0.039655172413793106
+          },
+          "unscored_as_full_deletions": {
+            "errors": 217,
+            "substitutions": 109,
+            "deletions": 62,
+            "insertions": 46,
+            "reference_words": 1160,
+            "wer": 0.1870689655172414,
+            "substitution_rate": 0.0939655172413793,
+            "deletion_rate": 0.05344827586206897,
+            "insertion_rate": 0.039655172413793106
+          },
+          "imputed_items": 0,
+          "generation_seconds": 262.39547999948263,
+          "asr_seconds": 167.56184828933328,
+          "audio_seconds": 458.0,
+          "aggregate_generation_rtf": 0.5729158951953769
+        }
+      },
+      "by_length_and_seed": [
+        {
+          "length_group": "long",
+          "seed": "17",
+          "items": 15,
+          "text_clusters": 15,
+          "scored_items": 15,
+          "failed_items": 0,
+          "pending_items": 0,
+          "score_errors": 0,
+          "scored_rate": 1.0,
+          "exception_rate": 0.0,
+          "exception_stages": {},
+          "stop_reasons": {
+            "eos": 14,
+            "output_limit": 1
+          },
+          "truncation_rate": 0.06666666666666667,
+          "eos_audio_success_rate": 0.9333333333333333,
+          "normalized_exact_match_rate": 0.13333333333333333,
+          "scored": {
+            "errors": 151,
+            "substitutions": 70,
+            "deletions": 44,
+            "insertions": 37,
+            "reference_words": 703,
+            "wer": 0.2147937411095306,
+            "substitution_rate": 0.09957325746799431,
+            "deletion_rate": 0.06258890469416785,
+            "insertion_rate": 0.05263157894736842
+          },
+          "unscored_as_full_deletions": {
+            "errors": 151,
+            "substitutions": 70,
+            "deletions": 44,
+            "insertions": 37,
+            "reference_words": 703,
+            "wer": 0.2147937411095306,
+            "substitution_rate": 0.09957325746799431,
+            "deletion_rate": 0.06258890469416785,
+            "insertion_rate": 0.05263157894736842
+          },
+          "imputed_items": 0,
+          "generation_seconds": 168.24543654173613,
+          "asr_seconds": 73.3389772917144,
+          "audio_seconds": 276.44,
+          "aggregate_generation_rtf": 0.6086146597516139
+        },
+        {
+          "length_group": "long",
+          "seed": "42",
+          "items": 15,
+          "text_clusters": 15,
+          "scored_items": 15,
+          "failed_items": 0,
+          "pending_items": 0,
+          "score_errors": 0,
+          "scored_rate": 1.0,
+          "exception_rate": 0.0,
+          "exception_stages": {},
+          "stop_reasons": {
+            "eos": 14,
+            "output_limit": 1
+          },
+          "truncation_rate": 0.06666666666666667,
+          "eos_audio_success_rate": 0.9333333333333333,
+          "normalized_exact_match_rate": 0.2,
+          "scored": {
+            "errors": 152,
+            "substitutions": 63,
+            "deletions": 50,
+            "insertions": 39,
+            "reference_words": 703,
+            "wer": 0.21621621621621623,
+            "substitution_rate": 0.08961593172119488,
+            "deletion_rate": 0.07112375533428165,
+            "insertion_rate": 0.05547652916073969
+          },
+          "unscored_as_full_deletions": {
+            "errors": 152,
+            "substitutions": 63,
+            "deletions": 50,
+            "insertions": 39,
+            "reference_words": 703,
+            "wer": 0.21621621621621623,
+            "substitution_rate": 0.08961593172119488,
+            "deletion_rate": 0.07112375533428165,
+            "insertion_rate": 0.05547652916073969
+          },
+          "imputed_items": 0,
+          "generation_seconds": 167.79291308065876,
+          "asr_seconds": 79.4011878320016,
+          "audio_seconds": 272.08,
+          "aggregate_generation_rtf": 0.6167043262300014
+        },
+        {
+          "length_group": "medium",
+          "seed": "17",
+          "items": 15,
+          "text_clusters": 15,
+          "scored_items": 15,
+          "failed_items": 0,
+          "pending_items": 0,
+          "score_errors": 0,
+          "scored_rate": 1.0,
+          "exception_rate": 0.0,
+          "exception_stages": {},
+          "stop_reasons": {
+            "eos": 15
+          },
+          "truncation_rate": 0.0,
+          "eos_audio_success_rate": 1.0,
+          "normalized_exact_match_rate": 0.06666666666666667,
+          "scored": {
+            "errors": 59,
+            "substitutions": 43,
+            "deletions": 7,
+            "insertions": 9,
+            "reference_words": 330,
+            "wer": 0.1787878787878788,
+            "substitution_rate": 0.1303030303030303,
+            "deletion_rate": 0.021212121212121213,
+            "insertion_rate": 0.02727272727272727
+          },
+          "unscored_as_full_deletions": {
+            "errors": 59,
+            "substitutions": 43,
+            "deletions": 7,
+            "insertions": 9,
+            "reference_words": 330,
+            "wer": 0.1787878787878788,
+            "substitution_rate": 0.1303030303030303,
+            "deletion_rate": 0.021212121212121213,
+            "insertion_rate": 0.02727272727272727
+          },
+          "imputed_items": 0,
+          "generation_seconds": 64.59289337601513,
+          "asr_seconds": 50.57699683122337,
+          "audio_seconds": 134.24,
+          "aggregate_generation_rtf": 0.48117471227663233
+        },
+        {
+          "length_group": "medium",
+          "seed": "42",
+          "items": 15,
+          "text_clusters": 15,
+          "scored_items": 15,
+          "failed_items": 0,
+          "pending_items": 0,
+          "score_errors": 0,
+          "scored_rate": 1.0,
+          "exception_rate": 0.0,
+          "exception_stages": {},
+          "stop_reasons": {
+            "eos": 15
+          },
+          "truncation_rate": 0.0,
+          "eos_audio_success_rate": 1.0,
+          "normalized_exact_match_rate": 0.13333333333333333,
+          "scored": {
+            "errors": 48,
+            "substitutions": 32,
+            "deletions": 10,
+            "insertions": 6,
+            "reference_words": 330,
+            "wer": 0.14545454545454545,
+            "substitution_rate": 0.09696969696969697,
+            "deletion_rate": 0.030303030303030304,
+            "insertion_rate": 0.01818181818181818
+          },
+          "unscored_as_full_deletions": {
+            "errors": 48,
+            "substitutions": 32,
+            "deletions": 10,
+            "insertions": 6,
+            "reference_words": 330,
+            "wer": 0.14545454545454545,
+            "substitution_rate": 0.09696969696969697,
+            "deletion_rate": 0.030303030303030304,
+            "insertion_rate": 0.01818181818181818
+          },
+          "imputed_items": 0,
+          "generation_seconds": 64.73534562485293,
+          "asr_seconds": 50.52703849924728,
+          "audio_seconds": 134.2,
+          "aggregate_generation_rtf": 0.4823796246263259
+        },
+        {
+          "length_group": "short",
+          "seed": "17",
+          "items": 15,
+          "text_clusters": 15,
+          "scored_items": 15,
+          "failed_items": 0,
+          "pending_items": 0,
+          "score_errors": 0,
+          "scored_rate": 1.0,
+          "exception_rate": 0.0,
+          "exception_stages": {},
+          "stop_reasons": {
+            "eos": 15
+          },
+          "truncation_rate": 0.0,
+          "eos_audio_success_rate": 1.0,
+          "normalized_exact_match_rate": 0.4,
+          "scored": {
+            "errors": 17,
+            "substitutions": 10,
+            "deletions": 4,
+            "insertions": 3,
+            "reference_words": 127,
+            "wer": 0.13385826771653545,
+            "substitution_rate": 0.07874015748031496,
+            "deletion_rate": 0.031496062992125984,
+            "insertion_rate": 0.023622047244094488
+          },
+          "unscored_as_full_deletions": {
+            "errors": 17,
+            "substitutions": 10,
+            "deletions": 4,
+            "insertions": 3,
+            "reference_words": 127,
+            "wer": 0.13385826771653545,
+            "substitution_rate": 0.07874015748031496,
+            "deletion_rate": 0.031496062992125984,
+            "insertion_rate": 0.023622047244094488
+          },
+          "imputed_items": 0,
+          "generation_seconds": 30.04590291902423,
+          "asr_seconds": 36.45130487391725,
+          "audio_seconds": 52.76,
+          "aggregate_generation_rtf": 0.5694826178738481
+        },
+        {
+          "length_group": "short",
+          "seed": "42",
+          "items": 15,
+          "text_clusters": 15,
+          "scored_items": 15,
+          "failed_items": 0,
+          "pending_items": 0,
+          "score_errors": 0,
+          "scored_rate": 1.0,
+          "exception_rate": 0.0,
+          "exception_stages": {},
+          "stop_reasons": {
+            "eos": 15
+          },
+          "truncation_rate": 0.0,
+          "eos_audio_success_rate": 1.0,
+          "normalized_exact_match_rate": 0.3333333333333333,
+          "scored": {
+            "errors": 17,
+            "substitutions": 14,
+            "deletions": 2,
+            "insertions": 1,
+            "reference_words": 127,
+            "wer": 0.13385826771653545,
+            "substitution_rate": 0.11023622047244094,
+            "deletion_rate": 0.015748031496062992,
+            "insertion_rate": 0.007874015748031496
+          },
+          "unscored_as_full_deletions": {
+            "errors": 17,
+            "substitutions": 14,
+            "deletions": 2,
+            "insertions": 1,
+            "reference_words": 127,
+            "wer": 0.13385826771653545,
+            "substitution_rate": 0.11023622047244094,
+            "deletion_rate": 0.015748031496062992,
+            "insertion_rate": 0.007874015748031496
+          },
+          "imputed_items": 0,
+          "generation_seconds": 29.867221293970942,
+          "asr_seconds": 37.633621958084404,
+          "audio_seconds": 51.72,
+          "aggregate_generation_rtf": 0.5774791433482395
+        }
+      ]
+    },
+    "B184": {
+      "overall": {
+        "items": 90,
+        "text_clusters": 45,
+        "scored_items": 90,
+        "failed_items": 0,
+        "pending_items": 0,
+        "score_errors": 0,
+        "scored_rate": 1.0,
+        "exception_rate": 0.0,
+        "exception_stages": {},
+        "stop_reasons": {
+          "eos": 89,
+          "output_limit": 1
+        },
+        "truncation_rate": 0.011111111111111112,
+        "eos_audio_success_rate": 0.9888888888888889,
+        "normalized_exact_match_rate": 0.2111111111111111,
+        "scored": {
+          "errors": 396,
+          "substitutions": 231,
+          "deletions": 81,
+          "insertions": 84,
+          "reference_words": 2320,
+          "wer": 0.1706896551724138,
+          "substitution_rate": 0.09956896551724138,
+          "deletion_rate": 0.034913793103448276,
+          "insertion_rate": 0.03620689655172414
+        },
+        "unscored_as_full_deletions": {
+          "errors": 396,
+          "substitutions": 231,
+          "deletions": 81,
+          "insertions": 84,
+          "reference_words": 2320,
+          "wer": 0.1706896551724138,
+          "substitution_rate": 0.09956896551724138,
+          "deletion_rate": 0.034913793103448276,
+          "insertion_rate": 0.03620689655172414
+        },
+        "imputed_items": 0,
+        "generation_seconds": 419.34809287590906,
+        "asr_seconds": 316.2405824963935,
+        "audio_seconds": 923.68,
+        "aggregate_generation_rtf": 0.45399715580710753
+      },
+      "by_length": {
+        "long": {
+          "items": 30,
+          "text_clusters": 15,
+          "scored_items": 30,
+          "failed_items": 0,
+          "pending_items": 0,
+          "score_errors": 0,
+          "scored_rate": 1.0,
+          "exception_rate": 0.0,
+          "exception_stages": {},
+          "stop_reasons": {
+            "eos": 29,
+            "output_limit": 1
+          },
+          "truncation_rate": 0.03333333333333333,
+          "eos_audio_success_rate": 0.9666666666666667,
+          "normalized_exact_match_rate": 0.13333333333333333,
+          "scored": {
+            "errors": 266,
+            "substitutions": 157,
+            "deletions": 56,
+            "insertions": 53,
+            "reference_words": 1406,
+            "wer": 0.1891891891891892,
+            "substitution_rate": 0.1116642958748222,
+            "deletion_rate": 0.03982930298719772,
+            "insertion_rate": 0.03769559032716927
+          },
+          "unscored_as_full_deletions": {
+            "errors": 266,
+            "substitutions": 157,
+            "deletions": 56,
+            "insertions": 53,
+            "reference_words": 1406,
+            "wer": 0.1891891891891892,
+            "substitution_rate": 0.1116642958748222,
+            "deletion_rate": 0.03982930298719772,
+            "insertion_rate": 0.03769559032716927
+          },
+          "imputed_items": 0,
+          "generation_seconds": 237.8781775389798,
+          "asr_seconds": 143.98729924857616,
+          "audio_seconds": 544.92,
+          "aggregate_generation_rtf": 0.4365377991980104
+        },
+        "medium": {
+          "items": 30,
+          "text_clusters": 15,
+          "scored_items": 30,
+          "failed_items": 0,
+          "pending_items": 0,
+          "score_errors": 0,
+          "scored_rate": 1.0,
+          "exception_rate": 0.0,
+          "exception_stages": {},
+          "stop_reasons": {
+            "eos": 30
+          },
+          "truncation_rate": 0.0,
+          "eos_audio_success_rate": 1.0,
+          "normalized_exact_match_rate": 0.16666666666666666,
+          "scored": {
+            "errors": 85,
+            "substitutions": 53,
+            "deletions": 13,
+            "insertions": 19,
+            "reference_words": 660,
+            "wer": 0.12878787878787878,
+            "substitution_rate": 0.0803030303030303,
+            "deletion_rate": 0.019696969696969695,
+            "insertion_rate": 0.02878787878787879
+          },
+          "unscored_as_full_deletions": {
+            "errors": 85,
+            "substitutions": 53,
+            "deletions": 13,
+            "insertions": 19,
+            "reference_words": 660,
+            "wer": 0.12878787878787878,
+            "substitution_rate": 0.0803030303030303,
+            "deletion_rate": 0.019696969696969695,
+            "insertion_rate": 0.02878787878787879
+          },
+          "imputed_items": 0,
+          "generation_seconds": 123.97774583473802,
+          "asr_seconds": 98.9480028306134,
+          "audio_seconds": 278.71999999999997,
+          "aggregate_generation_rtf": 0.44481108580201645
+        },
+        "short": {
+          "items": 30,
+          "text_clusters": 15,
+          "scored_items": 30,
+          "failed_items": 0,
+          "pending_items": 0,
+          "score_errors": 0,
+          "scored_rate": 1.0,
+          "exception_rate": 0.0,
+          "exception_stages": {},
+          "stop_reasons": {
+            "eos": 30
+          },
+          "truncation_rate": 0.0,
+          "eos_audio_success_rate": 1.0,
+          "normalized_exact_match_rate": 0.3333333333333333,
+          "scored": {
+            "errors": 45,
+            "substitutions": 21,
+            "deletions": 12,
+            "insertions": 12,
+            "reference_words": 254,
+            "wer": 0.17716535433070865,
+            "substitution_rate": 0.08267716535433071,
+            "deletion_rate": 0.047244094488188976,
+            "insertion_rate": 0.047244094488188976
+          },
+          "unscored_as_full_deletions": {
+            "errors": 45,
+            "substitutions": 21,
+            "deletions": 12,
+            "insertions": 12,
+            "reference_words": 254,
+            "wer": 0.17716535433070865,
+            "substitution_rate": 0.08267716535433071,
+            "deletion_rate": 0.047244094488188976,
+            "insertion_rate": 0.047244094488188976
+          },
+          "imputed_items": 0,
+          "generation_seconds": 57.492169502191246,
+          "asr_seconds": 73.3052804172039,
+          "audio_seconds": 100.04,
+          "aggregate_generation_rtf": 0.5746918182945946
+        }
+      },
+      "by_seed": {
+        "17": {
+          "items": 45,
+          "text_clusters": 45,
+          "scored_items": 45,
+          "failed_items": 0,
+          "pending_items": 0,
+          "score_errors": 0,
+          "scored_rate": 1.0,
+          "exception_rate": 0.0,
+          "exception_stages": {},
+          "stop_reasons": {
+            "eos": 45
+          },
+          "truncation_rate": 0.0,
+          "eos_audio_success_rate": 1.0,
+          "normalized_exact_match_rate": 0.2222222222222222,
+          "scored": {
+            "errors": 191,
+            "substitutions": 115,
+            "deletions": 41,
+            "insertions": 35,
+            "reference_words": 1160,
+            "wer": 0.1646551724137931,
+            "substitution_rate": 0.09913793103448276,
+            "deletion_rate": 0.0353448275862069,
+            "insertion_rate": 0.03017241379310345
+          },
+          "unscored_as_full_deletions": {
+            "errors": 191,
+            "substitutions": 115,
+            "deletions": 41,
+            "insertions": 35,
+            "reference_words": 1160,
+            "wer": 0.1646551724137931,
+            "substitution_rate": 0.09913793103448276,
+            "deletion_rate": 0.0353448275862069,
+            "insertion_rate": 0.03017241379310345
+          },
+          "imputed_items": 0,
+          "generation_seconds": 202.51197279291227,
+          "asr_seconds": 154.55596482940018,
+          "audio_seconds": 444.96,
+          "aggregate_generation_rtf": 0.45512399494991074
+        },
+        "42": {
+          "items": 45,
+          "text_clusters": 45,
+          "scored_items": 45,
+          "failed_items": 0,
+          "pending_items": 0,
+          "score_errors": 0,
+          "scored_rate": 1.0,
+          "exception_rate": 0.0,
+          "exception_stages": {},
+          "stop_reasons": {
+            "eos": 44,
+            "output_limit": 1
+          },
+          "truncation_rate": 0.022222222222222223,
+          "eos_audio_success_rate": 0.9777777777777777,
+          "normalized_exact_match_rate": 0.2,
+          "scored": {
+            "errors": 205,
+            "substitutions": 116,
+            "deletions": 40,
+            "insertions": 49,
+            "reference_words": 1160,
+            "wer": 0.17672413793103448,
+            "substitution_rate": 0.1,
+            "deletion_rate": 0.034482758620689655,
+            "insertion_rate": 0.04224137931034483
+          },
+          "unscored_as_full_deletions": {
+            "errors": 205,
+            "substitutions": 116,
+            "deletions": 40,
+            "insertions": 49,
+            "reference_words": 1160,
+            "wer": 0.17672413793103448,
+            "substitution_rate": 0.1,
+            "deletion_rate": 0.034482758620689655,
+            "insertion_rate": 0.04224137931034483
+          },
+          "imputed_items": 0,
+          "generation_seconds": 216.83612008299679,
+          "asr_seconds": 161.6846176669933,
+          "audio_seconds": 478.71999999999997,
+          "aggregate_generation_rtf": 0.452949782927383
+        }
+      },
+      "by_length_and_seed": [
+        {
+          "length_group": "long",
+          "seed": "17",
+          "items": 15,
+          "text_clusters": 15,
+          "scored_items": 15,
+          "failed_items": 0,
+          "pending_items": 0,
+          "score_errors": 0,
+          "scored_rate": 1.0,
+          "exception_rate": 0.0,
+          "exception_stages": {},
+          "stop_reasons": {
+            "eos": 15
+          },
+          "truncation_rate": 0.0,
+          "eos_audio_success_rate": 1.0,
+          "normalized_exact_match_rate": 0.13333333333333333,
+          "scored": {
+            "errors": 122,
+            "substitutions": 82,
+            "deletions": 26,
+            "insertions": 14,
+            "reference_words": 703,
+            "wer": 0.17354196301564723,
+            "substitution_rate": 0.1166429587482219,
+            "deletion_rate": 0.03698435277382646,
+            "insertion_rate": 0.01991465149359886
+          },
+          "unscored_as_full_deletions": {
+            "errors": 122,
+            "substitutions": 82,
+            "deletions": 26,
+            "insertions": 14,
+            "reference_words": 703,
+            "wer": 0.17354196301564723,
+            "substitution_rate": 0.1166429587482219,
+            "deletion_rate": 0.03698435277382646,
+            "insertion_rate": 0.01991465149359886
+          },
+          "imputed_items": 0,
+          "generation_seconds": 111.58367262315005,
+          "asr_seconds": 68.43878728849813,
+          "audio_seconds": 256.64,
+          "aggregate_generation_rtf": 0.43478675429843383
+        },
+        {
+          "length_group": "long",
+          "seed": "42",
+          "items": 15,
+          "text_clusters": 15,
+          "scored_items": 15,
+          "failed_items": 0,
+          "pending_items": 0,
+          "score_errors": 0,
+          "scored_rate": 1.0,
+          "exception_rate": 0.0,
+          "exception_stages": {},
+          "stop_reasons": {
+            "eos": 14,
+            "output_limit": 1
+          },
+          "truncation_rate": 0.06666666666666667,
+          "eos_audio_success_rate": 0.9333333333333333,
+          "normalized_exact_match_rate": 0.13333333333333333,
+          "scored": {
+            "errors": 144,
+            "substitutions": 75,
+            "deletions": 30,
+            "insertions": 39,
+            "reference_words": 703,
+            "wer": 0.20483641536273114,
+            "substitution_rate": 0.10668563300142248,
+            "deletion_rate": 0.04267425320056899,
+            "insertion_rate": 0.05547652916073969
+          },
+          "unscored_as_full_deletions": {
+            "errors": 144,
+            "substitutions": 75,
+            "deletions": 30,
+            "insertions": 39,
+            "reference_words": 703,
+            "wer": 0.20483641536273114,
+            "substitution_rate": 0.10668563300142248,
+            "deletion_rate": 0.04267425320056899,
+            "insertion_rate": 0.05547652916073969
+          },
+          "imputed_items": 0,
+          "generation_seconds": 126.29450491582975,
+          "asr_seconds": 75.54851196007803,
+          "audio_seconds": 288.28,
+          "aggregate_generation_rtf": 0.43809665920573665
+        },
+        {
+          "length_group": "medium",
+          "seed": "17",
+          "items": 15,
+          "text_clusters": 15,
+          "scored_items": 15,
+          "failed_items": 0,
+          "pending_items": 0,
+          "score_errors": 0,
+          "scored_rate": 1.0,
+          "exception_rate": 0.0,
+          "exception_stages": {},
+          "stop_reasons": {
+            "eos": 15
+          },
+          "truncation_rate": 0.0,
+          "eos_audio_success_rate": 1.0,
+          "normalized_exact_match_rate": 0.2,
+          "scored": {
+            "errors": 45,
+            "substitutions": 25,
+            "deletions": 9,
+            "insertions": 11,
+            "reference_words": 330,
+            "wer": 0.13636363636363635,
+            "substitution_rate": 0.07575757575757576,
+            "deletion_rate": 0.02727272727272727,
+            "insertion_rate": 0.03333333333333333
+          },
+          "unscored_as_full_deletions": {
+            "errors": 45,
+            "substitutions": 25,
+            "deletions": 9,
+            "insertions": 11,
+            "reference_words": 330,
+            "wer": 0.13636363636363635,
+            "substitution_rate": 0.07575757575757576,
+            "deletion_rate": 0.02727272727272727,
+            "insertion_rate": 0.03333333333333333
+          },
+          "imputed_items": 0,
+          "generation_seconds": 61.55464450037107,
+          "asr_seconds": 49.2918316652067,
+          "audio_seconds": 137.64,
+          "aggregate_generation_rtf": 0.4472147958469273
+        },
+        {
+          "length_group": "medium",
+          "seed": "42",
+          "items": 15,
+          "text_clusters": 15,
+          "scored_items": 15,
+          "failed_items": 0,
+          "pending_items": 0,
+          "score_errors": 0,
+          "scored_rate": 1.0,
+          "exception_rate": 0.0,
+          "exception_stages": {},
+          "stop_reasons": {
+            "eos": 15
+          },
+          "truncation_rate": 0.0,
+          "eos_audio_success_rate": 1.0,
+          "normalized_exact_match_rate": 0.13333333333333333,
+          "scored": {
+            "errors": 40,
+            "substitutions": 28,
+            "deletions": 4,
+            "insertions": 8,
+            "reference_words": 330,
+            "wer": 0.12121212121212122,
+            "substitution_rate": 0.08484848484848485,
+            "deletion_rate": 0.012121212121212121,
+            "insertion_rate": 0.024242424242424242
+          },
+          "unscored_as_full_deletions": {
+            "errors": 40,
+            "substitutions": 28,
+            "deletions": 4,
+            "insertions": 8,
+            "reference_words": 330,
+            "wer": 0.12121212121212122,
+            "substitution_rate": 0.08484848484848485,
+            "deletion_rate": 0.012121212121212121,
+            "insertion_rate": 0.024242424242424242
+          },
+          "imputed_items": 0,
+          "generation_seconds": 62.42310133436695,
+          "asr_seconds": 49.656171165406704,
+          "audio_seconds": 141.07999999999998,
+          "aggregate_generation_rtf": 0.44246598620900873
+        },
+        {
+          "length_group": "short",
+          "seed": "17",
+          "items": 15,
+          "text_clusters": 15,
+          "scored_items": 15,
+          "failed_items": 0,
+          "pending_items": 0,
+          "score_errors": 0,
+          "scored_rate": 1.0,
+          "exception_rate": 0.0,
+          "exception_stages": {},
+          "stop_reasons": {
+            "eos": 15
+          },
+          "truncation_rate": 0.0,
+          "eos_audio_success_rate": 1.0,
+          "normalized_exact_match_rate": 0.3333333333333333,
+          "scored": {
+            "errors": 24,
+            "substitutions": 8,
+            "deletions": 6,
+            "insertions": 10,
+            "reference_words": 127,
+            "wer": 0.1889763779527559,
+            "substitution_rate": 0.06299212598425197,
+            "deletion_rate": 0.047244094488188976,
+            "insertion_rate": 0.07874015748031496
+          },
+          "unscored_as_full_deletions": {
+            "errors": 24,
+            "substitutions": 8,
+            "deletions": 6,
+            "insertions": 10,
+            "reference_words": 127,
+            "wer": 0.1889763779527559,
+            "substitution_rate": 0.06299212598425197,
+            "deletion_rate": 0.047244094488188976,
+            "insertion_rate": 0.07874015748031496
+          },
+          "imputed_items": 0,
+          "generation_seconds": 29.373655669391155,
+          "asr_seconds": 36.82534587569535,
+          "audio_seconds": 50.68,
+          "aggregate_generation_rtf": 0.579590680137947
+        },
+        {
+          "length_group": "short",
+          "seed": "42",
+          "items": 15,
+          "text_clusters": 15,
+          "scored_items": 15,
+          "failed_items": 0,
+          "pending_items": 0,
+          "score_errors": 0,
+          "scored_rate": 1.0,
+          "exception_rate": 0.0,
+          "exception_stages": {},
+          "stop_reasons": {
+            "eos": 15
+          },
+          "truncation_rate": 0.0,
+          "eos_audio_success_rate": 1.0,
+          "normalized_exact_match_rate": 0.3333333333333333,
+          "scored": {
+            "errors": 21,
+            "substitutions": 13,
+            "deletions": 6,
+            "insertions": 2,
+            "reference_words": 127,
+            "wer": 0.16535433070866143,
+            "substitution_rate": 0.10236220472440945,
+            "deletion_rate": 0.047244094488188976,
+            "insertion_rate": 0.015748031496062992
+          },
+          "unscored_as_full_deletions": {
+            "errors": 21,
+            "substitutions": 13,
+            "deletions": 6,
+            "insertions": 2,
+            "reference_words": 127,
+            "wer": 0.16535433070866143,
+            "substitution_rate": 0.10236220472440945,
+            "deletion_rate": 0.047244094488188976,
+            "insertion_rate": 0.015748031496062992
+          },
+          "imputed_items": 0,
+          "generation_seconds": 28.11851383280009,
+          "asr_seconds": 36.479934541508555,
+          "audio_seconds": 49.36,
+          "aggregate_generation_rtf": 0.5696619496110229
+        }
+      ]
+    }
+  },
+  "paired": {
+    "B184": {
+      "baseline_only_items": 0,
+      "method_only_items": 0,
+      "common_success_unique_texts": 45,
+      "shared_attempted_unique_texts": 45,
+      "overall": {
+        "shared_attempted_pairs": 90,
+        "common_success_pairs": 90,
+        "common_success_baseline": {
+          "errors": 444,
+          "substitutions": 232,
+          "deletions": 117,
+          "insertions": 95,
+          "reference_words": 2320,
+          "wer": 0.19137931034482758,
+          "substitution_rate": 0.1,
+          "deletion_rate": 0.05043103448275862,
+          "insertion_rate": 0.040948275862068964
+        },
+        "common_success_method": {
+          "errors": 396,
+          "substitutions": 231,
+          "deletions": 81,
+          "insertions": 84,
+          "reference_words": 2320,
+          "wer": 0.1706896551724138,
+          "substitution_rate": 0.09956896551724138,
+          "deletion_rate": 0.034913793103448276,
+          "insertion_rate": 0.03620689655172414
+        },
+        "common_success": {
+          "paired_items": 90,
+          "text_clusters": 45,
+          "clusters_per_length": {
+            "long": 15,
+            "medium": 15,
+            "short": 15
+          },
+          "reference_words": 2320,
+          "baseline_wer": 0.19137931034482758,
+          "method_wer": 0.1706896551724138,
+          "delta_wer": -0.020689655172413793,
+          "delta_wer_ci95": [
+            -0.04370172957276017,
+            0.0013547477731410038
+          ],
+          "bootstrap_repeats": 2000,
+          "bootstrap_seed": 1832026,
+          "method": "Percentile bootstrap: sample text clusters with replacement within length stratum; retain every paired seed in the sampled cluster; recompute micro WER.",
+          "bootstrap_valid_replicates": 2000,
+          "ci_note": "Conditional on these text sources, observed seed pairs, and available scores; excludes uncertainty from training randomness and the ASR model."
+        },
+        "unscored_as_full_deletions": {
+          "paired_items": 90,
+          "text_clusters": 45,
+          "clusters_per_length": {
+            "long": 15,
+            "medium": 15,
+            "short": 15
+          },
+          "reference_words": 2320,
+          "baseline_wer": 0.19137931034482758,
+          "method_wer": 0.1706896551724138,
+          "delta_wer": -0.020689655172413793,
+          "delta_wer_ci95": [
+            -0.04370172957276017,
+            0.0013547477731410038
+          ],
+          "bootstrap_repeats": 2000,
+          "bootstrap_seed": 1832026,
+          "method": "Percentile bootstrap: sample text clusters with replacement within length stratum; retain every paired seed in the sampled cluster; recompute micro WER.",
+          "bootstrap_valid_replicates": 2000,
+          "ci_note": "Conditional on these text sources, observed seed pairs, and available scores; excludes uncertainty from training randomness and the ASR model."
+        }
+      },
+      "by_length": {
+        "long": {
+          "shared_attempted_pairs": 30,
+          "common_success_pairs": 30,
+          "common_success_baseline": {
+            "errors": 303,
+            "substitutions": 133,
+            "deletions": 94,
+            "insertions": 76,
+            "reference_words": 1406,
+            "wer": 0.2155049786628734,
+            "substitution_rate": 0.0945945945945946,
+            "deletion_rate": 0.06685633001422475,
+            "insertion_rate": 0.05405405405405406
+          },
+          "common_success_method": {
+            "errors": 266,
+            "substitutions": 157,
+            "deletions": 56,
+            "insertions": 53,
+            "reference_words": 1406,
+            "wer": 0.1891891891891892,
+            "substitution_rate": 0.1116642958748222,
+            "deletion_rate": 0.03982930298719772,
+            "insertion_rate": 0.03769559032716927
+          },
+          "common_success": {
+            "paired_items": 30,
+            "text_clusters": 15,
+            "clusters_per_length": {
+              "long": 15
+            },
+            "reference_words": 1406,
+            "baseline_wer": 0.2155049786628734,
+            "method_wer": 0.1891891891891892,
+            "delta_wer": -0.02631578947368421,
+            "delta_wer_ci95": [
+              -0.05672344368781995,
+              0.005050687510947626
+            ],
+            "bootstrap_repeats": 2000,
+            "bootstrap_seed": 1832026,
+            "method": "Percentile bootstrap: sample text clusters with replacement within length stratum; retain every paired seed in the sampled cluster; recompute micro WER.",
+            "bootstrap_valid_replicates": 2000,
+            "ci_note": "Conditional on these text sources, observed seed pairs, and available scores; excludes uncertainty from training randomness and the ASR model."
+          },
+          "unscored_as_full_deletions": {
+            "paired_items": 30,
+            "text_clusters": 15,
+            "clusters_per_length": {
+              "long": 15
+            },
+            "reference_words": 1406,
+            "baseline_wer": 0.2155049786628734,
+            "method_wer": 0.1891891891891892,
+            "delta_wer": -0.02631578947368421,
+            "delta_wer_ci95": [
+              -0.05672344368781995,
+              0.005050687510947626
+            ],
+            "bootstrap_repeats": 2000,
+            "bootstrap_seed": 1832026,
+            "method": "Percentile bootstrap: sample text clusters with replacement within length stratum; retain every paired seed in the sampled cluster; recompute micro WER.",
+            "bootstrap_valid_replicates": 2000,
+            "ci_note": "Conditional on these text sources, observed seed pairs, and available scores; excludes uncertainty from training randomness and the ASR model."
+          }
+        },
+        "medium": {
+          "shared_attempted_pairs": 30,
+          "common_success_pairs": 30,
+          "common_success_baseline": {
+            "errors": 107,
+            "substitutions": 75,
+            "deletions": 17,
+            "insertions": 15,
+            "reference_words": 660,
+            "wer": 0.1621212121212121,
+            "substitution_rate": 0.11363636363636363,
+            "deletion_rate": 0.025757575757575757,
+            "insertion_rate": 0.022727272727272728
+          },
+          "common_success_method": {
+            "errors": 85,
+            "substitutions": 53,
+            "deletions": 13,
+            "insertions": 19,
+            "reference_words": 660,
+            "wer": 0.12878787878787878,
+            "substitution_rate": 0.0803030303030303,
+            "deletion_rate": 0.019696969696969695,
+            "insertion_rate": 0.02878787878787879
+          },
+          "common_success": {
+            "paired_items": 30,
+            "text_clusters": 15,
+            "clusters_per_length": {
+              "medium": 15
+            },
+            "reference_words": 660,
+            "baseline_wer": 0.1621212121212121,
+            "method_wer": 0.12878787878787878,
+            "delta_wer": -0.03333333333333333,
+            "delta_wer_ci95": [
+              -0.07581002449979583,
+              0.010883540372670732
+            ],
+            "bootstrap_repeats": 2000,
+            "bootstrap_seed": 1832026,
+            "method": "Percentile bootstrap: sample text clusters with replacement within length stratum; retain every paired seed in the sampled cluster; recompute micro WER.",
+            "bootstrap_valid_replicates": 2000,
+            "ci_note": "Conditional on these text sources, observed seed pairs, and available scores; excludes uncertainty from training randomness and the ASR model."
+          },
+          "unscored_as_full_deletions": {
+            "paired_items": 30,
+            "text_clusters": 15,
+            "clusters_per_length": {
+              "medium": 15
+            },
+            "reference_words": 660,
+            "baseline_wer": 0.1621212121212121,
+            "method_wer": 0.12878787878787878,
+            "delta_wer": -0.03333333333333333,
+            "delta_wer_ci95": [
+              -0.07581002449979583,
+              0.010883540372670732
+            ],
+            "bootstrap_repeats": 2000,
+            "bootstrap_seed": 1832026,
+            "method": "Percentile bootstrap: sample text clusters with replacement within length stratum; retain every paired seed in the sampled cluster; recompute micro WER.",
+            "bootstrap_valid_replicates": 2000,
+            "ci_note": "Conditional on these text sources, observed seed pairs, and available scores; excludes uncertainty from training randomness and the ASR model."
+          }
+        },
+        "short": {
+          "shared_attempted_pairs": 30,
+          "common_success_pairs": 30,
+          "common_success_baseline": {
+            "errors": 34,
+            "substitutions": 24,
+            "deletions": 6,
+            "insertions": 4,
+            "reference_words": 254,
+            "wer": 0.13385826771653545,
+            "substitution_rate": 0.09448818897637795,
+            "deletion_rate": 0.023622047244094488,
+            "insertion_rate": 0.015748031496062992
+          },
+          "common_success_method": {
+            "errors": 45,
+            "substitutions": 21,
+            "deletions": 12,
+            "insertions": 12,
+            "reference_words": 254,
+            "wer": 0.17716535433070865,
+            "substitution_rate": 0.08267716535433071,
+            "deletion_rate": 0.047244094488188976,
+            "insertion_rate": 0.047244094488188976
+          },
+          "common_success": {
+            "paired_items": 30,
+            "text_clusters": 15,
+            "clusters_per_length": {
+              "short": 15
+            },
+            "reference_words": 254,
+            "baseline_wer": 0.13385826771653545,
+            "method_wer": 0.17716535433070865,
+            "delta_wer": 0.04330708661417323,
+            "delta_wer_ci95": [
+              -0.007466959097641563,
+              0.10256410256410256
+            ],
+            "bootstrap_repeats": 2000,
+            "bootstrap_seed": 1832026,
+            "method": "Percentile bootstrap: sample text clusters with replacement within length stratum; retain every paired seed in the sampled cluster; recompute micro WER.",
+            "bootstrap_valid_replicates": 2000,
+            "ci_note": "Conditional on these text sources, observed seed pairs, and available scores; excludes uncertainty from training randomness and the ASR model."
+          },
+          "unscored_as_full_deletions": {
+            "paired_items": 30,
+            "text_clusters": 15,
+            "clusters_per_length": {
+              "short": 15
+            },
+            "reference_words": 254,
+            "baseline_wer": 0.13385826771653545,
+            "method_wer": 0.17716535433070865,
+            "delta_wer": 0.04330708661417323,
+            "delta_wer_ci95": [
+              -0.007466959097641563,
+              0.10256410256410256
+            ],
+            "bootstrap_repeats": 2000,
+            "bootstrap_seed": 1832026,
+            "method": "Percentile bootstrap: sample text clusters with replacement within length stratum; retain every paired seed in the sampled cluster; recompute micro WER.",
+            "bootstrap_valid_replicates": 2000,
+            "ci_note": "Conditional on these text sources, observed seed pairs, and available scores; excludes uncertainty from training randomness and the ASR model."
+          }
+        }
+      },
+      "comparability_note": "Pairs match exact id, seed, raw reference text, and length group. Unmatched attempts are excluded from paired analyses and counted separately; configurations may still differ beyond the intended intervention."
+    }
+  },
+  "interpretation": {
+    "denominators": "Per-system rates use observed deduplicated attempts. WER uses reference words of scored items. No inference is made about jobs absent from raw.jsonl.",
+    "completeness": "eos_audio_success_rate is audio available plus EOS / attempted items. It is operational completion, not proof all words were spoken. Normalized exact match is ASR transcript agreement.",
+    "sensitivity": "Every unscored attempted item (failure, pending, invalid score) is assigned an empty hypothesis: all reference words deleted. This penalizes missing output but is NOT a mathematical upper bound; WER can exceed 100% through insertions.",
+    "pairing": "Common-success analysis and deletion sensitivity use only shared attempted id/seed pairs. Missing jobs are counted, never invented as completed or failed.",
+    "uncertainty": "Length-stratified text-cluster bootstrap retains all observed paired seeds per text, recomputes micro WER, and reports method minus baseline; negative delta favors method.",
+    "time": "Generation/ASR durations are summed from last records. Audio duration includes inserted segmentation pauses; failed attempts may lack duration. These totals are not full wall-clock run duration."
+  }
+}

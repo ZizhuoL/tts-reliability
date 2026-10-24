@@ -1,0 +1,4500 @@
+{
+  "systems": {
+    "A": {
+      "status": "all_expected_latest_items_terminal",
+      "expected_items": 90,
+      "items": 90,
+      "statuses": {
+        "complete": 90
+      },
+      "seconds": {
+        "generation_seconds": {
+          "sum_known": 417.14780858019367,
+          "known_items": 90,
+          "unknown_items": 0,
+          "complete_coverage": true
+        },
+        "asr_seconds": {
+          "sum_known": 312.7616379605606,
+          "known_items": 90,
+          "unknown_items": 0,
+          "complete_coverage": true
+        },
+        "attempt_seconds": {
+          "sum_known": 730.3258983348496,
+          "known_items": 90,
+          "unknown_items": 0,
+          "complete_coverage": true
+        },
+        "audio_seconds": {
+          "sum_known": 855.6,
+          "known_items": 90,
+          "unknown_items": 0,
+          "complete_coverage": true
+        }
+      },
+      "rtf": {
+        "generation_seconds": {
+          "value": 0.4875500334036859,
+          "numerator_seconds": 417.14780858019367,
+          "denominator_audio_seconds": 855.6,
+          "matched_items": 90,
+          "unmatched_items": 0
+        },
+        "asr_seconds": {
+          "value": 0.36554656143123027,
+          "numerator_seconds": 312.7616379605606,
+          "denominator_audio_seconds": 855.6,
+          "matched_items": 90,
+          "unmatched_items": 0
+        },
+        "attempt_seconds": {
+          "value": 0.8535833313871547,
+          "numerator_seconds": 730.3258983348496,
+          "denominator_audio_seconds": 855.6,
+          "matched_items": 90,
+          "unmatched_items": 0
+        }
+      },
+      "memory": {
+        "process_peak_rss_bytes": {
+          "max_observed_bytes": 8377319424,
+          "max_observed_gib": 7.8019866943359375,
+          "known_items": 90,
+          "unknown_items": 0,
+          "max_observation_ids": [
+            {
+              "key": "79386fd4c18b766bbbf457ed",
+              "id": "holmes-p00974-s01-n2",
+              "seed": 17
+            },
+            {
+              "key": "2a0122651d979b04e46392c2",
+              "id": "holmes-p00974-s01-n2",
+              "seed": 42
+            },
+            {
+              "key": "46f57a6aa7c20769879dea34",
+              "id": "holmes-p02145-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "bdecca5e5dee0e7e2b3ea1e0",
+              "id": "holmes-p02145-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "ab782b0b264a6eee8fc3da90",
+              "id": "holmes-p01028-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "174e3d06a92813b55b0a37f8",
+              "id": "holmes-p01028-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "9789a3686601e28c1d81b839",
+              "id": "holmes-p01795-s01-n2",
+              "seed": 17
+            },
+            {
+              "key": "fe6a8e488e0d4e122965e845",
+              "id": "holmes-p01795-s01-n2",
+              "seed": 42
+            },
+            {
+              "key": "72542277038f7f62f0f2b770",
+              "id": "holmes-p02149-s01-n3",
+              "seed": 17
+            },
+            {
+              "key": "85730d2de5d2f3aa66efdeb7",
+              "id": "holmes-p02149-s01-n3",
+              "seed": 42
+            },
+            {
+              "key": "1a56f656f4088a8f623d3b8f",
+              "id": "holmes-p00216-s02-n2",
+              "seed": 17
+            },
+            {
+              "key": "b66d44c5f0d8aa82534e241a",
+              "id": "holmes-p00216-s02-n2",
+              "seed": 42
+            },
+            {
+              "key": "bf948351e2156a15d2c7641b",
+              "id": "holmes-p02469-s02-n2",
+              "seed": 17
+            },
+            {
+              "key": "2e66812c5acb29bad63b5642",
+              "id": "holmes-p02469-s02-n2",
+              "seed": 42
+            },
+            {
+              "key": "c79c6d9bb2953343a067daa4",
+              "id": "alice-p00484-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "e8c710b1288d8f39e0880bf0",
+              "id": "alice-p00484-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "9f03bd66c0b412188cf1b9b6",
+              "id": "alice-p00744-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "40e3163ed7dda75eff684462",
+              "id": "alice-p00744-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "9c69cff195dbe4ae67b3e1de",
+              "id": "alice-p00467-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "048c5ddb645c75b16fb27fc1",
+              "id": "alice-p00467-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "77179b61fd092f31092cf8f8",
+              "id": "alice-p00449-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "827666e932b9ed33ccb68ef8",
+              "id": "alice-p00449-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "2acbd137682267b954c70268",
+              "id": "alice-p00032-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "dd12510a3c9ededcd51ea439",
+              "id": "alice-p00032-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "1df765eb84f7fcc8f92c9fd4",
+              "id": "alice-p00019-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "55392e55ea9ac6552bb27f7f",
+              "id": "alice-p00019-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "7d32c654122c280f089d7bff",
+              "id": "alice-p00123-s04-n2",
+              "seed": 17
+            },
+            {
+              "key": "8a2e4066cd3cb1dbbbc6d658",
+              "id": "alice-p00123-s04-n2",
+              "seed": 42
+            }
+          ]
+        },
+        "mps_current_allocated_bytes": {
+          "max_observed_bytes": 1344017152,
+          "max_observed_gib": 1.251713514328003,
+          "known_items": 90,
+          "unknown_items": 0,
+          "max_observation_ids": [
+            {
+              "key": "70a81670345a07f53c619b35",
+              "id": "holmes-p01042-s02-n1",
+              "seed": 17
+            },
+            {
+              "key": "47969aff41c3356752758179",
+              "id": "holmes-p01042-s02-n1",
+              "seed": 42
+            },
+            {
+              "key": "5c67e804c1908be7d1bb2739",
+              "id": "holmes-p01651-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "45e380b377758afa1497d56f",
+              "id": "holmes-p01651-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "b2b9de58a57802c398e41c51",
+              "id": "holmes-p01618-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "3cbee4c52330838a90d5aa24",
+              "id": "holmes-p01618-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "fbb45a45218aee1a87c9718d",
+              "id": "holmes-p02484-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "66ea65b9df06c669bc2d7064",
+              "id": "holmes-p02484-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "b1af613e227bca154e3d0063",
+              "id": "holmes-p02257-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "ddfd466bf3fd0f61ff08cccd",
+              "id": "holmes-p02257-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "bcdac23d5e0089ec51c6bd08",
+              "id": "holmes-p00452-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "b96f73878c938a71cc7e22b0",
+              "id": "holmes-p00452-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "ee0b970b750b609e919a3c34",
+              "id": "holmes-p01399-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "1ed14a3e4009198549d2d136",
+              "id": "holmes-p01399-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "2ac40d19258f70101c267197",
+              "id": "holmes-p00146-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "cb978cf5d99aeb0270e8607e",
+              "id": "holmes-p00146-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "e378ee549d06f73c181f335c",
+              "id": "alice-p00528-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "c13e0809ff4cffab9201bf03",
+              "id": "alice-p00528-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "89d555cee0e84bd40cad3c92",
+              "id": "alice-p00734-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "d70562ae1b561ed39e907ea2",
+              "id": "alice-p00734-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "597349fd197ddfb9829766e3",
+              "id": "alice-p00474-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "2667a195049357feeb419342",
+              "id": "alice-p00474-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "e63c5e0f16e5f36e8c696576",
+              "id": "alice-p00555-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "14e0fc7b30e4eeff39f9b6e0",
+              "id": "alice-p00555-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "78420c0279429d948a69504d",
+              "id": "alice-p00354-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "f9b0415d2588f5aaf3762e1d",
+              "id": "alice-p00354-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "fc601564fcb276489d2d515a",
+              "id": "alice-p00248-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "eff9253baa368cb46b17f7f2",
+              "id": "alice-p00248-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "a62983bf0dcfa331cf6c2802",
+              "id": "alice-p00358-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "9a39c50760ee6cbe328e191d",
+              "id": "alice-p00358-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "246187295799d04cdf21b811",
+              "id": "holmes-p00151-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "f8a4e119a3f36fcb77537e1a",
+              "id": "holmes-p00151-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "a4fd5811dffba6551c18b59c",
+              "id": "holmes-p00753-s03-n1",
+              "seed": 17
+            },
+            {
+              "key": "8d3fb4ea3d0c8461ed4571f5",
+              "id": "holmes-p00753-s03-n1",
+              "seed": 42
+            },
+            {
+              "key": "000123de81c0b1acdccbac22",
+              "id": "holmes-p00874-s03-n1",
+              "seed": 17
+            },
+            {
+              "key": "c8ac59880c871767684e2e46",
+              "id": "holmes-p00874-s03-n1",
+              "seed": 42
+            },
+            {
+              "key": "75d3c5abf30ab9288880f06f",
+              "id": "holmes-p01369-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "eace0303984577f39520e869",
+              "id": "holmes-p01369-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "e60106afaa5b5d805941124e",
+              "id": "holmes-p00888-s02-n1",
+              "seed": 17
+            },
+            {
+              "key": "d3d91d3b7ab46e76879c11da",
+              "id": "holmes-p00888-s02-n1",
+              "seed": 42
+            },
+            {
+              "key": "d4dc6deefad65161e6adb6a8",
+              "id": "holmes-p02331-s12-n1",
+              "seed": 17
+            },
+            {
+              "key": "5019e9ad5a1045ca8fabe8fc",
+              "id": "holmes-p02331-s12-n1",
+              "seed": 42
+            },
+            {
+              "key": "c94425872ab5b9fb6c2fc4ea",
+              "id": "holmes-p02230-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "105adc8f8a6fe139978d6603",
+              "id": "holmes-p02230-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "84fe6c6ec9310144b86db70d",
+              "id": "holmes-p01420-s02-n2",
+              "seed": 17
+            },
+            {
+              "key": "e9d185a76274cd5468897fcd",
+              "id": "holmes-p01420-s02-n2",
+              "seed": 42
+            },
+            {
+              "key": "2b987b7e79adaf4479377966",
+              "id": "alice-p00579-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "95809fe91a0a44ea7832b6f9",
+              "id": "alice-p00579-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "25b98957eade2022a1ce921c",
+              "id": "alice-p00115-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "20d326d630ea857b7aae2854",
+              "id": "alice-p00115-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "c563a527c50ac0ab2cf375f3",
+              "id": "alice-p00318-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "886ae99faba0a7d10984dc4d",
+              "id": "alice-p00318-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "c6ccef5c694e217c708ae86b",
+              "id": "alice-p00362-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "5644da38bd04deecbc6d99f2",
+              "id": "alice-p00362-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "e5f8d0acce8d5441e7afda99",
+              "id": "alice-p00045-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "63ec414ce2b933ebedb0428e",
+              "id": "alice-p00045-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "4f73300682eae73674c79e60",
+              "id": "alice-p00427-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "dd8e93b3d10f07f46fe76012",
+              "id": "alice-p00427-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "23a38cae4d1e8ca4e1b995e8",
+              "id": "alice-p00128-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "b42537ded2743d0b5a50c9b2",
+              "id": "alice-p00128-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "7f255538ea6066052779a1fe",
+              "id": "holmes-p01748-s00-n3",
+              "seed": 17
+            },
+            {
+              "key": "3e4225f18397a22cfd1c987b",
+              "id": "holmes-p01748-s00-n3",
+              "seed": 42
+            },
+            {
+              "key": "79386fd4c18b766bbbf457ed",
+              "id": "holmes-p00974-s01-n2",
+              "seed": 17
+            },
+            {
+              "key": "2a0122651d979b04e46392c2",
+              "id": "holmes-p00974-s01-n2",
+              "seed": 42
+            },
+            {
+              "key": "46f57a6aa7c20769879dea34",
+              "id": "holmes-p02145-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "bdecca5e5dee0e7e2b3ea1e0",
+              "id": "holmes-p02145-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "ab782b0b264a6eee8fc3da90",
+              "id": "holmes-p01028-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "174e3d06a92813b55b0a37f8",
+              "id": "holmes-p01028-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "9789a3686601e28c1d81b839",
+              "id": "holmes-p01795-s01-n2",
+              "seed": 17
+            },
+            {
+              "key": "fe6a8e488e0d4e122965e845",
+              "id": "holmes-p01795-s01-n2",
+              "seed": 42
+            },
+            {
+              "key": "72542277038f7f62f0f2b770",
+              "id": "holmes-p02149-s01-n3",
+              "seed": 17
+            },
+            {
+              "key": "85730d2de5d2f3aa66efdeb7",
+              "id": "holmes-p02149-s01-n3",
+              "seed": 42
+            },
+            {
+              "key": "1a56f656f4088a8f623d3b8f",
+              "id": "holmes-p00216-s02-n2",
+              "seed": 17
+            },
+            {
+              "key": "b66d44c5f0d8aa82534e241a",
+              "id": "holmes-p00216-s02-n2",
+              "seed": 42
+            },
+            {
+              "key": "bf948351e2156a15d2c7641b",
+              "id": "holmes-p02469-s02-n2",
+              "seed": 17
+            },
+            {
+              "key": "2e66812c5acb29bad63b5642",
+              "id": "holmes-p02469-s02-n2",
+              "seed": 42
+            },
+            {
+              "key": "c79c6d9bb2953343a067daa4",
+              "id": "alice-p00484-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "e8c710b1288d8f39e0880bf0",
+              "id": "alice-p00484-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "9f03bd66c0b412188cf1b9b6",
+              "id": "alice-p00744-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "40e3163ed7dda75eff684462",
+              "id": "alice-p00744-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "9c69cff195dbe4ae67b3e1de",
+              "id": "alice-p00467-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "048c5ddb645c75b16fb27fc1",
+              "id": "alice-p00467-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "77179b61fd092f31092cf8f8",
+              "id": "alice-p00449-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "827666e932b9ed33ccb68ef8",
+              "id": "alice-p00449-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "2acbd137682267b954c70268",
+              "id": "alice-p00032-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "dd12510a3c9ededcd51ea439",
+              "id": "alice-p00032-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "1df765eb84f7fcc8f92c9fd4",
+              "id": "alice-p00019-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "55392e55ea9ac6552bb27f7f",
+              "id": "alice-p00019-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "7d32c654122c280f089d7bff",
+              "id": "alice-p00123-s04-n2",
+              "seed": 17
+            },
+            {
+              "key": "8a2e4066cd3cb1dbbbc6d658",
+              "id": "alice-p00123-s04-n2",
+              "seed": 42
+            }
+          ]
+        },
+        "mps_driver_allocated_bytes": {
+          "max_observed_bytes": 14153220096,
+          "max_observed_gib": 13.18121337890625,
+          "known_items": 90,
+          "unknown_items": 0,
+          "max_observation_ids": [
+            {
+              "key": "7d32c654122c280f089d7bff",
+              "id": "alice-p00123-s04-n2",
+              "seed": 17
+            }
+          ]
+        }
+      },
+      "stop_reasons": {
+        "eos": 90
+      },
+      "cap_items": 0,
+      "cap_ids": [],
+      "exception_items": 0,
+      "exception_stages": {},
+      "exception_ids": [],
+      "longest_audio_seconds": 25.4,
+      "longest_audio_ids": [
+        {
+          "key": "79386fd4c18b766bbbf457ed",
+          "id": "holmes-p00974-s01-n2",
+          "seed": 17
+        }
+      ],
+      "audio_duration_known_items": 90,
+      "audio_duration_unknown_items": 0,
+      "audio_over_30_seconds_count": 0,
+      "audio_over_30_seconds_ids": [],
+      "by_seed": {
+        "17": {
+          "items": 45,
+          "statuses": {
+            "complete": 45
+          },
+          "seconds": {
+            "generation_seconds": {
+              "sum_known": 210.07501158118248,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            },
+            "asr_seconds": {
+              "sum_known": 158.9167321701534,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            },
+            "attempt_seconds": {
+              "sum_known": 369.19769116677344,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            },
+            "audio_seconds": {
+              "sum_known": 431.36,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            }
+          },
+          "rtf": {
+            "generation_seconds": {
+              "value": 0.48700623975607954,
+              "numerator_seconds": 210.07501158118248,
+              "denominator_audio_seconds": 431.36,
+              "matched_items": 45,
+              "unmatched_items": 0
+            },
+            "asr_seconds": {
+              "value": 0.36840859646270724,
+              "numerator_seconds": 158.9167321701534,
+              "denominator_audio_seconds": 431.36,
+              "matched_items": 45,
+              "unmatched_items": 0
+            },
+            "attempt_seconds": {
+              "value": 0.855892273661845,
+              "numerator_seconds": 369.19769116677344,
+              "denominator_audio_seconds": 431.36,
+              "matched_items": 45,
+              "unmatched_items": 0
+            }
+          },
+          "memory": {
+            "process_peak_rss_bytes": {
+              "max_observed_bytes": 8377319424,
+              "max_observed_gib": 7.8019866943359375,
+              "known_items": 45,
+              "unknown_items": 0,
+              "max_observation_ids": [
+                {
+                  "key": "79386fd4c18b766bbbf457ed",
+                  "id": "holmes-p00974-s01-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "46f57a6aa7c20769879dea34",
+                  "id": "holmes-p02145-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "ab782b0b264a6eee8fc3da90",
+                  "id": "holmes-p01028-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "9789a3686601e28c1d81b839",
+                  "id": "holmes-p01795-s01-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "72542277038f7f62f0f2b770",
+                  "id": "holmes-p02149-s01-n3",
+                  "seed": 17
+                },
+                {
+                  "key": "1a56f656f4088a8f623d3b8f",
+                  "id": "holmes-p00216-s02-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "bf948351e2156a15d2c7641b",
+                  "id": "holmes-p02469-s02-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "c79c6d9bb2953343a067daa4",
+                  "id": "alice-p00484-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "9f03bd66c0b412188cf1b9b6",
+                  "id": "alice-p00744-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "9c69cff195dbe4ae67b3e1de",
+                  "id": "alice-p00467-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "77179b61fd092f31092cf8f8",
+                  "id": "alice-p00449-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "2acbd137682267b954c70268",
+                  "id": "alice-p00032-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "1df765eb84f7fcc8f92c9fd4",
+                  "id": "alice-p00019-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "7d32c654122c280f089d7bff",
+                  "id": "alice-p00123-s04-n2",
+                  "seed": 17
+                }
+              ]
+            },
+            "mps_current_allocated_bytes": {
+              "max_observed_bytes": 1344017152,
+              "max_observed_gib": 1.251713514328003,
+              "known_items": 45,
+              "unknown_items": 0,
+              "max_observation_ids": [
+                {
+                  "key": "70a81670345a07f53c619b35",
+                  "id": "holmes-p01042-s02-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "5c67e804c1908be7d1bb2739",
+                  "id": "holmes-p01651-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "b2b9de58a57802c398e41c51",
+                  "id": "holmes-p01618-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "fbb45a45218aee1a87c9718d",
+                  "id": "holmes-p02484-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "b1af613e227bca154e3d0063",
+                  "id": "holmes-p02257-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "bcdac23d5e0089ec51c6bd08",
+                  "id": "holmes-p00452-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "ee0b970b750b609e919a3c34",
+                  "id": "holmes-p01399-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "2ac40d19258f70101c267197",
+                  "id": "holmes-p00146-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "e378ee549d06f73c181f335c",
+                  "id": "alice-p00528-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "89d555cee0e84bd40cad3c92",
+                  "id": "alice-p00734-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "597349fd197ddfb9829766e3",
+                  "id": "alice-p00474-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "e63c5e0f16e5f36e8c696576",
+                  "id": "alice-p00555-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "78420c0279429d948a69504d",
+                  "id": "alice-p00354-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "fc601564fcb276489d2d515a",
+                  "id": "alice-p00248-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "a62983bf0dcfa331cf6c2802",
+                  "id": "alice-p00358-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "246187295799d04cdf21b811",
+                  "id": "holmes-p00151-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "a4fd5811dffba6551c18b59c",
+                  "id": "holmes-p00753-s03-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "000123de81c0b1acdccbac22",
+                  "id": "holmes-p00874-s03-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "75d3c5abf30ab9288880f06f",
+                  "id": "holmes-p01369-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "e60106afaa5b5d805941124e",
+                  "id": "holmes-p00888-s02-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "d4dc6deefad65161e6adb6a8",
+                  "id": "holmes-p02331-s12-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "c94425872ab5b9fb6c2fc4ea",
+                  "id": "holmes-p02230-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "84fe6c6ec9310144b86db70d",
+                  "id": "holmes-p01420-s02-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "2b987b7e79adaf4479377966",
+                  "id": "alice-p00579-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "25b98957eade2022a1ce921c",
+                  "id": "alice-p00115-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "c563a527c50ac0ab2cf375f3",
+                  "id": "alice-p00318-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "c6ccef5c694e217c708ae86b",
+                  "id": "alice-p00362-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "e5f8d0acce8d5441e7afda99",
+                  "id": "alice-p00045-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "4f73300682eae73674c79e60",
+                  "id": "alice-p00427-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "23a38cae4d1e8ca4e1b995e8",
+                  "id": "alice-p00128-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "7f255538ea6066052779a1fe",
+                  "id": "holmes-p01748-s00-n3",
+                  "seed": 17
+                },
+                {
+                  "key": "79386fd4c18b766bbbf457ed",
+                  "id": "holmes-p00974-s01-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "46f57a6aa7c20769879dea34",
+                  "id": "holmes-p02145-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "ab782b0b264a6eee8fc3da90",
+                  "id": "holmes-p01028-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "9789a3686601e28c1d81b839",
+                  "id": "holmes-p01795-s01-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "72542277038f7f62f0f2b770",
+                  "id": "holmes-p02149-s01-n3",
+                  "seed": 17
+                },
+                {
+                  "key": "1a56f656f4088a8f623d3b8f",
+                  "id": "holmes-p00216-s02-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "bf948351e2156a15d2c7641b",
+                  "id": "holmes-p02469-s02-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "c79c6d9bb2953343a067daa4",
+                  "id": "alice-p00484-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "9f03bd66c0b412188cf1b9b6",
+                  "id": "alice-p00744-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "9c69cff195dbe4ae67b3e1de",
+                  "id": "alice-p00467-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "77179b61fd092f31092cf8f8",
+                  "id": "alice-p00449-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "2acbd137682267b954c70268",
+                  "id": "alice-p00032-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "1df765eb84f7fcc8f92c9fd4",
+                  "id": "alice-p00019-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "7d32c654122c280f089d7bff",
+                  "id": "alice-p00123-s04-n2",
+                  "seed": 17
+                }
+              ]
+            },
+            "mps_driver_allocated_bytes": {
+              "max_observed_bytes": 14153220096,
+              "max_observed_gib": 13.18121337890625,
+              "known_items": 45,
+              "unknown_items": 0,
+              "max_observation_ids": [
+                {
+                  "key": "7d32c654122c280f089d7bff",
+                  "id": "alice-p00123-s04-n2",
+                  "seed": 17
+                }
+              ]
+            }
+          },
+          "stop_reasons": {
+            "eos": 45
+          },
+          "cap_items": 0,
+          "cap_ids": [],
+          "exception_items": 0,
+          "exception_stages": {},
+          "exception_ids": [],
+          "longest_audio_seconds": 25.4,
+          "longest_audio_ids": [
+            {
+              "key": "79386fd4c18b766bbbf457ed",
+              "id": "holmes-p00974-s01-n2",
+              "seed": 17
+            }
+          ],
+          "audio_duration_known_items": 45,
+          "audio_duration_unknown_items": 0,
+          "audio_over_30_seconds_count": 0,
+          "audio_over_30_seconds_ids": []
+        },
+        "42": {
+          "items": 45,
+          "statuses": {
+            "complete": 45
+          },
+          "seconds": {
+            "generation_seconds": {
+              "sum_known": 207.0727969990112,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            },
+            "asr_seconds": {
+              "sum_known": 153.8449057904072,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            },
+            "attempt_seconds": {
+              "sum_known": 361.1282071680762,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            },
+            "audio_seconds": {
+              "sum_known": 424.24,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            }
+          },
+          "rtf": {
+            "generation_seconds": {
+              "value": 0.48810295351454647,
+              "numerator_seconds": 207.0727969990112,
+              "denominator_audio_seconds": 424.24,
+              "matched_items": 45,
+              "unmatched_items": 0
+            },
+            "asr_seconds": {
+              "value": 0.36263649300020556,
+              "numerator_seconds": 153.8449057904072,
+              "denominator_audio_seconds": 424.24,
+              "matched_items": 45,
+              "unmatched_items": 0
+            },
+            "attempt_seconds": {
+              "value": 0.8512356382426838,
+              "numerator_seconds": 361.1282071680762,
+              "denominator_audio_seconds": 424.24,
+              "matched_items": 45,
+              "unmatched_items": 0
+            }
+          },
+          "memory": {
+            "process_peak_rss_bytes": {
+              "max_observed_bytes": 8377319424,
+              "max_observed_gib": 7.8019866943359375,
+              "known_items": 45,
+              "unknown_items": 0,
+              "max_observation_ids": [
+                {
+                  "key": "2a0122651d979b04e46392c2",
+                  "id": "holmes-p00974-s01-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "bdecca5e5dee0e7e2b3ea1e0",
+                  "id": "holmes-p02145-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "174e3d06a92813b55b0a37f8",
+                  "id": "holmes-p01028-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "fe6a8e488e0d4e122965e845",
+                  "id": "holmes-p01795-s01-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "85730d2de5d2f3aa66efdeb7",
+                  "id": "holmes-p02149-s01-n3",
+                  "seed": 42
+                },
+                {
+                  "key": "b66d44c5f0d8aa82534e241a",
+                  "id": "holmes-p00216-s02-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "2e66812c5acb29bad63b5642",
+                  "id": "holmes-p02469-s02-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "e8c710b1288d8f39e0880bf0",
+                  "id": "alice-p00484-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "40e3163ed7dda75eff684462",
+                  "id": "alice-p00744-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "048c5ddb645c75b16fb27fc1",
+                  "id": "alice-p00467-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "827666e932b9ed33ccb68ef8",
+                  "id": "alice-p00449-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "dd12510a3c9ededcd51ea439",
+                  "id": "alice-p00032-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "55392e55ea9ac6552bb27f7f",
+                  "id": "alice-p00019-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "8a2e4066cd3cb1dbbbc6d658",
+                  "id": "alice-p00123-s04-n2",
+                  "seed": 42
+                }
+              ]
+            },
+            "mps_current_allocated_bytes": {
+              "max_observed_bytes": 1344017152,
+              "max_observed_gib": 1.251713514328003,
+              "known_items": 45,
+              "unknown_items": 0,
+              "max_observation_ids": [
+                {
+                  "key": "47969aff41c3356752758179",
+                  "id": "holmes-p01042-s02-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "45e380b377758afa1497d56f",
+                  "id": "holmes-p01651-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "3cbee4c52330838a90d5aa24",
+                  "id": "holmes-p01618-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "66ea65b9df06c669bc2d7064",
+                  "id": "holmes-p02484-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "ddfd466bf3fd0f61ff08cccd",
+                  "id": "holmes-p02257-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "b96f73878c938a71cc7e22b0",
+                  "id": "holmes-p00452-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "1ed14a3e4009198549d2d136",
+                  "id": "holmes-p01399-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "cb978cf5d99aeb0270e8607e",
+                  "id": "holmes-p00146-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "c13e0809ff4cffab9201bf03",
+                  "id": "alice-p00528-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "d70562ae1b561ed39e907ea2",
+                  "id": "alice-p00734-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "2667a195049357feeb419342",
+                  "id": "alice-p00474-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "14e0fc7b30e4eeff39f9b6e0",
+                  "id": "alice-p00555-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "f9b0415d2588f5aaf3762e1d",
+                  "id": "alice-p00354-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "eff9253baa368cb46b17f7f2",
+                  "id": "alice-p00248-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "9a39c50760ee6cbe328e191d",
+                  "id": "alice-p00358-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "f8a4e119a3f36fcb77537e1a",
+                  "id": "holmes-p00151-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "8d3fb4ea3d0c8461ed4571f5",
+                  "id": "holmes-p00753-s03-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "c8ac59880c871767684e2e46",
+                  "id": "holmes-p00874-s03-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "eace0303984577f39520e869",
+                  "id": "holmes-p01369-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "d3d91d3b7ab46e76879c11da",
+                  "id": "holmes-p00888-s02-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "5019e9ad5a1045ca8fabe8fc",
+                  "id": "holmes-p02331-s12-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "105adc8f8a6fe139978d6603",
+                  "id": "holmes-p02230-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "e9d185a76274cd5468897fcd",
+                  "id": "holmes-p01420-s02-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "95809fe91a0a44ea7832b6f9",
+                  "id": "alice-p00579-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "20d326d630ea857b7aae2854",
+                  "id": "alice-p00115-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "886ae99faba0a7d10984dc4d",
+                  "id": "alice-p00318-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "5644da38bd04deecbc6d99f2",
+                  "id": "alice-p00362-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "63ec414ce2b933ebedb0428e",
+                  "id": "alice-p00045-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "dd8e93b3d10f07f46fe76012",
+                  "id": "alice-p00427-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "b42537ded2743d0b5a50c9b2",
+                  "id": "alice-p00128-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "3e4225f18397a22cfd1c987b",
+                  "id": "holmes-p01748-s00-n3",
+                  "seed": 42
+                },
+                {
+                  "key": "2a0122651d979b04e46392c2",
+                  "id": "holmes-p00974-s01-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "bdecca5e5dee0e7e2b3ea1e0",
+                  "id": "holmes-p02145-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "174e3d06a92813b55b0a37f8",
+                  "id": "holmes-p01028-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "fe6a8e488e0d4e122965e845",
+                  "id": "holmes-p01795-s01-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "85730d2de5d2f3aa66efdeb7",
+                  "id": "holmes-p02149-s01-n3",
+                  "seed": 42
+                },
+                {
+                  "key": "b66d44c5f0d8aa82534e241a",
+                  "id": "holmes-p00216-s02-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "2e66812c5acb29bad63b5642",
+                  "id": "holmes-p02469-s02-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "e8c710b1288d8f39e0880bf0",
+                  "id": "alice-p00484-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "40e3163ed7dda75eff684462",
+                  "id": "alice-p00744-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "048c5ddb645c75b16fb27fc1",
+                  "id": "alice-p00467-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "827666e932b9ed33ccb68ef8",
+                  "id": "alice-p00449-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "dd12510a3c9ededcd51ea439",
+                  "id": "alice-p00032-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "55392e55ea9ac6552bb27f7f",
+                  "id": "alice-p00019-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "8a2e4066cd3cb1dbbbc6d658",
+                  "id": "alice-p00123-s04-n2",
+                  "seed": 42
+                }
+              ]
+            },
+            "mps_driver_allocated_bytes": {
+              "max_observed_bytes": 14105198592,
+              "max_observed_gib": 13.136489868164062,
+              "known_items": 45,
+              "unknown_items": 0,
+              "max_observation_ids": [
+                {
+                  "key": "8a2e4066cd3cb1dbbbc6d658",
+                  "id": "alice-p00123-s04-n2",
+                  "seed": 42
+                }
+              ]
+            }
+          },
+          "stop_reasons": {
+            "eos": 45
+          },
+          "cap_items": 0,
+          "cap_ids": [],
+          "exception_items": 0,
+          "exception_stages": {},
+          "exception_ids": [],
+          "longest_audio_seconds": 24.76,
+          "longest_audio_ids": [
+            {
+              "key": "2a0122651d979b04e46392c2",
+              "id": "holmes-p00974-s01-n2",
+              "seed": 42
+            }
+          ],
+          "audio_duration_known_items": 45,
+          "audio_duration_unknown_items": 0,
+          "audio_over_30_seconds_count": 0,
+          "audio_over_30_seconds_ids": []
+        }
+      }
+    },
+    "ANoLM": {
+      "status": "all_expected_latest_items_terminal",
+      "expected_items": 90,
+      "items": 90,
+      "statuses": {
+        "complete": 90
+      },
+      "seconds": {
+        "generation_seconds": {
+          "sum_known": 398.3238632567227,
+          "known_items": 90,
+          "unknown_items": 0,
+          "complete_coverage": true
+        },
+        "asr_seconds": {
+          "sum_known": 327.1705547044985,
+          "known_items": 90,
+          "unknown_items": 0,
+          "complete_coverage": true
+        },
+        "attempt_seconds": {
+          "sum_known": 725.9584419978783,
+          "known_items": 90,
+          "unknown_items": 0,
+          "complete_coverage": true
+        },
+        "audio_seconds": {
+          "sum_known": 822.76,
+          "known_items": 90,
+          "unknown_items": 0,
+          "complete_coverage": true
+        }
+      },
+      "rtf": {
+        "generation_seconds": {
+          "value": 0.48413129376333647,
+          "numerator_seconds": 398.3238632567227,
+          "denominator_audio_seconds": 822.76,
+          "matched_items": 90,
+          "unmatched_items": 0
+        },
+        "asr_seconds": {
+          "value": 0.39765004947311305,
+          "numerator_seconds": 327.1705547044985,
+          "denominator_audio_seconds": 822.76,
+          "matched_items": 90,
+          "unmatched_items": 0
+        },
+        "attempt_seconds": {
+          "value": 0.8823453279180785,
+          "numerator_seconds": 725.9584419978783,
+          "denominator_audio_seconds": 822.76,
+          "matched_items": 90,
+          "unmatched_items": 0
+        }
+      },
+      "memory": {
+        "process_peak_rss_bytes": {
+          "max_observed_bytes": 9096085504,
+          "max_observed_gib": 8.471389770507812,
+          "known_items": 90,
+          "unknown_items": 0,
+          "max_observation_ids": [
+            {
+              "key": "2a0122651d979b04e46392c2",
+              "id": "holmes-p00974-s01-n2",
+              "seed": 42
+            },
+            {
+              "key": "46f57a6aa7c20769879dea34",
+              "id": "holmes-p02145-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "bdecca5e5dee0e7e2b3ea1e0",
+              "id": "holmes-p02145-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "ab782b0b264a6eee8fc3da90",
+              "id": "holmes-p01028-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "174e3d06a92813b55b0a37f8",
+              "id": "holmes-p01028-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "9789a3686601e28c1d81b839",
+              "id": "holmes-p01795-s01-n2",
+              "seed": 17
+            },
+            {
+              "key": "fe6a8e488e0d4e122965e845",
+              "id": "holmes-p01795-s01-n2",
+              "seed": 42
+            },
+            {
+              "key": "72542277038f7f62f0f2b770",
+              "id": "holmes-p02149-s01-n3",
+              "seed": 17
+            },
+            {
+              "key": "85730d2de5d2f3aa66efdeb7",
+              "id": "holmes-p02149-s01-n3",
+              "seed": 42
+            },
+            {
+              "key": "1a56f656f4088a8f623d3b8f",
+              "id": "holmes-p00216-s02-n2",
+              "seed": 17
+            },
+            {
+              "key": "b66d44c5f0d8aa82534e241a",
+              "id": "holmes-p00216-s02-n2",
+              "seed": 42
+            },
+            {
+              "key": "bf948351e2156a15d2c7641b",
+              "id": "holmes-p02469-s02-n2",
+              "seed": 17
+            },
+            {
+              "key": "2e66812c5acb29bad63b5642",
+              "id": "holmes-p02469-s02-n2",
+              "seed": 42
+            },
+            {
+              "key": "c79c6d9bb2953343a067daa4",
+              "id": "alice-p00484-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "e8c710b1288d8f39e0880bf0",
+              "id": "alice-p00484-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "9f03bd66c0b412188cf1b9b6",
+              "id": "alice-p00744-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "40e3163ed7dda75eff684462",
+              "id": "alice-p00744-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "9c69cff195dbe4ae67b3e1de",
+              "id": "alice-p00467-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "048c5ddb645c75b16fb27fc1",
+              "id": "alice-p00467-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "77179b61fd092f31092cf8f8",
+              "id": "alice-p00449-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "827666e932b9ed33ccb68ef8",
+              "id": "alice-p00449-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "2acbd137682267b954c70268",
+              "id": "alice-p00032-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "dd12510a3c9ededcd51ea439",
+              "id": "alice-p00032-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "1df765eb84f7fcc8f92c9fd4",
+              "id": "alice-p00019-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "55392e55ea9ac6552bb27f7f",
+              "id": "alice-p00019-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "7d32c654122c280f089d7bff",
+              "id": "alice-p00123-s04-n2",
+              "seed": 17
+            },
+            {
+              "key": "8a2e4066cd3cb1dbbbc6d658",
+              "id": "alice-p00123-s04-n2",
+              "seed": 42
+            }
+          ]
+        },
+        "mps_current_allocated_bytes": {
+          "max_observed_bytes": 1344017152,
+          "max_observed_gib": 1.251713514328003,
+          "known_items": 90,
+          "unknown_items": 0,
+          "max_observation_ids": [
+            {
+              "key": "70a81670345a07f53c619b35",
+              "id": "holmes-p01042-s02-n1",
+              "seed": 17
+            },
+            {
+              "key": "47969aff41c3356752758179",
+              "id": "holmes-p01042-s02-n1",
+              "seed": 42
+            },
+            {
+              "key": "5c67e804c1908be7d1bb2739",
+              "id": "holmes-p01651-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "45e380b377758afa1497d56f",
+              "id": "holmes-p01651-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "b2b9de58a57802c398e41c51",
+              "id": "holmes-p01618-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "3cbee4c52330838a90d5aa24",
+              "id": "holmes-p01618-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "fbb45a45218aee1a87c9718d",
+              "id": "holmes-p02484-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "66ea65b9df06c669bc2d7064",
+              "id": "holmes-p02484-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "b1af613e227bca154e3d0063",
+              "id": "holmes-p02257-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "ddfd466bf3fd0f61ff08cccd",
+              "id": "holmes-p02257-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "bcdac23d5e0089ec51c6bd08",
+              "id": "holmes-p00452-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "b96f73878c938a71cc7e22b0",
+              "id": "holmes-p00452-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "ee0b970b750b609e919a3c34",
+              "id": "holmes-p01399-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "1ed14a3e4009198549d2d136",
+              "id": "holmes-p01399-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "2ac40d19258f70101c267197",
+              "id": "holmes-p00146-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "cb978cf5d99aeb0270e8607e",
+              "id": "holmes-p00146-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "e378ee549d06f73c181f335c",
+              "id": "alice-p00528-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "c13e0809ff4cffab9201bf03",
+              "id": "alice-p00528-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "89d555cee0e84bd40cad3c92",
+              "id": "alice-p00734-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "d70562ae1b561ed39e907ea2",
+              "id": "alice-p00734-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "597349fd197ddfb9829766e3",
+              "id": "alice-p00474-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "2667a195049357feeb419342",
+              "id": "alice-p00474-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "e63c5e0f16e5f36e8c696576",
+              "id": "alice-p00555-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "14e0fc7b30e4eeff39f9b6e0",
+              "id": "alice-p00555-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "78420c0279429d948a69504d",
+              "id": "alice-p00354-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "f9b0415d2588f5aaf3762e1d",
+              "id": "alice-p00354-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "fc601564fcb276489d2d515a",
+              "id": "alice-p00248-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "eff9253baa368cb46b17f7f2",
+              "id": "alice-p00248-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "a62983bf0dcfa331cf6c2802",
+              "id": "alice-p00358-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "9a39c50760ee6cbe328e191d",
+              "id": "alice-p00358-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "246187295799d04cdf21b811",
+              "id": "holmes-p00151-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "f8a4e119a3f36fcb77537e1a",
+              "id": "holmes-p00151-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "a4fd5811dffba6551c18b59c",
+              "id": "holmes-p00753-s03-n1",
+              "seed": 17
+            },
+            {
+              "key": "8d3fb4ea3d0c8461ed4571f5",
+              "id": "holmes-p00753-s03-n1",
+              "seed": 42
+            },
+            {
+              "key": "000123de81c0b1acdccbac22",
+              "id": "holmes-p00874-s03-n1",
+              "seed": 17
+            },
+            {
+              "key": "c8ac59880c871767684e2e46",
+              "id": "holmes-p00874-s03-n1",
+              "seed": 42
+            },
+            {
+              "key": "75d3c5abf30ab9288880f06f",
+              "id": "holmes-p01369-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "eace0303984577f39520e869",
+              "id": "holmes-p01369-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "e60106afaa5b5d805941124e",
+              "id": "holmes-p00888-s02-n1",
+              "seed": 17
+            },
+            {
+              "key": "d3d91d3b7ab46e76879c11da",
+              "id": "holmes-p00888-s02-n1",
+              "seed": 42
+            },
+            {
+              "key": "d4dc6deefad65161e6adb6a8",
+              "id": "holmes-p02331-s12-n1",
+              "seed": 17
+            },
+            {
+              "key": "5019e9ad5a1045ca8fabe8fc",
+              "id": "holmes-p02331-s12-n1",
+              "seed": 42
+            },
+            {
+              "key": "c94425872ab5b9fb6c2fc4ea",
+              "id": "holmes-p02230-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "105adc8f8a6fe139978d6603",
+              "id": "holmes-p02230-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "84fe6c6ec9310144b86db70d",
+              "id": "holmes-p01420-s02-n2",
+              "seed": 17
+            },
+            {
+              "key": "e9d185a76274cd5468897fcd",
+              "id": "holmes-p01420-s02-n2",
+              "seed": 42
+            },
+            {
+              "key": "2b987b7e79adaf4479377966",
+              "id": "alice-p00579-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "95809fe91a0a44ea7832b6f9",
+              "id": "alice-p00579-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "25b98957eade2022a1ce921c",
+              "id": "alice-p00115-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "20d326d630ea857b7aae2854",
+              "id": "alice-p00115-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "c563a527c50ac0ab2cf375f3",
+              "id": "alice-p00318-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "886ae99faba0a7d10984dc4d",
+              "id": "alice-p00318-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "c6ccef5c694e217c708ae86b",
+              "id": "alice-p00362-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "5644da38bd04deecbc6d99f2",
+              "id": "alice-p00362-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "e5f8d0acce8d5441e7afda99",
+              "id": "alice-p00045-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "63ec414ce2b933ebedb0428e",
+              "id": "alice-p00045-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "4f73300682eae73674c79e60",
+              "id": "alice-p00427-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "dd8e93b3d10f07f46fe76012",
+              "id": "alice-p00427-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "23a38cae4d1e8ca4e1b995e8",
+              "id": "alice-p00128-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "b42537ded2743d0b5a50c9b2",
+              "id": "alice-p00128-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "7f255538ea6066052779a1fe",
+              "id": "holmes-p01748-s00-n3",
+              "seed": 17
+            },
+            {
+              "key": "3e4225f18397a22cfd1c987b",
+              "id": "holmes-p01748-s00-n3",
+              "seed": 42
+            },
+            {
+              "key": "79386fd4c18b766bbbf457ed",
+              "id": "holmes-p00974-s01-n2",
+              "seed": 17
+            },
+            {
+              "key": "2a0122651d979b04e46392c2",
+              "id": "holmes-p00974-s01-n2",
+              "seed": 42
+            },
+            {
+              "key": "46f57a6aa7c20769879dea34",
+              "id": "holmes-p02145-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "bdecca5e5dee0e7e2b3ea1e0",
+              "id": "holmes-p02145-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "ab782b0b264a6eee8fc3da90",
+              "id": "holmes-p01028-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "174e3d06a92813b55b0a37f8",
+              "id": "holmes-p01028-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "9789a3686601e28c1d81b839",
+              "id": "holmes-p01795-s01-n2",
+              "seed": 17
+            },
+            {
+              "key": "fe6a8e488e0d4e122965e845",
+              "id": "holmes-p01795-s01-n2",
+              "seed": 42
+            },
+            {
+              "key": "72542277038f7f62f0f2b770",
+              "id": "holmes-p02149-s01-n3",
+              "seed": 17
+            },
+            {
+              "key": "85730d2de5d2f3aa66efdeb7",
+              "id": "holmes-p02149-s01-n3",
+              "seed": 42
+            },
+            {
+              "key": "1a56f656f4088a8f623d3b8f",
+              "id": "holmes-p00216-s02-n2",
+              "seed": 17
+            },
+            {
+              "key": "b66d44c5f0d8aa82534e241a",
+              "id": "holmes-p00216-s02-n2",
+              "seed": 42
+            },
+            {
+              "key": "bf948351e2156a15d2c7641b",
+              "id": "holmes-p02469-s02-n2",
+              "seed": 17
+            },
+            {
+              "key": "2e66812c5acb29bad63b5642",
+              "id": "holmes-p02469-s02-n2",
+              "seed": 42
+            },
+            {
+              "key": "c79c6d9bb2953343a067daa4",
+              "id": "alice-p00484-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "e8c710b1288d8f39e0880bf0",
+              "id": "alice-p00484-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "9f03bd66c0b412188cf1b9b6",
+              "id": "alice-p00744-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "40e3163ed7dda75eff684462",
+              "id": "alice-p00744-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "9c69cff195dbe4ae67b3e1de",
+              "id": "alice-p00467-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "048c5ddb645c75b16fb27fc1",
+              "id": "alice-p00467-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "77179b61fd092f31092cf8f8",
+              "id": "alice-p00449-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "827666e932b9ed33ccb68ef8",
+              "id": "alice-p00449-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "2acbd137682267b954c70268",
+              "id": "alice-p00032-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "dd12510a3c9ededcd51ea439",
+              "id": "alice-p00032-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "1df765eb84f7fcc8f92c9fd4",
+              "id": "alice-p00019-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "55392e55ea9ac6552bb27f7f",
+              "id": "alice-p00019-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "7d32c654122c280f089d7bff",
+              "id": "alice-p00123-s04-n2",
+              "seed": 17
+            },
+            {
+              "key": "8a2e4066cd3cb1dbbbc6d658",
+              "id": "alice-p00123-s04-n2",
+              "seed": 42
+            }
+          ]
+        },
+        "mps_driver_allocated_bytes": {
+          "max_observed_bytes": 12258557952,
+          "max_observed_gib": 11.416671752929688,
+          "known_items": 90,
+          "unknown_items": 0,
+          "max_observation_ids": [
+            {
+              "key": "8a2e4066cd3cb1dbbbc6d658",
+              "id": "alice-p00123-s04-n2",
+              "seed": 42
+            }
+          ]
+        }
+      },
+      "stop_reasons": {
+        "eos": 89,
+        "output_limit": 1
+      },
+      "cap_items": 1,
+      "cap_ids": [
+        {
+          "key": "2a0122651d979b04e46392c2",
+          "id": "holmes-p00974-s01-n2",
+          "seed": 42,
+          "stop_reason": "output_limit"
+        }
+      ],
+      "exception_items": 0,
+      "exception_stages": {},
+      "exception_ids": [],
+      "longest_audio_seconds": 29.48,
+      "longest_audio_ids": [
+        {
+          "key": "2a0122651d979b04e46392c2",
+          "id": "holmes-p00974-s01-n2",
+          "seed": 42
+        }
+      ],
+      "audio_duration_known_items": 90,
+      "audio_duration_unknown_items": 0,
+      "audio_over_30_seconds_count": 0,
+      "audio_over_30_seconds_ids": [],
+      "by_seed": {
+        "17": {
+          "items": 45,
+          "statuses": {
+            "complete": 45
+          },
+          "seconds": {
+            "generation_seconds": {
+              "sum_known": 198.49114708369598,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            },
+            "asr_seconds": {
+              "sum_known": 164.33164279162884,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            },
+            "attempt_seconds": {
+              "sum_known": 363.0608357503079,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            },
+            "audio_seconds": {
+              "sum_known": 407.2,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            }
+          },
+          "rtf": {
+            "generation_seconds": {
+              "value": 0.48745370108962666,
+              "numerator_seconds": 198.49114708369598,
+              "denominator_audio_seconds": 407.2,
+              "matched_items": 45,
+              "unmatched_items": 0
+            },
+            "asr_seconds": {
+              "value": 0.40356493809339106,
+              "numerator_seconds": 164.33164279162884,
+              "denominator_audio_seconds": 407.2,
+              "matched_items": 45,
+              "unmatched_items": 0
+            },
+            "attempt_seconds": {
+              "value": 0.8916032312139192,
+              "numerator_seconds": 363.0608357503079,
+              "denominator_audio_seconds": 407.2,
+              "matched_items": 45,
+              "unmatched_items": 0
+            }
+          },
+          "memory": {
+            "process_peak_rss_bytes": {
+              "max_observed_bytes": 9096085504,
+              "max_observed_gib": 8.471389770507812,
+              "known_items": 45,
+              "unknown_items": 0,
+              "max_observation_ids": [
+                {
+                  "key": "46f57a6aa7c20769879dea34",
+                  "id": "holmes-p02145-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "ab782b0b264a6eee8fc3da90",
+                  "id": "holmes-p01028-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "9789a3686601e28c1d81b839",
+                  "id": "holmes-p01795-s01-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "72542277038f7f62f0f2b770",
+                  "id": "holmes-p02149-s01-n3",
+                  "seed": 17
+                },
+                {
+                  "key": "1a56f656f4088a8f623d3b8f",
+                  "id": "holmes-p00216-s02-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "bf948351e2156a15d2c7641b",
+                  "id": "holmes-p02469-s02-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "c79c6d9bb2953343a067daa4",
+                  "id": "alice-p00484-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "9f03bd66c0b412188cf1b9b6",
+                  "id": "alice-p00744-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "9c69cff195dbe4ae67b3e1de",
+                  "id": "alice-p00467-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "77179b61fd092f31092cf8f8",
+                  "id": "alice-p00449-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "2acbd137682267b954c70268",
+                  "id": "alice-p00032-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "1df765eb84f7fcc8f92c9fd4",
+                  "id": "alice-p00019-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "7d32c654122c280f089d7bff",
+                  "id": "alice-p00123-s04-n2",
+                  "seed": 17
+                }
+              ]
+            },
+            "mps_current_allocated_bytes": {
+              "max_observed_bytes": 1344017152,
+              "max_observed_gib": 1.251713514328003,
+              "known_items": 45,
+              "unknown_items": 0,
+              "max_observation_ids": [
+                {
+                  "key": "70a81670345a07f53c619b35",
+                  "id": "holmes-p01042-s02-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "5c67e804c1908be7d1bb2739",
+                  "id": "holmes-p01651-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "b2b9de58a57802c398e41c51",
+                  "id": "holmes-p01618-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "fbb45a45218aee1a87c9718d",
+                  "id": "holmes-p02484-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "b1af613e227bca154e3d0063",
+                  "id": "holmes-p02257-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "bcdac23d5e0089ec51c6bd08",
+                  "id": "holmes-p00452-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "ee0b970b750b609e919a3c34",
+                  "id": "holmes-p01399-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "2ac40d19258f70101c267197",
+                  "id": "holmes-p00146-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "e378ee549d06f73c181f335c",
+                  "id": "alice-p00528-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "89d555cee0e84bd40cad3c92",
+                  "id": "alice-p00734-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "597349fd197ddfb9829766e3",
+                  "id": "alice-p00474-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "e63c5e0f16e5f36e8c696576",
+                  "id": "alice-p00555-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "78420c0279429d948a69504d",
+                  "id": "alice-p00354-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "fc601564fcb276489d2d515a",
+                  "id": "alice-p00248-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "a62983bf0dcfa331cf6c2802",
+                  "id": "alice-p00358-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "246187295799d04cdf21b811",
+                  "id": "holmes-p00151-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "a4fd5811dffba6551c18b59c",
+                  "id": "holmes-p00753-s03-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "000123de81c0b1acdccbac22",
+                  "id": "holmes-p00874-s03-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "75d3c5abf30ab9288880f06f",
+                  "id": "holmes-p01369-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "e60106afaa5b5d805941124e",
+                  "id": "holmes-p00888-s02-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "d4dc6deefad65161e6adb6a8",
+                  "id": "holmes-p02331-s12-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "c94425872ab5b9fb6c2fc4ea",
+                  "id": "holmes-p02230-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "84fe6c6ec9310144b86db70d",
+                  "id": "holmes-p01420-s02-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "2b987b7e79adaf4479377966",
+                  "id": "alice-p00579-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "25b98957eade2022a1ce921c",
+                  "id": "alice-p00115-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "c563a527c50ac0ab2cf375f3",
+                  "id": "alice-p00318-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "c6ccef5c694e217c708ae86b",
+                  "id": "alice-p00362-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "e5f8d0acce8d5441e7afda99",
+                  "id": "alice-p00045-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "4f73300682eae73674c79e60",
+                  "id": "alice-p00427-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "23a38cae4d1e8ca4e1b995e8",
+                  "id": "alice-p00128-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "7f255538ea6066052779a1fe",
+                  "id": "holmes-p01748-s00-n3",
+                  "seed": 17
+                },
+                {
+                  "key": "79386fd4c18b766bbbf457ed",
+                  "id": "holmes-p00974-s01-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "46f57a6aa7c20769879dea34",
+                  "id": "holmes-p02145-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "ab782b0b264a6eee8fc3da90",
+                  "id": "holmes-p01028-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "9789a3686601e28c1d81b839",
+                  "id": "holmes-p01795-s01-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "72542277038f7f62f0f2b770",
+                  "id": "holmes-p02149-s01-n3",
+                  "seed": 17
+                },
+                {
+                  "key": "1a56f656f4088a8f623d3b8f",
+                  "id": "holmes-p00216-s02-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "bf948351e2156a15d2c7641b",
+                  "id": "holmes-p02469-s02-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "c79c6d9bb2953343a067daa4",
+                  "id": "alice-p00484-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "9f03bd66c0b412188cf1b9b6",
+                  "id": "alice-p00744-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "9c69cff195dbe4ae67b3e1de",
+                  "id": "alice-p00467-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "77179b61fd092f31092cf8f8",
+                  "id": "alice-p00449-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "2acbd137682267b954c70268",
+                  "id": "alice-p00032-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "1df765eb84f7fcc8f92c9fd4",
+                  "id": "alice-p00019-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "7d32c654122c280f089d7bff",
+                  "id": "alice-p00123-s04-n2",
+                  "seed": 17
+                }
+              ]
+            },
+            "mps_driver_allocated_bytes": {
+              "max_observed_bytes": 12258361344,
+              "max_observed_gib": 11.416488647460938,
+              "known_items": 45,
+              "unknown_items": 0,
+              "max_observation_ids": [
+                {
+                  "key": "7d32c654122c280f089d7bff",
+                  "id": "alice-p00123-s04-n2",
+                  "seed": 17
+                }
+              ]
+            }
+          },
+          "stop_reasons": {
+            "eos": 45
+          },
+          "cap_items": 0,
+          "cap_ids": [],
+          "exception_items": 0,
+          "exception_stages": {},
+          "exception_ids": [],
+          "longest_audio_seconds": 21.96,
+          "longest_audio_ids": [
+            {
+              "key": "9f03bd66c0b412188cf1b9b6",
+              "id": "alice-p00744-s00-n2",
+              "seed": 17
+            }
+          ],
+          "audio_duration_known_items": 45,
+          "audio_duration_unknown_items": 0,
+          "audio_over_30_seconds_count": 0,
+          "audio_over_30_seconds_ids": []
+        },
+        "42": {
+          "items": 45,
+          "statuses": {
+            "complete": 45
+          },
+          "seconds": {
+            "generation_seconds": {
+              "sum_known": 199.8327161730267,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            },
+            "asr_seconds": {
+              "sum_known": 162.83891191286966,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            },
+            "attempt_seconds": {
+              "sum_known": 362.89760624757037,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            },
+            "audio_seconds": {
+              "sum_known": 415.56,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            }
+          },
+          "rtf": {
+            "generation_seconds": {
+              "value": 0.480875724740174,
+              "numerator_seconds": 199.8327161730267,
+              "denominator_audio_seconds": 415.56,
+              "matched_items": 45,
+              "unmatched_items": 0
+            },
+            "asr_seconds": {
+              "value": 0.3918541532218444,
+              "numerator_seconds": 162.83891191286966,
+              "denominator_audio_seconds": 415.56,
+              "matched_items": 45,
+              "unmatched_items": 0
+            },
+            "attempt_seconds": {
+              "value": 0.8732736698613205,
+              "numerator_seconds": 362.89760624757037,
+              "denominator_audio_seconds": 415.56,
+              "matched_items": 45,
+              "unmatched_items": 0
+            }
+          },
+          "memory": {
+            "process_peak_rss_bytes": {
+              "max_observed_bytes": 9096085504,
+              "max_observed_gib": 8.471389770507812,
+              "known_items": 45,
+              "unknown_items": 0,
+              "max_observation_ids": [
+                {
+                  "key": "2a0122651d979b04e46392c2",
+                  "id": "holmes-p00974-s01-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "bdecca5e5dee0e7e2b3ea1e0",
+                  "id": "holmes-p02145-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "174e3d06a92813b55b0a37f8",
+                  "id": "holmes-p01028-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "fe6a8e488e0d4e122965e845",
+                  "id": "holmes-p01795-s01-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "85730d2de5d2f3aa66efdeb7",
+                  "id": "holmes-p02149-s01-n3",
+                  "seed": 42
+                },
+                {
+                  "key": "b66d44c5f0d8aa82534e241a",
+                  "id": "holmes-p00216-s02-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "2e66812c5acb29bad63b5642",
+                  "id": "holmes-p02469-s02-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "e8c710b1288d8f39e0880bf0",
+                  "id": "alice-p00484-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "40e3163ed7dda75eff684462",
+                  "id": "alice-p00744-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "048c5ddb645c75b16fb27fc1",
+                  "id": "alice-p00467-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "827666e932b9ed33ccb68ef8",
+                  "id": "alice-p00449-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "dd12510a3c9ededcd51ea439",
+                  "id": "alice-p00032-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "55392e55ea9ac6552bb27f7f",
+                  "id": "alice-p00019-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "8a2e4066cd3cb1dbbbc6d658",
+                  "id": "alice-p00123-s04-n2",
+                  "seed": 42
+                }
+              ]
+            },
+            "mps_current_allocated_bytes": {
+              "max_observed_bytes": 1344017152,
+              "max_observed_gib": 1.251713514328003,
+              "known_items": 45,
+              "unknown_items": 0,
+              "max_observation_ids": [
+                {
+                  "key": "47969aff41c3356752758179",
+                  "id": "holmes-p01042-s02-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "45e380b377758afa1497d56f",
+                  "id": "holmes-p01651-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "3cbee4c52330838a90d5aa24",
+                  "id": "holmes-p01618-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "66ea65b9df06c669bc2d7064",
+                  "id": "holmes-p02484-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "ddfd466bf3fd0f61ff08cccd",
+                  "id": "holmes-p02257-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "b96f73878c938a71cc7e22b0",
+                  "id": "holmes-p00452-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "1ed14a3e4009198549d2d136",
+                  "id": "holmes-p01399-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "cb978cf5d99aeb0270e8607e",
+                  "id": "holmes-p00146-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "c13e0809ff4cffab9201bf03",
+                  "id": "alice-p00528-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "d70562ae1b561ed39e907ea2",
+                  "id": "alice-p00734-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "2667a195049357feeb419342",
+                  "id": "alice-p00474-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "14e0fc7b30e4eeff39f9b6e0",
+                  "id": "alice-p00555-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "f9b0415d2588f5aaf3762e1d",
+                  "id": "alice-p00354-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "eff9253baa368cb46b17f7f2",
+                  "id": "alice-p00248-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "9a39c50760ee6cbe328e191d",
+                  "id": "alice-p00358-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "f8a4e119a3f36fcb77537e1a",
+                  "id": "holmes-p00151-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "8d3fb4ea3d0c8461ed4571f5",
+                  "id": "holmes-p00753-s03-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "c8ac59880c871767684e2e46",
+                  "id": "holmes-p00874-s03-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "eace0303984577f39520e869",
+                  "id": "holmes-p01369-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "d3d91d3b7ab46e76879c11da",
+                  "id": "holmes-p00888-s02-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "5019e9ad5a1045ca8fabe8fc",
+                  "id": "holmes-p02331-s12-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "105adc8f8a6fe139978d6603",
+                  "id": "holmes-p02230-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "e9d185a76274cd5468897fcd",
+                  "id": "holmes-p01420-s02-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "95809fe91a0a44ea7832b6f9",
+                  "id": "alice-p00579-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "20d326d630ea857b7aae2854",
+                  "id": "alice-p00115-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "886ae99faba0a7d10984dc4d",
+                  "id": "alice-p00318-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "5644da38bd04deecbc6d99f2",
+                  "id": "alice-p00362-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "63ec414ce2b933ebedb0428e",
+                  "id": "alice-p00045-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "dd8e93b3d10f07f46fe76012",
+                  "id": "alice-p00427-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "b42537ded2743d0b5a50c9b2",
+                  "id": "alice-p00128-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "3e4225f18397a22cfd1c987b",
+                  "id": "holmes-p01748-s00-n3",
+                  "seed": 42
+                },
+                {
+                  "key": "2a0122651d979b04e46392c2",
+                  "id": "holmes-p00974-s01-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "bdecca5e5dee0e7e2b3ea1e0",
+                  "id": "holmes-p02145-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "174e3d06a92813b55b0a37f8",
+                  "id": "holmes-p01028-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "fe6a8e488e0d4e122965e845",
+                  "id": "holmes-p01795-s01-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "85730d2de5d2f3aa66efdeb7",
+                  "id": "holmes-p02149-s01-n3",
+                  "seed": 42
+                },
+                {
+                  "key": "b66d44c5f0d8aa82534e241a",
+                  "id": "holmes-p00216-s02-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "2e66812c5acb29bad63b5642",
+                  "id": "holmes-p02469-s02-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "e8c710b1288d8f39e0880bf0",
+                  "id": "alice-p00484-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "40e3163ed7dda75eff684462",
+                  "id": "alice-p00744-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "048c5ddb645c75b16fb27fc1",
+                  "id": "alice-p00467-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "827666e932b9ed33ccb68ef8",
+                  "id": "alice-p00449-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "dd12510a3c9ededcd51ea439",
+                  "id": "alice-p00032-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "55392e55ea9ac6552bb27f7f",
+                  "id": "alice-p00019-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "8a2e4066cd3cb1dbbbc6d658",
+                  "id": "alice-p00123-s04-n2",
+                  "seed": 42
+                }
+              ]
+            },
+            "mps_driver_allocated_bytes": {
+              "max_observed_bytes": 12258557952,
+              "max_observed_gib": 11.416671752929688,
+              "known_items": 45,
+              "unknown_items": 0,
+              "max_observation_ids": [
+                {
+                  "key": "8a2e4066cd3cb1dbbbc6d658",
+                  "id": "alice-p00123-s04-n2",
+                  "seed": 42
+                }
+              ]
+            }
+          },
+          "stop_reasons": {
+            "eos": 44,
+            "output_limit": 1
+          },
+          "cap_items": 1,
+          "cap_ids": [
+            {
+              "key": "2a0122651d979b04e46392c2",
+              "id": "holmes-p00974-s01-n2",
+              "seed": 42,
+              "stop_reason": "output_limit"
+            }
+          ],
+          "exception_items": 0,
+          "exception_stages": {},
+          "exception_ids": [],
+          "longest_audio_seconds": 29.48,
+          "longest_audio_ids": [
+            {
+              "key": "2a0122651d979b04e46392c2",
+              "id": "holmes-p00974-s01-n2",
+              "seed": 42
+            }
+          ],
+          "audio_duration_known_items": 45,
+          "audio_duration_unknown_items": 0,
+          "audio_over_30_seconds_count": 0,
+          "audio_over_30_seconds_ids": []
+        }
+      }
+    },
+    "ASplit": {
+      "status": "all_expected_latest_items_terminal",
+      "expected_items": 90,
+      "items": 90,
+      "statuses": {
+        "complete": 90
+      },
+      "seconds": {
+        "generation_seconds": {
+          "sum_known": 439.84518842445686,
+          "known_items": 90,
+          "unknown_items": 0,
+          "complete_coverage": true
+        },
+        "asr_seconds": {
+          "sum_known": 313.0836637057364,
+          "known_items": 90,
+          "unknown_items": 0,
+          "complete_coverage": true
+        },
+        "attempt_seconds": {
+          "sum_known": 753.369826038368,
+          "known_items": 90,
+          "unknown_items": 0,
+          "complete_coverage": true
+        },
+        "audio_seconds": {
+          "sum_known": 872.94,
+          "known_items": 90,
+          "unknown_items": 0,
+          "complete_coverage": true
+        }
+      },
+      "rtf": {
+        "generation_seconds": {
+          "value": 0.5038664609531661,
+          "numerator_seconds": 439.84518842445686,
+          "denominator_audio_seconds": 872.94,
+          "matched_items": 90,
+          "unmatched_items": 0
+        },
+        "asr_seconds": {
+          "value": 0.3586542760163773,
+          "numerator_seconds": 313.0836637057364,
+          "denominator_audio_seconds": 872.94,
+          "matched_items": 90,
+          "unmatched_items": 0
+        },
+        "attempt_seconds": {
+          "value": 0.8630258964400394,
+          "numerator_seconds": 753.369826038368,
+          "denominator_audio_seconds": 872.94,
+          "matched_items": 90,
+          "unmatched_items": 0
+        }
+      },
+      "memory": {
+        "process_peak_rss_bytes": {
+          "max_observed_bytes": 9275785216,
+          "max_observed_gib": 8.638748168945312,
+          "known_items": 90,
+          "unknown_items": 0,
+          "max_observation_ids": [
+            {
+              "key": "ab782b0b264a6eee8fc3da90",
+              "id": "holmes-p01028-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "174e3d06a92813b55b0a37f8",
+              "id": "holmes-p01028-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "9789a3686601e28c1d81b839",
+              "id": "holmes-p01795-s01-n2",
+              "seed": 17
+            },
+            {
+              "key": "fe6a8e488e0d4e122965e845",
+              "id": "holmes-p01795-s01-n2",
+              "seed": 42
+            },
+            {
+              "key": "72542277038f7f62f0f2b770",
+              "id": "holmes-p02149-s01-n3",
+              "seed": 17
+            },
+            {
+              "key": "85730d2de5d2f3aa66efdeb7",
+              "id": "holmes-p02149-s01-n3",
+              "seed": 42
+            },
+            {
+              "key": "1a56f656f4088a8f623d3b8f",
+              "id": "holmes-p00216-s02-n2",
+              "seed": 17
+            },
+            {
+              "key": "b66d44c5f0d8aa82534e241a",
+              "id": "holmes-p00216-s02-n2",
+              "seed": 42
+            },
+            {
+              "key": "bf948351e2156a15d2c7641b",
+              "id": "holmes-p02469-s02-n2",
+              "seed": 17
+            },
+            {
+              "key": "2e66812c5acb29bad63b5642",
+              "id": "holmes-p02469-s02-n2",
+              "seed": 42
+            },
+            {
+              "key": "c79c6d9bb2953343a067daa4",
+              "id": "alice-p00484-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "e8c710b1288d8f39e0880bf0",
+              "id": "alice-p00484-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "9f03bd66c0b412188cf1b9b6",
+              "id": "alice-p00744-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "40e3163ed7dda75eff684462",
+              "id": "alice-p00744-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "9c69cff195dbe4ae67b3e1de",
+              "id": "alice-p00467-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "048c5ddb645c75b16fb27fc1",
+              "id": "alice-p00467-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "77179b61fd092f31092cf8f8",
+              "id": "alice-p00449-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "827666e932b9ed33ccb68ef8",
+              "id": "alice-p00449-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "2acbd137682267b954c70268",
+              "id": "alice-p00032-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "dd12510a3c9ededcd51ea439",
+              "id": "alice-p00032-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "1df765eb84f7fcc8f92c9fd4",
+              "id": "alice-p00019-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "55392e55ea9ac6552bb27f7f",
+              "id": "alice-p00019-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "7d32c654122c280f089d7bff",
+              "id": "alice-p00123-s04-n2",
+              "seed": 17
+            },
+            {
+              "key": "8a2e4066cd3cb1dbbbc6d658",
+              "id": "alice-p00123-s04-n2",
+              "seed": 42
+            }
+          ]
+        },
+        "mps_current_allocated_bytes": {
+          "max_observed_bytes": 1344017152,
+          "max_observed_gib": 1.251713514328003,
+          "known_items": 90,
+          "unknown_items": 0,
+          "max_observation_ids": [
+            {
+              "key": "70a81670345a07f53c619b35",
+              "id": "holmes-p01042-s02-n1",
+              "seed": 17
+            },
+            {
+              "key": "47969aff41c3356752758179",
+              "id": "holmes-p01042-s02-n1",
+              "seed": 42
+            },
+            {
+              "key": "5c67e804c1908be7d1bb2739",
+              "id": "holmes-p01651-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "45e380b377758afa1497d56f",
+              "id": "holmes-p01651-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "b2b9de58a57802c398e41c51",
+              "id": "holmes-p01618-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "3cbee4c52330838a90d5aa24",
+              "id": "holmes-p01618-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "fbb45a45218aee1a87c9718d",
+              "id": "holmes-p02484-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "66ea65b9df06c669bc2d7064",
+              "id": "holmes-p02484-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "b1af613e227bca154e3d0063",
+              "id": "holmes-p02257-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "ddfd466bf3fd0f61ff08cccd",
+              "id": "holmes-p02257-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "bcdac23d5e0089ec51c6bd08",
+              "id": "holmes-p00452-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "b96f73878c938a71cc7e22b0",
+              "id": "holmes-p00452-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "ee0b970b750b609e919a3c34",
+              "id": "holmes-p01399-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "1ed14a3e4009198549d2d136",
+              "id": "holmes-p01399-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "2ac40d19258f70101c267197",
+              "id": "holmes-p00146-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "cb978cf5d99aeb0270e8607e",
+              "id": "holmes-p00146-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "e378ee549d06f73c181f335c",
+              "id": "alice-p00528-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "c13e0809ff4cffab9201bf03",
+              "id": "alice-p00528-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "89d555cee0e84bd40cad3c92",
+              "id": "alice-p00734-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "d70562ae1b561ed39e907ea2",
+              "id": "alice-p00734-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "597349fd197ddfb9829766e3",
+              "id": "alice-p00474-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "2667a195049357feeb419342",
+              "id": "alice-p00474-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "e63c5e0f16e5f36e8c696576",
+              "id": "alice-p00555-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "14e0fc7b30e4eeff39f9b6e0",
+              "id": "alice-p00555-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "78420c0279429d948a69504d",
+              "id": "alice-p00354-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "f9b0415d2588f5aaf3762e1d",
+              "id": "alice-p00354-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "fc601564fcb276489d2d515a",
+              "id": "alice-p00248-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "eff9253baa368cb46b17f7f2",
+              "id": "alice-p00248-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "a62983bf0dcfa331cf6c2802",
+              "id": "alice-p00358-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "9a39c50760ee6cbe328e191d",
+              "id": "alice-p00358-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "246187295799d04cdf21b811",
+              "id": "holmes-p00151-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "f8a4e119a3f36fcb77537e1a",
+              "id": "holmes-p00151-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "a4fd5811dffba6551c18b59c",
+              "id": "holmes-p00753-s03-n1",
+              "seed": 17
+            },
+            {
+              "key": "8d3fb4ea3d0c8461ed4571f5",
+              "id": "holmes-p00753-s03-n1",
+              "seed": 42
+            },
+            {
+              "key": "000123de81c0b1acdccbac22",
+              "id": "holmes-p00874-s03-n1",
+              "seed": 17
+            },
+            {
+              "key": "c8ac59880c871767684e2e46",
+              "id": "holmes-p00874-s03-n1",
+              "seed": 42
+            },
+            {
+              "key": "75d3c5abf30ab9288880f06f",
+              "id": "holmes-p01369-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "eace0303984577f39520e869",
+              "id": "holmes-p01369-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "e60106afaa5b5d805941124e",
+              "id": "holmes-p00888-s02-n1",
+              "seed": 17
+            },
+            {
+              "key": "d3d91d3b7ab46e76879c11da",
+              "id": "holmes-p00888-s02-n1",
+              "seed": 42
+            },
+            {
+              "key": "d4dc6deefad65161e6adb6a8",
+              "id": "holmes-p02331-s12-n1",
+              "seed": 17
+            },
+            {
+              "key": "5019e9ad5a1045ca8fabe8fc",
+              "id": "holmes-p02331-s12-n1",
+              "seed": 42
+            },
+            {
+              "key": "c94425872ab5b9fb6c2fc4ea",
+              "id": "holmes-p02230-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "105adc8f8a6fe139978d6603",
+              "id": "holmes-p02230-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "84fe6c6ec9310144b86db70d",
+              "id": "holmes-p01420-s02-n2",
+              "seed": 17
+            },
+            {
+              "key": "e9d185a76274cd5468897fcd",
+              "id": "holmes-p01420-s02-n2",
+              "seed": 42
+            },
+            {
+              "key": "2b987b7e79adaf4479377966",
+              "id": "alice-p00579-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "95809fe91a0a44ea7832b6f9",
+              "id": "alice-p00579-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "25b98957eade2022a1ce921c",
+              "id": "alice-p00115-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "20d326d630ea857b7aae2854",
+              "id": "alice-p00115-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "c563a527c50ac0ab2cf375f3",
+              "id": "alice-p00318-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "886ae99faba0a7d10984dc4d",
+              "id": "alice-p00318-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "c6ccef5c694e217c708ae86b",
+              "id": "alice-p00362-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "5644da38bd04deecbc6d99f2",
+              "id": "alice-p00362-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "e5f8d0acce8d5441e7afda99",
+              "id": "alice-p00045-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "63ec414ce2b933ebedb0428e",
+              "id": "alice-p00045-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "4f73300682eae73674c79e60",
+              "id": "alice-p00427-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "dd8e93b3d10f07f46fe76012",
+              "id": "alice-p00427-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "23a38cae4d1e8ca4e1b995e8",
+              "id": "alice-p00128-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "b42537ded2743d0b5a50c9b2",
+              "id": "alice-p00128-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "7f255538ea6066052779a1fe",
+              "id": "holmes-p01748-s00-n3",
+              "seed": 17
+            },
+            {
+              "key": "3e4225f18397a22cfd1c987b",
+              "id": "holmes-p01748-s00-n3",
+              "seed": 42
+            },
+            {
+              "key": "79386fd4c18b766bbbf457ed",
+              "id": "holmes-p00974-s01-n2",
+              "seed": 17
+            },
+            {
+              "key": "2a0122651d979b04e46392c2",
+              "id": "holmes-p00974-s01-n2",
+              "seed": 42
+            },
+            {
+              "key": "46f57a6aa7c20769879dea34",
+              "id": "holmes-p02145-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "bdecca5e5dee0e7e2b3ea1e0",
+              "id": "holmes-p02145-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "ab782b0b264a6eee8fc3da90",
+              "id": "holmes-p01028-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "174e3d06a92813b55b0a37f8",
+              "id": "holmes-p01028-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "9789a3686601e28c1d81b839",
+              "id": "holmes-p01795-s01-n2",
+              "seed": 17
+            },
+            {
+              "key": "fe6a8e488e0d4e122965e845",
+              "id": "holmes-p01795-s01-n2",
+              "seed": 42
+            },
+            {
+              "key": "72542277038f7f62f0f2b770",
+              "id": "holmes-p02149-s01-n3",
+              "seed": 17
+            },
+            {
+              "key": "85730d2de5d2f3aa66efdeb7",
+              "id": "holmes-p02149-s01-n3",
+              "seed": 42
+            },
+            {
+              "key": "1a56f656f4088a8f623d3b8f",
+              "id": "holmes-p00216-s02-n2",
+              "seed": 17
+            },
+            {
+              "key": "b66d44c5f0d8aa82534e241a",
+              "id": "holmes-p00216-s02-n2",
+              "seed": 42
+            },
+            {
+              "key": "bf948351e2156a15d2c7641b",
+              "id": "holmes-p02469-s02-n2",
+              "seed": 17
+            },
+            {
+              "key": "2e66812c5acb29bad63b5642",
+              "id": "holmes-p02469-s02-n2",
+              "seed": 42
+            },
+            {
+              "key": "c79c6d9bb2953343a067daa4",
+              "id": "alice-p00484-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "e8c710b1288d8f39e0880bf0",
+              "id": "alice-p00484-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "9f03bd66c0b412188cf1b9b6",
+              "id": "alice-p00744-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "40e3163ed7dda75eff684462",
+              "id": "alice-p00744-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "9c69cff195dbe4ae67b3e1de",
+              "id": "alice-p00467-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "048c5ddb645c75b16fb27fc1",
+              "id": "alice-p00467-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "77179b61fd092f31092cf8f8",
+              "id": "alice-p00449-s00-n2",
+              "seed": 17
+            },
+            {
+              "key": "827666e932b9ed33ccb68ef8",
+              "id": "alice-p00449-s00-n2",
+              "seed": 42
+            },
+            {
+              "key": "2acbd137682267b954c70268",
+              "id": "alice-p00032-s01-n1",
+              "seed": 17
+            },
+            {
+              "key": "dd12510a3c9ededcd51ea439",
+              "id": "alice-p00032-s01-n1",
+              "seed": 42
+            },
+            {
+              "key": "1df765eb84f7fcc8f92c9fd4",
+              "id": "alice-p00019-s00-n1",
+              "seed": 17
+            },
+            {
+              "key": "55392e55ea9ac6552bb27f7f",
+              "id": "alice-p00019-s00-n1",
+              "seed": 42
+            },
+            {
+              "key": "7d32c654122c280f089d7bff",
+              "id": "alice-p00123-s04-n2",
+              "seed": 17
+            },
+            {
+              "key": "8a2e4066cd3cb1dbbbc6d658",
+              "id": "alice-p00123-s04-n2",
+              "seed": 42
+            }
+          ]
+        },
+        "mps_driver_allocated_bytes": {
+          "max_observed_bytes": 8365604864,
+          "max_observed_gib": 7.79107666015625,
+          "known_items": 90,
+          "unknown_items": 0,
+          "max_observation_ids": [
+            {
+              "key": "8a2e4066cd3cb1dbbbc6d658",
+              "id": "alice-p00123-s04-n2",
+              "seed": 42
+            }
+          ]
+        }
+      },
+      "stop_reasons": {
+        "eos": 89,
+        "output_limit": 1
+      },
+      "cap_items": 1,
+      "cap_ids": [
+        {
+          "key": "7d32c654122c280f089d7bff",
+          "id": "alice-p00123-s04-n2",
+          "seed": 17,
+          "stop_reason": "output_limit"
+        }
+      ],
+      "exception_items": 0,
+      "exception_stages": {},
+      "exception_ids": [],
+      "longest_audio_seconds": 24.51,
+      "longest_audio_ids": [
+        {
+          "key": "2a0122651d979b04e46392c2",
+          "id": "holmes-p00974-s01-n2",
+          "seed": 42
+        }
+      ],
+      "audio_duration_known_items": 90,
+      "audio_duration_unknown_items": 0,
+      "audio_over_30_seconds_count": 0,
+      "audio_over_30_seconds_ids": [],
+      "by_seed": {
+        "17": {
+          "items": 45,
+          "statuses": {
+            "complete": 45
+          },
+          "seconds": {
+            "generation_seconds": {
+              "sum_known": 222.4150853776373,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            },
+            "asr_seconds": {
+              "sum_known": 156.6761701661162,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            },
+            "attempt_seconds": {
+              "sum_known": 379.3138510431163,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            },
+            "audio_seconds": {
+              "sum_known": 440.37,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            }
+          },
+          "rtf": {
+            "generation_seconds": {
+              "value": 0.505064117395911,
+              "numerator_seconds": 222.4150853776373,
+              "denominator_audio_seconds": 440.37,
+              "matched_items": 45,
+              "unmatched_items": 0
+            },
+            "asr_seconds": {
+              "value": 0.355783023743934,
+              "numerator_seconds": 156.6761701661162,
+              "denominator_audio_seconds": 440.37,
+              "matched_items": 45,
+              "unmatched_items": 0
+            },
+            "attempt_seconds": {
+              "value": 0.8613526149445155,
+              "numerator_seconds": 379.3138510431163,
+              "denominator_audio_seconds": 440.37,
+              "matched_items": 45,
+              "unmatched_items": 0
+            }
+          },
+          "memory": {
+            "process_peak_rss_bytes": {
+              "max_observed_bytes": 9275785216,
+              "max_observed_gib": 8.638748168945312,
+              "known_items": 45,
+              "unknown_items": 0,
+              "max_observation_ids": [
+                {
+                  "key": "ab782b0b264a6eee8fc3da90",
+                  "id": "holmes-p01028-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "9789a3686601e28c1d81b839",
+                  "id": "holmes-p01795-s01-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "72542277038f7f62f0f2b770",
+                  "id": "holmes-p02149-s01-n3",
+                  "seed": 17
+                },
+                {
+                  "key": "1a56f656f4088a8f623d3b8f",
+                  "id": "holmes-p00216-s02-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "bf948351e2156a15d2c7641b",
+                  "id": "holmes-p02469-s02-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "c79c6d9bb2953343a067daa4",
+                  "id": "alice-p00484-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "9f03bd66c0b412188cf1b9b6",
+                  "id": "alice-p00744-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "9c69cff195dbe4ae67b3e1de",
+                  "id": "alice-p00467-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "77179b61fd092f31092cf8f8",
+                  "id": "alice-p00449-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "2acbd137682267b954c70268",
+                  "id": "alice-p00032-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "1df765eb84f7fcc8f92c9fd4",
+                  "id": "alice-p00019-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "7d32c654122c280f089d7bff",
+                  "id": "alice-p00123-s04-n2",
+                  "seed": 17
+                }
+              ]
+            },
+            "mps_current_allocated_bytes": {
+              "max_observed_bytes": 1344017152,
+              "max_observed_gib": 1.251713514328003,
+              "known_items": 45,
+              "unknown_items": 0,
+              "max_observation_ids": [
+                {
+                  "key": "70a81670345a07f53c619b35",
+                  "id": "holmes-p01042-s02-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "5c67e804c1908be7d1bb2739",
+                  "id": "holmes-p01651-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "b2b9de58a57802c398e41c51",
+                  "id": "holmes-p01618-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "fbb45a45218aee1a87c9718d",
+                  "id": "holmes-p02484-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "b1af613e227bca154e3d0063",
+                  "id": "holmes-p02257-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "bcdac23d5e0089ec51c6bd08",
+                  "id": "holmes-p00452-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "ee0b970b750b609e919a3c34",
+                  "id": "holmes-p01399-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "2ac40d19258f70101c267197",
+                  "id": "holmes-p00146-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "e378ee549d06f73c181f335c",
+                  "id": "alice-p00528-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "89d555cee0e84bd40cad3c92",
+                  "id": "alice-p00734-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "597349fd197ddfb9829766e3",
+                  "id": "alice-p00474-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "e63c5e0f16e5f36e8c696576",
+                  "id": "alice-p00555-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "78420c0279429d948a69504d",
+                  "id": "alice-p00354-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "fc601564fcb276489d2d515a",
+                  "id": "alice-p00248-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "a62983bf0dcfa331cf6c2802",
+                  "id": "alice-p00358-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "246187295799d04cdf21b811",
+                  "id": "holmes-p00151-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "a4fd5811dffba6551c18b59c",
+                  "id": "holmes-p00753-s03-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "000123de81c0b1acdccbac22",
+                  "id": "holmes-p00874-s03-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "75d3c5abf30ab9288880f06f",
+                  "id": "holmes-p01369-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "e60106afaa5b5d805941124e",
+                  "id": "holmes-p00888-s02-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "d4dc6deefad65161e6adb6a8",
+                  "id": "holmes-p02331-s12-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "c94425872ab5b9fb6c2fc4ea",
+                  "id": "holmes-p02230-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "84fe6c6ec9310144b86db70d",
+                  "id": "holmes-p01420-s02-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "2b987b7e79adaf4479377966",
+                  "id": "alice-p00579-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "25b98957eade2022a1ce921c",
+                  "id": "alice-p00115-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "c563a527c50ac0ab2cf375f3",
+                  "id": "alice-p00318-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "c6ccef5c694e217c708ae86b",
+                  "id": "alice-p00362-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "e5f8d0acce8d5441e7afda99",
+                  "id": "alice-p00045-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "4f73300682eae73674c79e60",
+                  "id": "alice-p00427-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "23a38cae4d1e8ca4e1b995e8",
+                  "id": "alice-p00128-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "7f255538ea6066052779a1fe",
+                  "id": "holmes-p01748-s00-n3",
+                  "seed": 17
+                },
+                {
+                  "key": "79386fd4c18b766bbbf457ed",
+                  "id": "holmes-p00974-s01-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "46f57a6aa7c20769879dea34",
+                  "id": "holmes-p02145-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "ab782b0b264a6eee8fc3da90",
+                  "id": "holmes-p01028-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "9789a3686601e28c1d81b839",
+                  "id": "holmes-p01795-s01-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "72542277038f7f62f0f2b770",
+                  "id": "holmes-p02149-s01-n3",
+                  "seed": 17
+                },
+                {
+                  "key": "1a56f656f4088a8f623d3b8f",
+                  "id": "holmes-p00216-s02-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "bf948351e2156a15d2c7641b",
+                  "id": "holmes-p02469-s02-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "c79c6d9bb2953343a067daa4",
+                  "id": "alice-p00484-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "9f03bd66c0b412188cf1b9b6",
+                  "id": "alice-p00744-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "9c69cff195dbe4ae67b3e1de",
+                  "id": "alice-p00467-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "77179b61fd092f31092cf8f8",
+                  "id": "alice-p00449-s00-n2",
+                  "seed": 17
+                },
+                {
+                  "key": "2acbd137682267b954c70268",
+                  "id": "alice-p00032-s01-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "1df765eb84f7fcc8f92c9fd4",
+                  "id": "alice-p00019-s00-n1",
+                  "seed": 17
+                },
+                {
+                  "key": "7d32c654122c280f089d7bff",
+                  "id": "alice-p00123-s04-n2",
+                  "seed": 17
+                }
+              ]
+            },
+            "mps_driver_allocated_bytes": {
+              "max_observed_bytes": 8365178880,
+              "max_observed_gib": 7.790679931640625,
+              "known_items": 45,
+              "unknown_items": 0,
+              "max_observation_ids": [
+                {
+                  "key": "7d32c654122c280f089d7bff",
+                  "id": "alice-p00123-s04-n2",
+                  "seed": 17
+                }
+              ]
+            }
+          },
+          "stop_reasons": {
+            "eos": 44,
+            "output_limit": 1
+          },
+          "cap_items": 1,
+          "cap_ids": [
+            {
+              "key": "7d32c654122c280f089d7bff",
+              "id": "alice-p00123-s04-n2",
+              "seed": 17,
+              "stop_reason": "output_limit"
+            }
+          ],
+          "exception_items": 0,
+          "exception_stages": {},
+          "exception_ids": [],
+          "longest_audio_seconds": 23.63,
+          "longest_audio_ids": [
+            {
+              "key": "7d32c654122c280f089d7bff",
+              "id": "alice-p00123-s04-n2",
+              "seed": 17
+            }
+          ],
+          "audio_duration_known_items": 45,
+          "audio_duration_unknown_items": 0,
+          "audio_over_30_seconds_count": 0,
+          "audio_over_30_seconds_ids": []
+        },
+        "42": {
+          "items": 45,
+          "statuses": {
+            "complete": 45
+          },
+          "seconds": {
+            "generation_seconds": {
+              "sum_known": 217.43010304681957,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            },
+            "asr_seconds": {
+              "sum_known": 156.4074935396202,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            },
+            "attempt_seconds": {
+              "sum_known": 374.05597499525174,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            },
+            "audio_seconds": {
+              "sum_known": 432.57,
+              "known_items": 45,
+              "unknown_items": 0,
+              "complete_coverage": true
+            }
+          },
+          "rtf": {
+            "generation_seconds": {
+              "value": 0.5026472086525177,
+              "numerator_seconds": 217.43010304681957,
+              "denominator_audio_seconds": 432.57,
+              "matched_items": 45,
+              "unmatched_items": 0
+            },
+            "asr_seconds": {
+              "value": 0.361577302031163,
+              "numerator_seconds": 156.4074935396202,
+              "denominator_audio_seconds": 432.57,
+              "matched_items": 45,
+              "unmatched_items": 0
+            },
+            "attempt_seconds": {
+              "value": 0.8647293501520026,
+              "numerator_seconds": 374.05597499525174,
+              "denominator_audio_seconds": 432.57,
+              "matched_items": 45,
+              "unmatched_items": 0
+            }
+          },
+          "memory": {
+            "process_peak_rss_bytes": {
+              "max_observed_bytes": 9275785216,
+              "max_observed_gib": 8.638748168945312,
+              "known_items": 45,
+              "unknown_items": 0,
+              "max_observation_ids": [
+                {
+                  "key": "174e3d06a92813b55b0a37f8",
+                  "id": "holmes-p01028-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "fe6a8e488e0d4e122965e845",
+                  "id": "holmes-p01795-s01-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "85730d2de5d2f3aa66efdeb7",
+                  "id": "holmes-p02149-s01-n3",
+                  "seed": 42
+                },
+                {
+                  "key": "b66d44c5f0d8aa82534e241a",
+                  "id": "holmes-p00216-s02-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "2e66812c5acb29bad63b5642",
+                  "id": "holmes-p02469-s02-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "e8c710b1288d8f39e0880bf0",
+                  "id": "alice-p00484-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "40e3163ed7dda75eff684462",
+                  "id": "alice-p00744-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "048c5ddb645c75b16fb27fc1",
+                  "id": "alice-p00467-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "827666e932b9ed33ccb68ef8",
+                  "id": "alice-p00449-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "dd12510a3c9ededcd51ea439",
+                  "id": "alice-p00032-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "55392e55ea9ac6552bb27f7f",
+                  "id": "alice-p00019-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "8a2e4066cd3cb1dbbbc6d658",
+                  "id": "alice-p00123-s04-n2",
+                  "seed": 42
+                }
+              ]
+            },
+            "mps_current_allocated_bytes": {
+              "max_observed_bytes": 1344017152,
+              "max_observed_gib": 1.251713514328003,
+              "known_items": 45,
+              "unknown_items": 0,
+              "max_observation_ids": [
+                {
+                  "key": "47969aff41c3356752758179",
+                  "id": "holmes-p01042-s02-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "45e380b377758afa1497d56f",
+                  "id": "holmes-p01651-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "3cbee4c52330838a90d5aa24",
+                  "id": "holmes-p01618-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "66ea65b9df06c669bc2d7064",
+                  "id": "holmes-p02484-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "ddfd466bf3fd0f61ff08cccd",
+                  "id": "holmes-p02257-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "b96f73878c938a71cc7e22b0",
+                  "id": "holmes-p00452-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "1ed14a3e4009198549d2d136",
+                  "id": "holmes-p01399-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "cb978cf5d99aeb0270e8607e",
+                  "id": "holmes-p00146-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "c13e0809ff4cffab9201bf03",
+                  "id": "alice-p00528-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "d70562ae1b561ed39e907ea2",
+                  "id": "alice-p00734-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "2667a195049357feeb419342",
+                  "id": "alice-p00474-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "14e0fc7b30e4eeff39f9b6e0",
+                  "id": "alice-p00555-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "f9b0415d2588f5aaf3762e1d",
+                  "id": "alice-p00354-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "eff9253baa368cb46b17f7f2",
+                  "id": "alice-p00248-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "9a39c50760ee6cbe328e191d",
+                  "id": "alice-p00358-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "f8a4e119a3f36fcb77537e1a",
+                  "id": "holmes-p00151-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "8d3fb4ea3d0c8461ed4571f5",
+                  "id": "holmes-p00753-s03-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "c8ac59880c871767684e2e46",
+                  "id": "holmes-p00874-s03-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "eace0303984577f39520e869",
+                  "id": "holmes-p01369-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "d3d91d3b7ab46e76879c11da",
+                  "id": "holmes-p00888-s02-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "5019e9ad5a1045ca8fabe8fc",
+                  "id": "holmes-p02331-s12-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "105adc8f8a6fe139978d6603",
+                  "id": "holmes-p02230-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "e9d185a76274cd5468897fcd",
+                  "id": "holmes-p01420-s02-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "95809fe91a0a44ea7832b6f9",
+                  "id": "alice-p00579-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "20d326d630ea857b7aae2854",
+                  "id": "alice-p00115-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "886ae99faba0a7d10984dc4d",
+                  "id": "alice-p00318-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "5644da38bd04deecbc6d99f2",
+                  "id": "alice-p00362-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "63ec414ce2b933ebedb0428e",
+                  "id": "alice-p00045-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "dd8e93b3d10f07f46fe76012",
+                  "id": "alice-p00427-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "b42537ded2743d0b5a50c9b2",
+                  "id": "alice-p00128-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "3e4225f18397a22cfd1c987b",
+                  "id": "holmes-p01748-s00-n3",
+                  "seed": 42
+                },
+                {
+                  "key": "2a0122651d979b04e46392c2",
+                  "id": "holmes-p00974-s01-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "bdecca5e5dee0e7e2b3ea1e0",
+                  "id": "holmes-p02145-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "174e3d06a92813b55b0a37f8",
+                  "id": "holmes-p01028-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "fe6a8e488e0d4e122965e845",
+                  "id": "holmes-p01795-s01-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "85730d2de5d2f3aa66efdeb7",
+                  "id": "holmes-p02149-s01-n3",
+                  "seed": 42
+                },
+                {
+                  "key": "b66d44c5f0d8aa82534e241a",
+                  "id": "holmes-p00216-s02-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "2e66812c5acb29bad63b5642",
+                  "id": "holmes-p02469-s02-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "e8c710b1288d8f39e0880bf0",
+                  "id": "alice-p00484-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "40e3163ed7dda75eff684462",
+                  "id": "alice-p00744-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "048c5ddb645c75b16fb27fc1",
+                  "id": "alice-p00467-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "827666e932b9ed33ccb68ef8",
+                  "id": "alice-p00449-s00-n2",
+                  "seed": 42
+                },
+                {
+                  "key": "dd12510a3c9ededcd51ea439",
+                  "id": "alice-p00032-s01-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "55392e55ea9ac6552bb27f7f",
+                  "id": "alice-p00019-s00-n1",
+                  "seed": 42
+                },
+                {
+                  "key": "8a2e4066cd3cb1dbbbc6d658",
+                  "id": "alice-p00123-s04-n2",
+                  "seed": 42
+                }
+              ]
+            },
+            "mps_driver_allocated_bytes": {
+              "max_observed_bytes": 8365604864,
+              "max_observed_gib": 7.79107666015625,
+              "known_items": 45,
+              "unknown_items": 0,
+              "max_observation_ids": [
+                {
+                  "key": "8a2e4066cd3cb1dbbbc6d658",
+                  "id": "alice-p00123-s04-n2",
+                  "seed": 42
+                }
+              ]
+            }
+          },
+          "stop_reasons": {
+            "eos": 45
+          },
+          "cap_items": 0,
+          "cap_ids": [],
+          "exception_items": 0,
+          "exception_stages": {},
+          "exception_ids": [],
+          "longest_audio_seconds": 24.51,
+          "longest_audio_ids": [
+            {
+              "key": "2a0122651d979b04e46392c2",
+              "id": "holmes-p00974-s01-n2",
+              "seed": 42
+            }
+          ],
+          "audio_duration_known_items": 45,
+          "audio_duration_unknown_items": 0,
+          "audio_over_30_seconds_count": 0,
+          "audio_over_30_seconds_ids": []
+        }
+      }
+    }
+  },
+  "caveats": [
+    "Latest event per raw key only. Totals are recorded item timing sums, not whole-run wall-clock or total historical retry cost; model loading and earlier failed attempts may be absent.",
+    "ASR-only resume can retain an earlier generation_seconds but replace attempt_seconds. Do not add generation, ASR, and attempt times together or infer overhead by subtraction.",
+    "RTF uses matched rows with known nonnegative numerator and positive recorded audio duration; unknown fields stay unknown. Audio duration is the recorded delivered waveform duration including inserted pauses, not speech-only duration; this report does not reread WAVs.",
+    "process_peak_rss_bytes is the process cumulative high-water RSS, not per-item incremental memory. The maximum across latest records may span resumed processes; process identity and continuous whole-run peak are not established.",
+    "MPS current/driver maxima are observed post-attempt samples, not continuous allocator or system peaks. Host-wide usage, swap, and other processes are not measured here.",
+    "Audio >30 seconds flags the configured Whisper chunk window boundary, not an ASR failure or a quality judgment. Completed outputs can still terminate at a generation cap."
+  ]
+}

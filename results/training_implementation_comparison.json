@@ -1,0 +1,14 @@
+{
+  "comparison": "Original vs packed+per-step cache clearing on identical starter, ordered benchmark batches and optimizer updates",
+  "same_sample_indices": true,
+  "same_phases": true,
+  "compared_measurements": 35,
+  "max_loss_abs_difference": 9.5367431640625e-07,
+  "max_accuracy_abs_difference": 0.0,
+  "max_grad_norm_abs_difference": 0.0006055831909179688,
+  "original_estimated_epoch_hours": 3.6377336934958455,
+  "packed_estimated_epoch_hours": 3.5539660416300305,
+  "original_final_driver_bytes": 45095190528,
+  "packed_final_driver_bytes": 14250377216,
+  "limitation": "Combined changes (packing, cache clearing, memory cap); not an isolated packing ablation or sustained epoch benchmark. CPU full-gradient equivalence tested separately."
+}

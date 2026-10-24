@@ -1,0 +1,142 @@
+{
+  "overall": {
+    "errors": 513,
+    "substitutions": 272,
+    "deletions": 119,
+    "insertions": 122,
+    "reference_words": 3016,
+    "items": 120,
+    "scored_items": 120,
+    "exceptional_items": 0,
+    "wer": 0.17009283819628648,
+    "deletion_rate": 0.03945623342175066,
+    "insertion_rate": 0.04045092838196287,
+    "substitution_rate": 0.09018567639257294,
+    "stop_reasons": {
+      "eos": 119,
+      "output_limit": 1
+    },
+    "truncation_rate": 0.008333333333333333,
+    "exception_rate": 0.0,
+    "generation_seconds": 565.1624240796082,
+    "audio_seconds": 1181.36,
+    "asr_seconds": 385.1850874973461
+  },
+  "by_length": {
+    "short": {
+      "errors": 55,
+      "substitutions": 33,
+      "deletions": 4,
+      "insertions": 18,
+      "reference_words": 316,
+      "items": 40,
+      "scored_items": 40,
+      "exceptional_items": 0,
+      "wer": 0.17405063291139242,
+      "deletion_rate": 0.012658227848101266,
+      "insertion_rate": 0.056962025316455694,
+      "substitution_rate": 0.10443037974683544,
+      "stop_reasons": {
+        "eos": 40
+      },
+      "truncation_rate": 0.0,
+      "exception_rate": 0.0,
+      "generation_seconds": 77.89718079194427,
+      "audio_seconds": 139.6,
+      "asr_seconds": 96.7845617486164
+    },
+    "medium": {
+      "errors": 97,
+      "substitutions": 59,
+      "deletions": 17,
+      "insertions": 21,
+      "reference_words": 836,
+      "items": 40,
+      "scored_items": 40,
+      "exceptional_items": 0,
+      "wer": 0.11602870813397129,
+      "deletion_rate": 0.02033492822966507,
+      "insertion_rate": 0.025119617224880382,
+      "substitution_rate": 0.07057416267942583,
+      "stop_reasons": {
+        "eos": 40
+      },
+      "truncation_rate": 0.0,
+      "exception_rate": 0.0,
+      "generation_seconds": 150.26498433342203,
+      "audio_seconds": 320.12,
+      "asr_seconds": 119.37452079216018
+    },
+    "long": {
+      "errors": 361,
+      "substitutions": 180,
+      "deletions": 98,
+      "insertions": 83,
+      "reference_words": 1864,
+      "items": 40,
+      "scored_items": 40,
+      "exceptional_items": 0,
+      "wer": 0.1936695278969957,
+      "deletion_rate": 0.05257510729613734,
+      "insertion_rate": 0.04452789699570815,
+      "substitution_rate": 0.09656652360515021,
+      "stop_reasons": {
+        "eos": 39,
+        "output_limit": 1
+      },
+      "truncation_rate": 0.025,
+      "exception_rate": 0.0,
+      "generation_seconds": 337.0002589542419,
+      "audio_seconds": 721.64,
+      "asr_seconds": 169.02600495656952
+    }
+  },
+  "by_seed": {
+    "17": {
+      "errors": 279,
+      "substitutions": 156,
+      "deletions": 48,
+      "insertions": 75,
+      "reference_words": 1508,
+      "items": 60,
+      "scored_items": 60,
+      "exceptional_items": 0,
+      "wer": 0.18501326259946949,
+      "deletion_rate": 0.03183023872679045,
+      "insertion_rate": 0.04973474801061008,
+      "substitution_rate": 0.10344827586206896,
+      "stop_reasons": {
+        "eos": 60
+      },
+      "truncation_rate": 0.0,
+      "exception_rate": 0.0,
+      "generation_seconds": 291.1023206221871,
+      "audio_seconds": 608.72,
+      "asr_seconds": 194.8400320801884
+    },
+    "42": {
+      "errors": 234,
+      "substitutions": 116,
+      "deletions": 71,
+      "insertions": 47,
+      "reference_words": 1508,
+      "items": 60,
+      "scored_items": 60,
+      "exceptional_items": 0,
+      "wer": 0.15517241379310345,
+      "deletion_rate": 0.047082228116710874,
+      "insertion_rate": 0.03116710875331565,
+      "substitution_rate": 0.07692307692307693,
+      "stop_reasons": {
+        "eos": 59,
+        "output_limit": 1
+      },
+      "truncation_rate": 0.016666666666666666,
+      "exception_rate": 0.0,
+      "generation_seconds": 274.06010345742106,
+      "audio_seconds": 572.64,
+      "asr_seconds": 190.3450554171577
+    }
+  },
+  "interpretation": "WER is ASR disagreement; edits are not human-verified omissions/repetitions. Human listening and MOS have not been performed."
+}

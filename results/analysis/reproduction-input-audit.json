@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-10-20T10:01:39.010162+00:00",
+  "checks": {
+    "data/eval/sources/pg11.txt": {
+      "sha256": "01b38ea4c710a84bc18d0bd41271a5a1a92b94e97b2812f4dece97d4a694725e",
+      "matches_recorded_source": true
+    },
+    "data/eval/sources/pg1661.txt": {
+      "sha256": "922e2a12ccb43a4c9544c260b2166c6ad2097aeb5957faeee113f173bb857cd0",
+      "matches_recorded_source": true
+    },
+    "data/reference/librispeech_dummy.parquet": {
+      "sha256": "4e69a06fa5edc90921e5e7e39a7084881f8b3ed9c805c574f4f39c6fde27c603",
+      "matches_recorded_source": true
+    },
+    "data/reference/1272-128104-0000.flac": {
+      "sha256": "4e25e22555cd16e90edb0a3b49fdcf1fe652b2a1250ab643634db33895c75b41",
+      "matches_recorded_source": true
+    },
+    "data/reference/prompt.wav": {
+      "sha256": "799f78ed4beb4de7ceae3a809262d4ce242394342ccd1d58cef7d49dbc2def46",
+      "matches_recorded_source": true
+    }
+  },
+  "final_file_read": false,
+  "GPU_used": false,
+  "scope": "Source snapshots and fixed reference identity only; not an end-to-end fresh retraining or environment reinstall."
+}

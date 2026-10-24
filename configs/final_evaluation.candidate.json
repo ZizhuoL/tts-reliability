@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "status": "TEMPLATE_NOT_FROZEN",
+  "notice": "Candidate selected from the six primary development cells only. Seed184 replication is now complete and remains secondary; it does not reselect the primary seed or method. This candidate is not a frozen protocol: use the freeze command before reading or running the final set.",
+  "output": "results/final-evaluation-v1",
+  "selection": {
+    "selected_system": "BNoLM",
+    "rationale": "The complete six-cell development comparison has only BNoLM meeting every prespecified constraint: overall 10.1724%, short 7.4803%, long 10.6686% WER, no output/context caps or exceptions. Every other candidate has more output-limit stops than A; ASplit also worsens short WER. Selection uses seed183 only; seed184 is a subsequent sensitivity check and will not select a different primary training seed or method.",
+    "missingness_review": "All six systems have the same 45 texts x generation seeds 17 and 42, 90 scored terminal attempts each. Paired common-success and shared-attempted counts are 90, with no unmatched pairs or missing scores; full-deletion sensitivity equals scored results. Caps remain included. ASR and text-source uncertainty, selection optimism, and unmeasured human quality remain limitations.",
+    "failure_robust_eligible_systems": null
+  },
+  "include_seed184_sensitivity": true,
+  "omit_seed184_final_reason": null,
+  "generation": {
+    "seeds": [
+      17,
+      42
+    ],
+    "length_budget": "adaptive",
+    "max_length": 500,
+    "tokens_per_text": 11.0,
+    "temperature": 1.0,
+    "top_k": 50,
+    "min_length_ratio": 2.0,
+    "pause_seconds": 0.15,
+    "use_cache": true,
+    "lm_device": "mps",
+    "flow_device": "mps",
+    "vocoder_device": "cpu",
+    "asr_device": "cpu",
+    "threads": 8
+  },
+  "analysis": {
+    "bootstrap": 2000,
+    "seed": 1832026,
+    "failure_bootstrap": 10000,
+    "failure_seed": 20261020,
+    "tail_minimum": 3,
+    "listening_per_category": 1
+  },
+  "policy": {
+    "primary_training_seed": 183,
+    "training_endpoint": "full_epoch_latest",
+    "primary_outcomes": [
+      "overall_micro_WER",
+      "long_group_micro_WER"
+    ],
+    "mandatory_training_comparison": [
+      "A",
+      "B"
+    ],
+    "other_contrasts": "exploratory; seed184 cells are training-seed sensitivity",
+    "no_reselection_from_final": true,
+    "asr_is_not_human_quality": true,
+    "automatic_retry_errors": false,
+    "preserve_raw_wav_and_provenance": true
+  }
+}

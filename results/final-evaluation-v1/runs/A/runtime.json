@@ -1,0 +1,13 @@
+{
+  "devices": {
+    "lm": "mps",
+    "flow": "mps",
+    "vocoder": "cpu",
+    "prompt_features": "cpu",
+    "speech_tokenizer": "CPUExecutionProvider",
+    "speaker_encoder": "CPUExecutionProvider",
+    "asr": "cpu",
+    "reason": "Explicit per-component devices: CPU vocoder avoids unsupported MPS iSTFT/complex operators; prompt features use CPU ONNX/STFT. No silent runtime device fallback."
+  },
+  "run_id": "304b10eaaa5504d4d60be4fa955641401c8ffef017cdbbd3c6c9d1a744a02d88"
+}

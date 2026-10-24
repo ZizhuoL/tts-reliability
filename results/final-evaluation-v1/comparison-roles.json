@@ -1,0 +1,19 @@
+{
+  "primary_comparison": [
+    "A",
+    "BNoLM"
+  ],
+  "primary_outcomes": [
+    "overall_micro_WER",
+    "long_group_micro_WER"
+  ],
+  "always_report_training_comparison": [
+    "A",
+    "B"
+  ],
+  "training_comparison_role": "prespecified_research_comparison_exploratory",
+  "development_fallback": false,
+  "other_contrasts": "exploratory; training-seed sensitivity is secondary",
+  "no_reselection": true,
+  "human_listening_performed": false
+}

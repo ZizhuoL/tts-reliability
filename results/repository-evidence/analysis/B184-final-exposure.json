@@ -1,0 +1,294 @@
+{
+  "kind": "observed_training_exposure_reconstruction",
+  "evidence_status": "RECONSTRUCTED_FROM_LOGGED_UPDATES",
+  "label": "B184-full-epoch-latest",
+  "settings": {
+    "batch_size": 8,
+    "seed": 184,
+    "long_weight": 1.0,
+    "pad_multiple": 64,
+    "token_budget": 50450231,
+    "context_capacity": 2048,
+    "bucket_batches": 50
+  },
+  "totals": {
+    "steps": 44348,
+    "target_tokens": 50450231,
+    "examples": 354780,
+    "unique_examples": 354780,
+    "effective_input_tokens": 58399911,
+    "padded_input_tokens": 71901440,
+    "completed_sampler_epochs": 1,
+    "next_epoch_batch_cursor": 0,
+    "unique_coverage": 1.0,
+    "target_budget_overshoot": 0,
+    "padding_fraction": 0.18777828371726635,
+    "mean_exposures_per_dataset_example": 1.0,
+    "max_exposures_for_one_example": 1,
+    "repeated_exposure_examples": 0
+  },
+  "interpretation": "Reconstructed logical update exposure. Compared against each complete log row; logs prove recorded updates, not independently audited hardware execution.",
+  "dataset": {
+    "valid_examples": 354780,
+    "full_epoch_target_tokens": 50450231,
+    "lengths_path": "<repository>/data/processed/train_lengths.npy",
+    "lengths_sha256": "759191f18fcade3e9661959708441ccf89ad49b095c79f6bb495805560bd6fbc"
+  },
+  "source": {
+    "config_sha256": "1596a1ce2c86fc07933b070a279a5a44cc4f97c63bf2f99ffe1d2989a0529099",
+    "log_snapshots": [
+      {
+        "path": "<repository>/checkpoints/B-ordinary-seed184/train.jsonl",
+        "sha256_snapshot": "53285cf3cb0d2d621fb324772957d57c1d50cf55adbe850529ba0d429bb45c0e",
+        "snapshot_bytes": 54951471
+      }
+    ],
+    "sampler_source_sha256": "ef4a03c6fda8aaadf201fe8a6821b92f7e614076cdb19ed079f1836665598c92",
+    "analysis_source_sha256": "c3cf2065fe1f31e8449936a278b50bfbd8ac4212a2cf132288698a80b7ba4e2a"
+  },
+  "text_group_definition": {
+    "short": "1..17",
+    "medium": "18..43",
+    "long": ">=44",
+    "note": "Exhaustive training groups; cannot be equated directly with evaluation strata. Training short/long include tails outside evaluation range 6..72."
+  },
+  "training_length_groups": {
+    "short": {
+      "dataset_examples": 178570,
+      "dataset_sample_share": 0.5033260048480749,
+      "dataset_target_tokens": 11224777,
+      "dataset_target_share": 0.22249208333654608,
+      "exposure_examples": 178570,
+      "exposure_sample_share": 0.5033260048480749,
+      "exposure_target_tokens": 11224777,
+      "exposure_target_share": 0.22249208333654608,
+      "unique_examples": 178570,
+      "unique_coverage": 1.0
+    },
+    "medium": {
+      "dataset_examples": 142883,
+      "dataset_sample_share": 0.4027369073792209,
+      "dataset_target_tokens": 26155136,
+      "dataset_target_share": 0.5184344150971281,
+      "exposure_examples": 142883,
+      "exposure_sample_share": 0.4027369073792209,
+      "exposure_target_tokens": 26155136,
+      "exposure_target_share": 0.5184344150971281,
+      "unique_examples": 142883,
+      "unique_coverage": 1.0
+    },
+    "long": {
+      "dataset_examples": 33327,
+      "dataset_sample_share": 0.09393708777270421,
+      "dataset_target_tokens": 13070318,
+      "dataset_target_share": 0.2590735015663258,
+      "exposure_examples": 33327,
+      "exposure_sample_share": 0.09393708777270421,
+      "exposure_target_tokens": 13070318,
+      "exposure_target_share": 0.2590735015663258,
+      "unique_examples": 33327,
+      "unique_coverage": 1.0
+    }
+  },
+  "evaluation_range_length_groups": {
+    "below_eval_1_to_5": {
+      "dataset_examples": 28652,
+      "dataset_sample_share": 0.08075990754833981,
+      "dataset_target_tokens": 756090,
+      "dataset_target_share": 0.014986849118688871,
+      "exposure_examples": 28652,
+      "exposure_sample_share": 0.08075990754833981,
+      "exposure_target_tokens": 756090,
+      "exposure_target_share": 0.014986849118688871,
+      "unique_examples": 28652,
+      "unique_coverage": 1.0
+    },
+    "eval_short_6_to_17": {
+      "dataset_examples": 149918,
+      "dataset_sample_share": 0.42256609729973504,
+      "dataset_target_tokens": 10468687,
+      "dataset_target_share": 0.2075052342178572,
+      "exposure_examples": 149918,
+      "exposure_sample_share": 0.42256609729973504,
+      "exposure_target_tokens": 10468687,
+      "exposure_target_share": 0.2075052342178572,
+      "unique_examples": 149918,
+      "unique_coverage": 1.0
+    },
+    "eval_medium_18_to_43": {
+      "dataset_examples": 142883,
+      "dataset_sample_share": 0.4027369073792209,
+      "dataset_target_tokens": 26155136,
+      "dataset_target_share": 0.5184344150971281,
+      "exposure_examples": 142883,
+      "exposure_sample_share": 0.4027369073792209,
+      "exposure_target_tokens": 26155136,
+      "exposure_target_share": 0.5184344150971281,
+      "unique_examples": 142883,
+      "unique_coverage": 1.0
+    },
+    "eval_long_44_to_72": {
+      "dataset_examples": 29801,
+      "dataset_sample_share": 0.0839985343029483,
+      "dataset_target_tokens": 11101416,
+      "dataset_target_share": 0.2200468814503545,
+      "exposure_examples": 29801,
+      "exposure_sample_share": 0.0839985343029483,
+      "exposure_target_tokens": 11101416,
+      "exposure_target_share": 0.2200468814503545,
+      "unique_examples": 29801,
+      "unique_coverage": 1.0
+    },
+    "above_eval_73_plus": {
+      "dataset_examples": 3526,
+      "dataset_sample_share": 0.009938553469755905,
+      "dataset_target_tokens": 1968902,
+      "dataset_target_share": 0.03902662011597132,
+      "exposure_examples": 3526,
+      "exposure_sample_share": 0.009938553469755905,
+      "exposure_target_tokens": 1968902,
+      "exposure_target_share": 0.03902662011597132,
+      "unique_examples": 3526,
+      "unique_coverage": 1.0
+    }
+  },
+  "longest_speech_quartile": {
+    "threshold_inclusive": 191,
+    "threshold_rule": "sorted speech_lengths[int(0.75*(N-1))], exactly matching BucketSampler; ties can exceed 25% of samples",
+    "dataset_examples": 89426,
+    "dataset_sample_share": 0.25206043181690063,
+    "dataset_target_tokens": 26796421,
+    "dataset_target_share": 0.5311456552101813,
+    "exposure_examples": 89426,
+    "exposure_sample_share": 0.25206043181690063,
+    "exposure_target_tokens": 26796421,
+    "exposure_target_share": 0.5311456552101813,
+    "unique_examples": 89426,
+    "unique_coverage": 1.0
+  },
+  "exposure_multiplicity_histogram": {
+    "1": 354780
+  },
+  "exposure_counts_sha256": "45d2e25bfe4e254b1601d5c4a31d69a7c268e69ddbdefd04e1f28213a90f74a4",
+  "verification": {
+    "checked_logged_steps": 44348,
+    "all_logged_fields_match": true,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "partial_final_log_lines_ignored": [],
+    "checkpoint": {
+      "step": 44348,
+      "matched": true,
+      "mismatched_fields": []
+    },
+    "checkpoint_outside_logged_prefix": false
+  },
+  "replayed_or_rolled_back_log_work": {
+    "policy": "Chronological logs: on a non-increasing step, invalidate every old step >= the resumed step; retain the latest branch only.",
+    "events": [],
+    "discarded_logged_updates": 0,
+    "discarded_logged_target_tokens": 0,
+    "discarded_work_is_counted_in_effective_budget": false,
+    "discarded_runtime": null
+  },
+  "runtime": {
+    "observed_update_rows": 44348,
+    "compute_seconds": 10751.353765697218,
+    "step_wall_seconds": 11089.577292791102,
+    "empty_cache_seconds": 247.43176608346403,
+    "wall_time_scope": "Sum of logged update durations, excluding inter-step validation, checkpoints, startup and unlogged work.",
+    "memory_baseline": "First logged update, before cache clearing when available; not process-start memory.",
+    "memory": {
+      "rss_bytes": {
+        "first_observed": 5177606144,
+        "final_observed": 3412803584,
+        "min_observed": 2127855616,
+        "max_observed": 9547841536,
+        "final_change_from_first": -1764802560,
+        "max_increase_from_first": 4370235392
+      },
+      "mps_allocated_bytes": {
+        "first_observed": 3534516992,
+        "final_observed": 3747567104,
+        "min_observed": 3512909312,
+        "max_observed": 3933589760,
+        "final_change_from_first": 213050112,
+        "max_increase_from_first": 399072768
+      },
+      "mps_driver_bytes": {
+        "first_observed": 5333630976,
+        "final_observed": 18258722816,
+        "min_observed": 5316853760,
+        "max_observed": 32200589312,
+        "final_change_from_first": 12925091840,
+        "max_increase_from_first": 26866958336
+      },
+      "system_available_bytes": {
+        "first_observed": 25301434368,
+        "final_observed": 18108039168,
+        "min_observed": 8682930176,
+        "max_observed": 25303924736,
+        "final_change_from_first": -7193395200,
+        "max_increase_from_first": 2490368
+      },
+      "system_swap_used_bytes": {
+        "first_observed": 36147625984,
+        "final_observed": 35366174720,
+        "min_observed": 34796601344,
+        "max_observed": 36147625984,
+        "final_change_from_first": -781451264,
+        "max_increase_from_first": 0
+      }
+    }
+  },
+  "runtime_all_log_observations": {
+    "observed_update_rows": 44348,
+    "compute_seconds": 10751.353765697218,
+    "step_wall_seconds": 11089.577292791102,
+    "empty_cache_seconds": 247.43176608346403,
+    "wall_time_scope": "Sum of logged update durations, excluding inter-step validation, checkpoints, startup and unlogged work.",
+    "memory_baseline": "First logged update, before cache clearing when available; not process-start memory.",
+    "memory": {
+      "rss_bytes": {
+        "first_observed": 5177606144,
+        "final_observed": 3412803584,
+        "min_observed": 2127855616,
+        "max_observed": 9547841536,
+        "final_change_from_first": -1764802560,
+        "max_increase_from_first": 4370235392
+      },
+      "mps_allocated_bytes": {
+        "first_observed": 3534516992,
+        "final_observed": 3747567104,
+        "min_observed": 3512909312,
+        "max_observed": 3933589760,
+        "final_change_from_first": 213050112,
+        "max_increase_from_first": 399072768
+      },
+      "mps_driver_bytes": {
+        "first_observed": 5333630976,
+        "final_observed": 18258722816,
+        "min_observed": 5316853760,
+        "max_observed": 32200589312,
+        "final_change_from_first": 12925091840,
+        "max_increase_from_first": 26866958336
+      },
+      "system_available_bytes": {
+        "first_observed": 25301434368,
+        "final_observed": 18108039168,
+        "min_observed": 8682930176,
+        "max_observed": 25303924736,
+        "final_change_from_first": -7193395200,
+        "max_increase_from_first": 2490368
+      },
+      "system_swap_used_bytes": {
+        "first_observed": 36147625984,
+        "final_observed": 35366174720,
+        "min_observed": 34796601344,
+        "max_observed": 36147625984,
+        "final_change_from_first": -781451264,
+        "max_increase_from_first": 0
+      }
+    }
+  }
+}

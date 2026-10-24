@@ -1,0 +1,53 @@
+{
+  "format_version": 1,
+  "kind": "hw4_tts_starter",
+  "architecture": {
+    "family": "hw4-tts-transformer-encoder-v1",
+    "text_vocab_size": 151663,
+    "speech_vocab_size": 6561,
+    "speech_embedding_size": 6562,
+    "special_vocab_size": 2,
+    "output_size": 6562,
+    "d_model": 768,
+    "n_heads": 12,
+    "n_layers": 12,
+    "max_seq_len": 2048,
+    "dim_feedforward": 3072,
+    "dropout_settings": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "activation": "relu",
+    "norm_first": false,
+    "layer_norm_eps": [
+      1e-05,
+      1e-05
+    ],
+    "bias_settings": [
+      true,
+      true,
+      true
+    ],
+    "batch_first": true,
+    "final_norm": false
+  },
+  "model_config": {
+    "d_model": 768,
+    "n_heads": 12,
+    "n_layers": 12,
+    "max_seq_len": 2048
+  },
+  "storage_dtype": "float16",
+  "source_training": {
+    "completed_epochs": 2,
+    "training_examples_per_epoch": 354780,
+    "validation_loss": 4.577626412272161,
+    "initialization": "fresh original architecture",
+    "optimizer_included": false
+  },
+  "evaluation_status": "pending",
+  "checkpoint_sha256": "4cb40a7140b1055b7e077232a202f5600ce4a33eb955e8ff8ff1825b5fd54463",
+  "interpretation": "Upstream checkpoint metadata, not a local remeasurement. Metadata does not by itself prove absence of validation-based selection or overlap with source literature. Course validation is not an independent final test."
+}

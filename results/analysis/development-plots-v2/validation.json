@@ -1,0 +1,103 @@
+{
+  "status": "geometry_checks_passed",
+  "evidence": "FROZEN_DEVELOPMENT_SUMMARY",
+  "systems": [
+    "A",
+    "ANoLM",
+    "ASplit",
+    "B",
+    "BNoLM",
+    "BSplit"
+  ],
+  "axes": [
+    {
+      "largest_bar_percent": 29.133858267716533,
+      "y_limits": [
+        0.0,
+        32.62992125984252
+      ],
+      "bars_below_upper_limit": true,
+      "legend_outside_axes": true
+    },
+    {
+      "largest_bar_percent": 29.133858267716533,
+      "y_limits": [
+        0.0,
+        32.62992125984252
+      ],
+      "bars_below_upper_limit": true,
+      "legend_outside_axes": true
+    }
+  ],
+  "all_labels_within_figure": true,
+  "visual_inspection": {
+    "status": "passed",
+    "inspected_utc": "2026-10-20T09:50:30.620509+00:00",
+    "views": [
+      "six-system PNG",
+      "six-system PDF rasterized with pdftoppm",
+      "synthetic nine-system PNG"
+    ],
+    "findings": "ASplit short29.133858% bar fully visible with upper32.629921%; labels inside figure, shared y-axis limits, legend outside bars, no clipping or overlap.",
+    "synthetic_nine_system_note": "Temporary layout-only duplicated B data; not seed184 evidence."
+  },
+  "input_summary_sha256": "0e70c5ee94575ae4c581ec7891b98a609bb21a9dfe426e8f23a02becb4bc6cae",
+  "frozen_plot_function_sha256": "34f445291fc7e41941749666e29c739c157d7d20c6db3780e5408b06c4ea105c",
+  "artifacts": {
+    "wer_by_length.png": "3c26af6e5d94d1c9bcab8d1f478adacbb222623b870f40e298c4981c9fdbb647",
+    "wer_by_length.pdf": "7a2f8175e525e4ffa1fa08a557beac52df7645a613dc3c6aee4f0f93f52ce537"
+  },
+  "nine_system_layout_check": {
+    "evidence": "SYNTHETIC_NINE_SYSTEM_LAYOUT_ONLY",
+    "systems": [
+      "A",
+      "ANoLM",
+      "ASplit",
+      "B",
+      "BNoLM",
+      "BSplit",
+      "B184",
+      "B184NoLM",
+      "B184Split"
+    ],
+    "axes": [
+      {
+        "largest_bar_percent": 29.133858267716533,
+        "y_limits": [
+          0.0,
+          32.62992125984252
+        ],
+        "bars_below_upper_limit": true,
+        "legend_outside_axes": true
+      },
+      {
+        "largest_bar_percent": 29.133858267716533,
+        "y_limits": [
+          0.0,
+          32.62992125984252
+        ],
+        "bars_below_upper_limit": true,
+        "legend_outside_axes": true
+      }
+    ],
+    "all_labels_within_figure": true
+  },
+  "preserved_original_analyses": {
+    "development-comparisons": {
+      "completion_sha256": "ba1be2ef372d01c294bbbf82a64bb465452ba8218cfc1bd533c24d047d0e5c08",
+      "all_artifact_hashes_match": true
+    },
+    "development-within-B": {
+      "completion_sha256": "0927ba3c987531a210fd5781277e687044460760318ac4a6362abca0e48814f5",
+      "all_artifact_hashes_match": true
+    },
+    "development-training-no-lm": {
+      "completion_sha256": "daf3179b1104f50cfef8309a29d1771aadfb48c520912e42c33458dc5c0e5bae",
+      "all_artifact_hashes_match": true
+    },
+    "development-training-split": {
+      "completion_sha256": "5a681b1800adc5c418f0793a386e9f96eabe2456eeeac7154e4b056b9f629fba",
+      "all_artifact_hashes_match": true
+    }
+  }
+}

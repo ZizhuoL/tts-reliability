@@ -1,0 +1,22 @@
+{
+  "id": "1272-128104-0000",
+  "text": "Mister Quilter is the apostle of the middle classes, and we are glad to welcome his gospel.",
+  "audio_path": "data/reference/prompt.wav",
+  "sample_rate": 16000,
+  "num_samples": 93680,
+  "duration_seconds": 5.855,
+  "license": "CC BY 4.0",
+  "license_source": "https://www.openslr.org/12",
+  "attribution": "LibriSpeech, Vassil Panayotov, Guoguo Chen, Daniel Povey, Sanjeev Khudanpur (ICASSP 2015)",
+  "source_url": "https://huggingface.co/datasets/hf-internal-testing/librispeech_asr_dummy/resolve/5be91486e11a2d616f4ec5db8d3fd248585ac07a/clean/validation-00000-of-00001.parquet",
+  "revision": "5be91486e11a2d616f4ec5db8d3fd248585ac07a",
+  "source_sha256": "4e69a06fa5edc90921e5e7e39a7084881f8b3ed9c805c574f4f39c6fde27c603",
+  "original_audio_sha256": "4e25e22555cd16e90edb0a3b49fdcf1fe652b2a1250ab643634db33895c75b41",
+  "wav_sha256": "799f78ed4beb4de7ceae3a809262d4ce242394342ccd1d58cef7d49dbc2def46",
+  "transformation": "Decode FLAC and write mono PCM16 WAV at original 16000 Hz; no trimming or resampling.",
+  "transcript_status": "Exact dataset transcript; not manually listening-verified.",
+  "original_transcript": "MISTER QUILTER IS THE APOSTLE OF THE MIDDLE CLASSES AND WE ARE GLAD TO WELCOME HIS GOSPEL",
+  "diagnostic_transformation": "Sentence case and punctuation only; identical recorded waveform",
+  "selection_reason": "Standard sentence case and punctuation preserve reference words and match natural text formatting; selected during development, before final evaluation.",
+  "source_prompt_metadata": "data/reference/prompt.json"
+}

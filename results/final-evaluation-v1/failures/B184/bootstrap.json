@@ -1,0 +1,25 @@
+{
+  "method": "Independent length-group percentile bootstrap; resample normalized-text clusters within short and long, retaining every observed seed for each selected text; recompute micro WER.",
+  "interpretation": "Exploratory, non-causal length comparison; text content/source and difficulty are confounded with length. Does not establish equivalence or include ASR/training uncertainty.",
+  "bootstrap_seed": 20261020,
+  "bootstrap_repeats": 10000,
+  "clusters_per_length": {
+    "short": 20,
+    "long": 20
+  },
+  "excluded_incomplete_text_clusters": 0,
+  "observed_seed_sets": [
+    [
+      17,
+      42
+    ]
+  ],
+  "delta_long_minus_short_wer": 0.01961889498560329,
+  "delta_wer_ci95": [
+    -0.07149174579987455,
+    0.10578939999568736
+  ],
+  "short_wer": 0.17405063291139242,
+  "long_wer": 0.1936695278969957,
+  "valid_replicates": 10000
+}

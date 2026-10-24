@@ -1,0 +1,39 @@
+{
+  "source": "frozen B-final-training-plots inputs only; no live logs",
+  "identical_bytes_to_original_snapshot": {
+    "inputs/00-B183/summary.json": true,
+    "inputs/00-B183/train.jsonl": true,
+    "inputs/00-B183/config.json": true,
+    "inputs/00-B183/validation.jsonl": true,
+    "00-B183-metrics.csv": true
+  },
+  "observed_steps": 44348,
+  "observed_target_tokens": 50450231,
+  "status": "BUDGET_COMPLETE_SNAPSHOT",
+  "plotted_recovery_boundaries": [
+    {
+      "resumed_at_step": 34001,
+      "retained_tokens_before_resume": 38601729,
+      "x_million_targets": 38.601729,
+      "rollback_count": 2,
+      "discarded_update_rows": 3182,
+      "rollback_source_lines": [
+        35592,
+        37183
+      ],
+      "coordinate_interpretation": "Boundary before first accepted resumed update; not a measured restart timestamp."
+    }
+  ],
+  "syntax_check": "passed",
+  "visual_review": {
+    "figures_checked": [
+      "training-metrics.png",
+      "optimization-and-batches.png",
+      "observed-memory.png"
+    ],
+    "axes_checked": 7,
+    "result": "All three titles fully visible, including BUDGET-COMPLETE SNAPSHOT. One shared recovery boundary per axis, with resume step 34001 | 2 rollbacks. Footnotes fully visible, no label/data overlap."
+  },
+  "gpu_used": false,
+  "final_evaluation_data_read": false
+}

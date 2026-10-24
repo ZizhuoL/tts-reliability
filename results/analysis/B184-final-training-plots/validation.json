@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-20T13:45:10.766570+00:00",
+  "input_snapshots": {
+    "config.json": {
+      "sha256": "1596a1ce2c86fc07933b070a279a5a44cc4f97c63bf2f99ffe1d2989a0529099",
+      "matches_audit_and_original": true,
+      "changed_during_snapshot": false
+    },
+    "train.jsonl": {
+      "sha256": "53285cf3cb0d2d621fb324772957d57c1d50cf55adbe850529ba0d429bb45c0e",
+      "matches_audit_and_original": true,
+      "changed_during_snapshot": false
+    },
+    "validation.jsonl": {
+      "sha256": "fef1ce8e21ecf1387e511403a3d2aa1fb04b49d9bda6494ce371bf29fce0bad3",
+      "matches_audit_and_original": true,
+      "changed_during_snapshot": false
+    },
+    "summary.json": {
+      "sha256": "b786838f6704358ddcbad3ee0051012c6d21106a3fae679192e7130dbc483010",
+      "matches_audit_and_original": true,
+      "changed_during_snapshot": false
+    }
+  },
+  "metric_csv": {
+    "rows": 44348,
+    "continuous_steps": true,
+    "final_targets": 50450231,
+    "sha256": "7e90f37737a4b6ac20eb90be52b038734a6828d0f73c9adf89f5e3d1af051478"
+  },
+  "figure_hashes_match_manifest": true,
+  "completion_manifest_sha_matches": true,
+  "visual_inspection": {
+    "status": "passed",
+    "views": [
+      "training-metrics.png",
+      "optimization-and-batches.png",
+      "observed-memory.png",
+      "training-metrics.pdf rasterized via pdftoppm",
+      "optimization-and-batches.pdf rasterized via pdftoppm",
+      "observed-memory.pdf rasterized via pdftoppm"
+    ],
+    "findings": "All titles, labels, legends and footnotes readable without clipping; 100% target budget; course-dev markers separate from train; 500000-target weighted trailing window stated; memory/swap limits explicit."
+  },
+  "scope_limits": [
+    "Log/counter evidence only; sampler/checkpoint/sample-identity exposure audit remains pending.",
+    "Periodic validation subset185 differs from seed183 subset184; no same-subset pointwise comparison.",
+    "Memory observations are not continuous peaks; host swap is relative to first recorded observation and belongs to the host.",
+    "No checkpoint loaded or rehashed; latest SHA retained only from full-validation config."
+  ],
+  "audit_evidence": {
+    "json_sha256": "b8815bcf1e8420865a791342b537321d35271c2b24c75434f459799c18525a49",
+    "markdown_sha256": "00a4fdafb55708327c057bbe05d833241725c67c3acff6dace2186ce4d7eacf6"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "loss": 4.466165667285977,
+  "accuracy": 0.1161828954214515,
+  "target_tokens": 1362834,
+  "examples": 9756,
+  "seconds": 79.81866579223424,
+  "rss_bytes": 5471846400,
+  "system_available_bytes": 24304386048,
+  "system_swap_used_bytes": 32767672320,
+  "mps_allocated_bytes": 852768000,
+  "mps_driver_bytes": 6414204928
+}

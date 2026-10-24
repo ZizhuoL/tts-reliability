@@ -1,0 +1,6 @@
+-r upstream/eecs183-hw4/requirements-tts.txt
+torch==2.8.0
+torchaudio==2.8.0
+pytest>=8,<9
+psutil>=6,<8
+pyarrow==26.0.0

@@ -1,0 +1,111 @@
+{
+  "purpose": "Independent repeated generation after adding training-only padding; completed development pairs only",
+  "source_runs": [
+    "results/starter-dev",
+    "results/prompt-diagnosis/original"
+  ],
+  "pairs": [
+    {
+      "id": "holmes-p01042-s02-n1",
+      "seed": 17,
+      "wav_sha256_equal": true,
+      "asr_transcript_equal": true
+    },
+    {
+      "id": "holmes-p01042-s02-n1",
+      "seed": 42,
+      "wav_sha256_equal": true,
+      "asr_transcript_equal": true
+    },
+    {
+      "id": "holmes-p01651-s01-n1",
+      "seed": 17,
+      "wav_sha256_equal": true,
+      "asr_transcript_equal": true
+    },
+    {
+      "id": "holmes-p01651-s01-n1",
+      "seed": 42,
+      "wav_sha256_equal": true,
+      "asr_transcript_equal": true
+    },
+    {
+      "id": "holmes-p01618-s00-n1",
+      "seed": 17,
+      "wav_sha256_equal": true,
+      "asr_transcript_equal": true
+    },
+    {
+      "id": "holmes-p01618-s00-n1",
+      "seed": 42,
+      "wav_sha256_equal": true,
+      "asr_transcript_equal": true
+    },
+    {
+      "id": "holmes-p00151-s01-n1",
+      "seed": 17,
+      "wav_sha256_equal": true,
+      "asr_transcript_equal": true
+    },
+    {
+      "id": "holmes-p00151-s01-n1",
+      "seed": 42,
+      "wav_sha256_equal": true,
+      "asr_transcript_equal": true
+    },
+    {
+      "id": "holmes-p00753-s03-n1",
+      "seed": 17,
+      "wav_sha256_equal": true,
+      "asr_transcript_equal": true
+    },
+    {
+      "id": "holmes-p00753-s03-n1",
+      "seed": 42,
+      "wav_sha256_equal": true,
+      "asr_transcript_equal": true
+    },
+    {
+      "id": "holmes-p00874-s03-n1",
+      "seed": 17,
+      "wav_sha256_equal": true,
+      "asr_transcript_equal": true
+    },
+    {
+      "id": "holmes-p00874-s03-n1",
+      "seed": 42,
+      "wav_sha256_equal": true,
+      "asr_transcript_equal": true
+    },
+    {
+      "id": "holmes-p01748-s00-n3",
+      "seed": 17,
+      "wav_sha256_equal": true,
+      "asr_transcript_equal": true
+    },
+    {
+      "id": "holmes-p01748-s00-n3",
+      "seed": 42,
+      "wav_sha256_equal": true,
+      "asr_transcript_equal": true
+    },
+    {
+      "id": "holmes-p00974-s01-n2",
+      "seed": 17,
+      "wav_sha256_equal": true,
+      "asr_transcript_equal": true
+    },
+    {
+      "id": "holmes-p00974-s01-n2",
+      "seed": 42,
+      "wav_sha256_equal": true,
+      "asr_transcript_equal": true
+    },
+    {
+      "id": "holmes-p02145-s01-n1",
+      "seed": 17,
+      "wav_sha256_equal": true,
+      "asr_transcript_equal": true
+    }
+  ]
+}

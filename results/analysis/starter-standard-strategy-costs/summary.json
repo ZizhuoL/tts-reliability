@@ -1,0 +1,325 @@
+{
+  "normalizer": "transformers-whisper-EnglishTextNormalizer-unicode-quotes-empty-spelling-map-v2",
+  "baseline": "A",
+  "systems": {
+    "A": {
+      "status": "complete_observed_attempts",
+      "expected_items": 90,
+      "observed_items": 90,
+      "expected_count_matches": true,
+      "scores": {
+        "items": 90,
+        "scored_items": 90,
+        "unscored_items": 0,
+        "missing_score_reasons": {},
+        "errors": 601,
+        "reference_words": 2320,
+        "substitutions": 359,
+        "deletions": 152,
+        "insertions": 90,
+        "wer": 0.25905172413793104,
+        "substitution_rate": 0.15474137931034482,
+        "deletion_rate": 0.06551724137931035,
+        "insertion_rate": 0.03879310344827586
+      },
+      "costs": {
+        "items": 90,
+        "synthesis_complete_items": 90,
+        "split_states": {
+          "not_split": 90
+        },
+        "stops": {
+          "eos": 90
+        },
+        "recorded_segment_stops": {
+          "eos": 90
+        },
+        "measurements": {
+          "completed_waveform_segments": {
+            "sum_known": 90,
+            "known_items": 90,
+            "unknown_items": 0,
+            "complete_coverage": true
+          },
+          "actual_generated_tokens": {
+            "sum_known": 21390,
+            "known_items": 90,
+            "unknown_items": 0,
+            "complete_coverage": true
+          },
+          "completed_generated_tokens": {
+            "sum_known": 21390,
+            "known_items": 90,
+            "unknown_items": 0,
+            "complete_coverage": true
+          },
+          "completed_requested_budget_sum": {
+            "sum_known": 48370,
+            "known_items": 90,
+            "unknown_items": 0,
+            "complete_coverage": true
+          },
+          "completed_effective_budget_sum": {
+            "sum_known": 48370,
+            "known_items": 90,
+            "unknown_items": 0,
+            "complete_coverage": true
+          },
+          "inserted_boundaries": {
+            "sum_known": 0,
+            "known_items": 90,
+            "unknown_items": 0,
+            "complete_coverage": true
+          },
+          "inserted_pause_seconds": {
+            "sum_known": 0.0,
+            "known_items": 90,
+            "unknown_items": 0,
+            "complete_coverage": true
+          },
+          "generation_seconds": {
+            "sum_known": 417.14780858019367,
+            "known_items": 90,
+            "unknown_items": 0,
+            "complete_coverage": true
+          },
+          "audio_seconds": {
+            "sum_known": 855.6,
+            "known_items": 90,
+            "unknown_items": 0,
+            "complete_coverage": true
+          },
+          "audio_seconds_excluding_configured_pauses": {
+            "sum_known": 855.6,
+            "known_items": 90,
+            "unknown_items": 0,
+            "complete_coverage": true
+          }
+        },
+        "rtf": {
+          "available_items": 90,
+          "unknown_items": 0,
+          "value": 0.4875500334036859
+        },
+        "rtf_excluding_configured_pauses": {
+          "available_items": 90,
+          "unknown_items": 0,
+          "value": 0.4875500334036859
+        }
+      },
+      "by_seed": {
+        "17": {
+          "scores": {
+            "items": 45,
+            "scored_items": 45,
+            "unscored_items": 0,
+            "missing_score_reasons": {},
+            "errors": 301,
+            "reference_words": 1160,
+            "substitutions": 179,
+            "deletions": 80,
+            "insertions": 42,
+            "wer": 0.25948275862068965,
+            "substitution_rate": 0.1543103448275862,
+            "deletion_rate": 0.06896551724137931,
+            "insertion_rate": 0.03620689655172414
+          },
+          "costs": {
+            "items": 45,
+            "synthesis_complete_items": 45,
+            "split_states": {
+              "not_split": 45
+            },
+            "stops": {
+              "eos": 45
+            },
+            "recorded_segment_stops": {
+              "eos": 45
+            },
+            "measurements": {
+              "completed_waveform_segments": {
+                "sum_known": 45,
+                "known_items": 45,
+                "unknown_items": 0,
+                "complete_coverage": true
+              },
+              "actual_generated_tokens": {
+                "sum_known": 10784,
+                "known_items": 45,
+                "unknown_items": 0,
+                "complete_coverage": true
+              },
+              "completed_generated_tokens": {
+                "sum_known": 10784,
+                "known_items": 45,
+                "unknown_items": 0,
+                "complete_coverage": true
+              },
+              "completed_requested_budget_sum": {
+                "sum_known": 24185,
+                "known_items": 45,
+                "unknown_items": 0,
+                "complete_coverage": true
+              },
+              "completed_effective_budget_sum": {
+                "sum_known": 24185,
+                "known_items": 45,
+                "unknown_items": 0,
+                "complete_coverage": true
+              },
+              "inserted_boundaries": {
+                "sum_known": 0,
+                "known_items": 45,
+                "unknown_items": 0,
+                "complete_coverage": true
+              },
+              "inserted_pause_seconds": {
+                "sum_known": 0.0,
+                "known_items": 45,
+                "unknown_items": 0,
+                "complete_coverage": true
+              },
+              "generation_seconds": {
+                "sum_known": 210.07501158118248,
+                "known_items": 45,
+                "unknown_items": 0,
+                "complete_coverage": true
+              },
+              "audio_seconds": {
+                "sum_known": 431.36,
+                "known_items": 45,
+                "unknown_items": 0,
+                "complete_coverage": true
+              },
+              "audio_seconds_excluding_configured_pauses": {
+                "sum_known": 431.36,
+                "known_items": 45,
+                "unknown_items": 0,
+                "complete_coverage": true
+              }
+            },
+            "rtf": {
+              "available_items": 45,
+              "unknown_items": 0,
+              "value": 0.48700623975607954
+            },
+            "rtf_excluding_configured_pauses": {
+              "available_items": 45,
+              "unknown_items": 0,
+              "value": 0.48700623975607954
+            }
+          }
+        },
+        "42": {
+          "scores": {
+            "items": 45,
+            "scored_items": 45,
+            "unscored_items": 0,
+            "missing_score_reasons": {},
+            "errors": 300,
+            "reference_words": 1160,
+            "substitutions": 180,
+            "deletions": 72,
+            "insertions": 48,
+            "wer": 0.25862068965517243,
+            "substitution_rate": 0.15517241379310345,
+            "deletion_rate": 0.06206896551724138,
+            "insertion_rate": 0.041379310344827586
+          },
+          "costs": {
+            "items": 45,
+            "synthesis_complete_items": 45,
+            "split_states": {
+              "not_split": 45
+            },
+            "stops": {
+              "eos": 45
+            },
+            "recorded_segment_stops": {
+              "eos": 45
+            },
+            "measurements": {
+              "completed_waveform_segments": {
+                "sum_known": 45,
+                "known_items": 45,
+                "unknown_items": 0,
+                "complete_coverage": true
+              },
+              "actual_generated_tokens": {
+                "sum_known": 10606,
+                "known_items": 45,
+                "unknown_items": 0,
+                "complete_coverage": true
+              },
+              "completed_generated_tokens": {
+                "sum_known": 10606,
+                "known_items": 45,
+                "unknown_items": 0,
+                "complete_coverage": true
+              },
+              "completed_requested_budget_sum": {
+                "sum_known": 24185,
+                "known_items": 45,
+                "unknown_items": 0,
+                "complete_coverage": true
+              },
+              "completed_effective_budget_sum": {
+                "sum_known": 24185,
+                "known_items": 45,
+                "unknown_items": 0,
+                "complete_coverage": true
+              },
+              "inserted_boundaries": {
+                "sum_known": 0,
+                "known_items": 45,
+                "unknown_items": 0,
+                "complete_coverage": true
+              },
+              "inserted_pause_seconds": {
+                "sum_known": 0.0,
+                "known_items": 45,
+                "unknown_items": 0,
+                "complete_coverage": true
+              },
+              "generation_seconds": {
+                "sum_known": 207.0727969990112,
+                "known_items": 45,
+                "unknown_items": 0,
+                "complete_coverage": true
+              },
+              "audio_seconds": {
+                "sum_known": 424.24,
+                "known_items": 45,
+                "unknown_items": 0,
+                "complete_coverage": true
+              },
+              "audio_seconds_excluding_configured_pauses": {
+                "sum_known": 424.24,
+                "known_items": 45,
+                "unknown_items": 0,
+                "complete_coverage": true
+              }
+            },
+            "rtf": {
+              "available_items": 45,
+              "unknown_items": 0,
+              "value": 0.48810295351454647
+            },
+            "rtf_excluding_configured_pauses": {
+              "available_items": 45,
+              "unknown_items": 0,
+              "value": 0.48810295351454647
+            }
+          }
+        }
+      }
+    }
+  },
+  "paired": {},
+  "caveats": [
+    "Budgets are configured limits, not measured compute or generated-token counts.",
+    "Inserted silence is derived only from completed recorded segments and a saved pause setting plus known sample rate (or an explicit measured field); it is not total acoustic silence or perceived boundary quality.",
+    "RTF uses available matched generation/audio durations; coverage is shown. Excluding configured pauses prevents added silence from artificially improving the denominator.",
+    "Missing input, missing ASR, incomplete synthesis, and unknown costs remain explicit. This observed-record analysis does not establish quality or causal superiority."
+  ]
+}

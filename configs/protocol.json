@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "status": "development_only_final_set_unopened",
+  "upstream_commit": "48e1c407dec5a39df1a50a9069934879f175c373",
+  "train_examples": 354780,
+  "course_validation_examples": 9756,
+  "full_train_speech_target_tokens_including_eos": 50450231,
+  "development_texts": 45,
+  "final_texts": 60,
+  "evaluation_seeds": [
+    17,
+    42
+  ],
+  "length_groups_text_tokens": {
+    "short": [
+      6,
+      17
+    ],
+    "medium": [
+      18,
+      43
+    ],
+    "long": [
+      44,
+      72
+    ]
+  },
+  "generation": {
+    "temperature": 1.0,
+    "top_k": 50,
+    "minimum_new_speech_tokens": "2 * target_text_tokens",
+    "maximum_new_speech_tokens": "max(500, ceil(11 * target_text_tokens))",
+    "context_capacity": 2048,
+    "stop_reasons_separate": [
+      "eos",
+      "output_limit",
+      "context_limit",
+      "exception"
+    ],
+    "kv_cache": "required to pass CPU and actual-starter MPS parity checks",
+    "prompt_format": "configs/reference_prompt.json: same fixed audio and words, sentence case and punctuation; no-LM-prefix retained as a diagnostic/control option",
+    "sentence_split_pause_seconds": 0.15
+  },
+  "training": {
+    "ordinary_continuation_priority": "full valid epoch if measured budget allows",
+    "optimizer": "AdamW",
+    "learning_rate": 0.0002,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "schedule": "10 percent warmup then cosine, indexed by supervised speech-target tokens",
+    "batch_size": 8,
+    "padding": "length buckets and 64-position padding grid; padded targets ignored",
+    "method_branch": "Length-weighted C deferred: complete standardized development baseline does not establish stable length-specific overall deterioration. Reconsider only with further development evidence.",
+    "comparison": "same initial weights and supervised target-token budget; report actual batch overshoot, updates, sample coverage, padding and time",
+    "checkpoint_primary_comparison": "matched-budget endpoints",
+    "checkpoint_secondary_comparison": "validation-selected weights, with consumed budgets explicitly reported",
+    "sequence_implementation": "packed: CPU token grids, single lookup per embedding table, equivalent supervised computation",
+    "empty_mps_cache_every_steps": 1,
+    "mps_recommended_memory_fraction": 0.75,
+    "runtime_recovery": {
+      "initial_mps_memory_fraction": 0.6,
+      "terminal_attempts_at_initial_fraction": 2,
+      "failed_update": 35592,
+      "resume_checkpoint_step": 34000,
+      "current_save_every_steps": 500,
+      "initial_save_every_steps": 2000,
+      "current_script": "scripts/resume_B_memory075.sh",
+      "isolated_probe": "results/B-recovery-memory075/benchmark.json",
+      "probe_limit": "Same padded worst-case shape passed, but different samples and shorter process history; not causal evidence that the ceiling change fixes the original OOM.",
+      "status": "full epoch and full 9756-example course-dev validation completed; recovery pipeline exit0",
+      "passed_batch_evidence": "checkpoints/B-ordinary-seed183/recovery/oom-35592-recovery2-passed.json",
+      "accounting": "Discarded updates, isolated probe, saving and recovery count as actual cost, not effective accepted training budget.",
+      "numerical_replay": "Data/order/budget preserved; real MPS replay is not bitwise identical."
+    },
+    "ordinary_run": "checkpoints/B-ordinary-seed183",
+    "ordinary_seed": 183,
+    "ordinary_completed_evidence": {
+      "steps": 44348,
+      "examples_and_unique_examples": 354780,
+      "target_tokens": 50450231,
+      "checkpoint_sha256": "6d1b26bdc679ed32e81884d98f61eb621d574107ea6e24b0c57ffa653735b660",
+      "exposure_audit": "results/analysis/B-final-exposure.json",
+      "full_course_dev_validation": "results/B-full-validation/validation.json",
+      "full_course_dev_cross_entropy": 4.466165667285977,
+      "generation_quality_conclusion": "six-cell development complete; selected BNoLM by fixed development rule; independent final evaluation pending"
+    },
+    "training_seed_replication": {
+      "status": "complete: full seed184 epoch, matched full course-dev validation and three development strategies; producer exit0, endpoint exposure and checkpoint identity verified",
+      "secondary_seed": 184,
+      "script": "scripts/run_B_seed184_replication.sh",
+      "primary_seed_policy": "Keep seed183 primary; do not replace it with whichever seed scores better.",
+      "checkpoint_policy": "Full-epoch latest.pt for both seeds",
+      "periodic_validation_limit": "Subset seed is training seed+1: 184 versus 185. Periodic curves are not measured on identical subsets; full 9756-example validation is shared.",
+      "runtime_limit": "Seed183 experienced two OOM failures and runtime memory adjustment; seed184 starts at fraction0.75 with save_every500. Account for this history when comparing cost.",
+      "uncertainty": "Two seeds are a sensitivity check, not a robust estimate of population-level training variance.",
+      "completion": "results/B-seed184-execution/completion.json",
+      "exposure_audit": "results/analysis/B184-final-exposure.json",
+      "checkpoint_sha256": "1529b9ab7dcd7c0bfb33a938247635f6acdd4bd0ec58fef30ae4708efeb4df8b"
+    }
+  },
+  "evaluation": {
+    "primary_outcomes": [
+      "micro_WER_all_texts",
+      "micro_WER_long_group"
+    ],
+    "secondary_outcomes": [
+      "substitution_deletion_insertion_rates",
+      "short_and_medium_WER",
+      "output_and_context_limit_rates",
+      "exception_rate",
+      "generation_and_ASR_time",
+      "memory",
+      "training_token_and_sample_coverage"
+    ],
+    "uncertainty": "paired text-cluster bootstrap stratified by length, keeping all seeds for each sampled text",
+    "missingness": "report successful-only WER, common-success pairs, and whole-sentence-deletion sensitivity for failed outputs",
+    "normalization": "single version for all systems; raw transcripts always retained",
+    "human_listening": "not performed unless real user feedback is obtained",
+    "MOS_or_voice_similarity": "not measured",
+    "final_set_policy": "method, sampling, prompt protocol and checkpoint selection fixed before final generation; no tuning on final results",
+    "prepared_final_runner": "scripts/run_final_evaluation.py; all development and seed184 prerequisites complete; BNoLM selected from six primary development cells; actual final freeze and execution pending"
+  },
+  "development_comparisons": {
+    "systems": [
+      "A standard",
+      "A no-LM-prefix",
+      "A sentence-split",
+      "B standard",
+      "B no-LM-prefix",
+      "B sentence-split"
+    ],
+    "purpose": "Separate ordinary continuation effects from LM-prefix removal and sentence splitting; acoustic reference fixed.",
+    "script": "scripts/run_development_comparisons.sh",
+    "status": "six cells complete, all 90 scored; analysis/cost/failure/listening outputs verified. Outer script exit127 after final successful export reconciled in results/analysis/development-execution-reconciliation/incident.json",
+    "single_factor_contrasts": [
+      "A vs B standard",
+      "A standard vs A no-LM-prefix",
+      "A standard vs A split",
+      "B standard vs B no-LM-prefix",
+      "B standard vs B split",
+      "A no-LM-prefix vs B no-LM-prefix",
+      "A split vs B split"
+    ],
+    "baseline_summary": "results/starter-standard-dev/summary.json",
+    "decision_record": "docs/standard_baseline_review.md",
+    "selection_rule": "configs/development_selection_rule.json",
+    "selected_system": "BNoLM",
+    "selection_evidence": "results/analysis/development-selection.json"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "overall": {
+    "errors": 303,
+    "substitutions": 111,
+    "deletions": 65,
+    "insertions": 127,
+    "reference_words": 462,
+    "items": 18,
+    "scored_items": 18,
+    "exceptional_items": 0,
+    "wer": 0.6558441558441559,
+    "deletion_rate": 0.1406926406926407,
+    "insertion_rate": 0.2748917748917749,
+    "substitution_rate": 0.24025974025974026,
+    "stop_reasons": {
+      "eos": 18
+    },
+    "truncation_rate": 0.0,
+    "exception_rate": 0.0,
+    "generation_seconds": 98.10031129093841,
+    "audio_seconds": 202.2,
+    "asr_seconds": 71.66806041728705
+  },
+  "by_length": {
+    "short": {
+      "errors": 39,
+      "substitutions": 15,
+      "deletions": 0,
+      "insertions": 24,
+      "reference_words": 46,
+      "items": 6,
+      "scored_items": 6,
+      "exceptional_items": 0,
+      "wer": 0.8478260869565217,
+      "deletion_rate": 0.0,
+      "insertion_rate": 0.5217391304347826,
+      "substitution_rate": 0.32608695652173914,
+      "stop_reasons": {
+        "eos": 6
+      },
+      "truncation_rate": 0.0,
+      "exception_rate": 0.0,
+      "generation_seconds": 14.779773209244013,
+      "audio_seconds": 27.04,
+      "asr_seconds": 17.139824790880084
+    },
+    "medium": {
+      "errors": 71,
+      "substitutions": 29,
+      "deletions": 1,
+      "insertions": 41,
+      "reference_words": 122,
+      "items": 6,
+      "scored_items": 6,
+      "exceptional_items": 0,
+      "wer": 0.5819672131147541,
+      "deletion_rate": 0.00819672131147541,
+      "insertion_rate": 0.3360655737704918,
+      "substitution_rate": 0.23770491803278687,
+      "stop_reasons": {
+        "eos": 6
+      },
+      "truncation_rate": 0.0,
+      "exception_rate": 0.0,
+      "generation_seconds": 29.16839128965512,
+      "audio_seconds": 61.6,
+      "asr_seconds": 23.01563487574458
+    },
+    "long": {
+      "errors": 193,
+      "substitutions": 67,
+      "deletions": 64,
+      "insertions": 62,
+      "reference_words": 294,
+      "items": 6,
+      "scored_items": 6,
+      "exceptional_items": 0,
+      "wer": 0.6564625850340136,
+      "deletion_rate": 0.21768707482993196,
+      "insertion_rate": 0.2108843537414966,
+      "substitution_rate": 0.22789115646258504,
+      "stop_reasons": {
+        "eos": 6
+      },
+      "truncation_rate": 0.0,
+      "exception_rate": 0.0,
+      "generation_seconds": 54.152146792039275,
+      "audio_seconds": 113.56,
+      "asr_seconds": 31.512600750662386
+    }
+  },
+  "by_seed": {
+    "17": {
+      "errors": 143,
+      "substitutions": 59,
+      "deletions": 37,
+      "insertions": 47,
+      "reference_words": 231,
+      "items": 9,
+      "scored_items": 9,
+      "exceptional_items": 0,
+      "wer": 0.6190476190476191,
+      "deletion_rate": 0.16017316017316016,
+      "insertion_rate": 0.20346320346320346,
+      "substitution_rate": 0.2554112554112554,
+      "stop_reasons": {
+        "eos": 9
+      },
+      "truncation_rate": 0.0,
+      "exception_rate": 0.0,
+      "generation_seconds": 45.40600079065189,
+      "audio_seconds": 92.76,
+      "asr_seconds": 34.53400737605989
+    },
+    "42": {
+      "errors": 160,
+      "substitutions": 52,
+      "deletions": 28,
+      "insertions": 80,
+      "reference_words": 231,
+      "items": 9,
+      "scored_items": 9,
+      "exceptional_items": 0,
+      "wer": 0.6926406926406926,
+      "deletion_rate": 0.12121212121212122,
+      "insertion_rate": 0.3463203463203463,
+      "substitution_rate": 0.22510822510822512,
+      "stop_reasons": {
+        "eos": 9
+      },
+      "truncation_rate": 0.0,
+      "exception_rate": 0.0,
+      "generation_seconds": 52.69431050028652,
+      "audio_seconds": 109.44,
+      "asr_seconds": 37.13405304122716
+    }
+  },
+  "interpretation": "WER is ASR disagreement; edits are not human-verified omissions/repetitions. Human listening and MOS have not been performed."
+}

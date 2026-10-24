@@ -1,0 +1,13 @@
+# Use LF for maintained text without rewriting immutable experiment evidence.
+* text=auto
+*.py text eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.png binary
+*.pdf binary
+/results/** -text
+/configs/** -text
+requirements.lock.txt text eol=lf
+# Original CSV writers use CRLF; keep those hash-bound bytes.
+/results/**/*.csv whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

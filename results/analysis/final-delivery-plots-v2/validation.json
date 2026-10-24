@@ -1,0 +1,89 @@
+{
+  "status": "pass",
+  "reviewed_utc": "2026-10-20T16:57:41.790045+00:00",
+  "manifest_sha256": "2ea9c6e9caefed62a10aede22676d9cbef89129d92dcda391201fa1e1d4e41a6",
+  "pdf_renderer": "pdftoppm -png -singlefile -scale-to 1400",
+  "figures": [
+    {
+      "analysis": "overview",
+      "png_viewed": true,
+      "pdf_raster_viewed": true,
+      "labels_complete": true,
+      "legend_unobstructed": true,
+      "bars_not_clipped": true,
+      "summary_values_exact": true,
+      "source_and_output_sha_pass": true
+    },
+    {
+      "analysis": "seed-sensitivity-no-lm",
+      "png_viewed": true,
+      "pdf_raster_viewed": true,
+      "labels_complete": true,
+      "legend_unobstructed": true,
+      "bars_not_clipped": true,
+      "summary_values_exact": true,
+      "source_and_output_sha_pass": true
+    },
+    {
+      "analysis": "seed-sensitivity-split",
+      "png_viewed": true,
+      "pdf_raster_viewed": true,
+      "labels_complete": true,
+      "legend_unobstructed": true,
+      "bars_not_clipped": true,
+      "summary_values_exact": true,
+      "source_and_output_sha_pass": true
+    },
+    {
+      "analysis": "seed-sensitivity-standard",
+      "png_viewed": true,
+      "pdf_raster_viewed": true,
+      "labels_complete": true,
+      "legend_unobstructed": true,
+      "bars_not_clipped": true,
+      "summary_values_exact": true,
+      "source_and_output_sha_pass": true
+    },
+    {
+      "analysis": "training-no-lm",
+      "png_viewed": true,
+      "pdf_raster_viewed": true,
+      "labels_complete": true,
+      "legend_unobstructed": true,
+      "bars_not_clipped": true,
+      "summary_values_exact": true,
+      "source_and_output_sha_pass": true
+    },
+    {
+      "analysis": "training-split",
+      "png_viewed": true,
+      "pdf_raster_viewed": true,
+      "labels_complete": true,
+      "legend_unobstructed": true,
+      "bars_not_clipped": true,
+      "summary_values_exact": true,
+      "source_and_output_sha_pass": true
+    },
+    {
+      "analysis": "within-B183",
+      "png_viewed": true,
+      "pdf_raster_viewed": true,
+      "labels_complete": true,
+      "legend_unobstructed": true,
+      "bars_not_clipped": true,
+      "summary_values_exact": true,
+      "source_and_output_sha_pass": true
+    },
+    {
+      "analysis": "within-B184",
+      "png_viewed": true,
+      "pdf_raster_viewed": true,
+      "labels_complete": true,
+      "legend_unobstructed": true,
+      "bars_not_clipped": true,
+      "summary_values_exact": true,
+      "source_and_output_sha_pass": true
+    }
+  ],
+  "scope": "16 final exported files actually viewed; no frozen analysis source, summary, figure or stage marker modified."
+}

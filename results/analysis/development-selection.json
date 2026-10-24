@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-10-20T09:48:12.352255+00:00",
+  "status": "development_selection_complete_final_protocol_NOT_frozen",
+  "selection_check": {
+    "eligible_systems_in_order": [
+      "BNoLM"
+    ],
+    "selected_system": "BNoLM",
+    "missing_scores_require_human_review": false,
+    "unequal_scoring_counts": [],
+    "review_limitation": "Mechanical point checks cannot prove the supplied missingness review. Inspect common-success pairs and missing-as-deletions before freezing."
+  },
+  "decision": {
+    "selected_system": "BNoLM",
+    "rationale": "The complete six-cell development comparison has only BNoLM meeting every prespecified constraint: overall 10.1724%, short 7.4803%, long 10.6686% WER, no output/context caps or exceptions. Every other candidate has more output-limit stops than A; ASplit also worsens short WER. Selection uses seed183 only; seed184 is a subsequent sensitivity check and will not select a different primary training seed or method.",
+    "missingness_review": "All six systems have the same 45 texts x generation seeds 17 and 42, 90 scored terminal attempts each. Paired common-success and shared-attempted counts are 90, with no unmatched pairs or missing scores; full-deletion sensitivity equals scored results. Caps remain included. ASR and text-source uncertainty, selection optimism, and unmeasured human quality remain limitations.",
+    "failure_robust_eligible_systems": null
+  },
+  "candidate_sha256": "641def0136f01eb1df82a696992ab5fd7c15a87fd466ae3dd1ce8a858c6772ed",
+  "development_summary_sha256": "0e70c5ee94575ae4c581ec7891b98a609bb21a9dfe426e8f23a02becb4bc6cae",
+  "selection_rule_sha256": "386e7aed6a1de083a9a12cf90e1e0174a1eb5b343f502be0208c43bc765a01f2",
+  "final_set_read": false,
+  "training_seed184_executed": false
+}

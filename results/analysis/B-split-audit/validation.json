@@ -1,0 +1,11 @@
+{
+  "all_180_waveforms_hash_and_duration_match": true,
+  "all_54_unsplit_pairs_identical": true,
+  "raw_sha_stable_since_completed_observation": true,
+  "stability_elapsed_seconds": 103.91631531715393,
+  "evaluation_source_sha256": "09fe802dca127d4de87753108750d23141ada057e0bdf36a308bf4e0db0b2fae",
+  "evaluation_source_matches_both_manifests": true,
+  "no_final_evaluation_read": true,
+  "no_gpu": true,
+  "pipeline_exit_status": "Parent reported outer pipeline exit 127 after analyses/listening; this audit does not assert pipeline exit 0."
+}

@@ -1,0 +1,142 @@
+{
+  "overall": {
+    "errors": 280,
+    "substitutions": 174,
+    "deletions": 48,
+    "insertions": 58,
+    "reference_words": 2320,
+    "items": 90,
+    "scored_items": 90,
+    "exceptional_items": 0,
+    "wer": 0.1206896551724138,
+    "deletion_rate": 0.020689655172413793,
+    "insertion_rate": 0.025,
+    "substitution_rate": 0.075,
+    "stop_reasons": {
+      "eos": 88,
+      "output_limit": 2
+    },
+    "truncation_rate": 0.022222222222222223,
+    "exception_rate": 0.0,
+    "generation_seconds": 460.6941011669114,
+    "audio_seconds": 926.34,
+    "asr_seconds": 321.41658779093996
+  },
+  "by_length": {
+    "short": {
+      "errors": 36,
+      "substitutions": 28,
+      "deletions": 4,
+      "insertions": 4,
+      "reference_words": 254,
+      "items": 30,
+      "scored_items": 30,
+      "exceptional_items": 0,
+      "wer": 0.14173228346456693,
+      "deletion_rate": 0.015748031496062992,
+      "insertion_rate": 0.015748031496062992,
+      "substitution_rate": 0.11023622047244094,
+      "stop_reasons": {
+        "eos": 30
+      },
+      "truncation_rate": 0.0,
+      "exception_rate": 0.0,
+      "generation_seconds": 65.89923337381333,
+      "audio_seconds": 107.6,
+      "asr_seconds": 75.25147166568786
+    },
+    "medium": {
+      "errors": 109,
+      "substitutions": 75,
+      "deletions": 17,
+      "insertions": 17,
+      "reference_words": 660,
+      "items": 30,
+      "scored_items": 30,
+      "exceptional_items": 0,
+      "wer": 0.16515151515151516,
+      "deletion_rate": 0.025757575757575757,
+      "insertion_rate": 0.025757575757575757,
+      "substitution_rate": 0.11363636363636363,
+      "stop_reasons": {
+        "eos": 30
+      },
+      "truncation_rate": 0.0,
+      "exception_rate": 0.0,
+      "generation_seconds": 133.42633829452097,
+      "audio_seconds": 276.28,
+      "asr_seconds": 102.57337183179334
+    },
+    "long": {
+      "errors": 135,
+      "substitutions": 71,
+      "deletions": 27,
+      "insertions": 37,
+      "reference_words": 1406,
+      "items": 30,
+      "scored_items": 30,
+      "exceptional_items": 0,
+      "wer": 0.09601706970128022,
+      "deletion_rate": 0.019203413940256046,
+      "insertion_rate": 0.02631578947368421,
+      "substitution_rate": 0.050497866287339974,
+      "stop_reasons": {
+        "eos": 28,
+        "output_limit": 2
+      },
+      "truncation_rate": 0.06666666666666667,
+      "exception_rate": 0.0,
+      "generation_seconds": 261.3685294985771,
+      "audio_seconds": 542.46,
+      "asr_seconds": 143.59174429345876
+    }
+  },
+  "by_seed": {
+    "17": {
+      "errors": 151,
+      "substitutions": 95,
+      "deletions": 27,
+      "insertions": 29,
+      "reference_words": 1160,
+      "items": 45,
+      "scored_items": 45,
+      "exceptional_items": 0,
+      "wer": 0.13017241379310346,
+      "deletion_rate": 0.02327586206896552,
+      "insertion_rate": 0.025,
+      "substitution_rate": 0.08189655172413793,
+      "stop_reasons": {
+        "eos": 43,
+        "output_limit": 2
+      },
+      "truncation_rate": 0.044444444444444446,
+      "exception_rate": 0.0,
+      "generation_seconds": 233.28790037846193,
+      "audio_seconds": 469.69,
+      "asr_seconds": 159.89405104052275
+    },
+    "42": {
+      "errors": 129,
+      "substitutions": 79,
+      "deletions": 21,
+      "insertions": 29,
+      "reference_words": 1160,
+      "items": 45,
+      "scored_items": 45,
+      "exceptional_items": 0,
+      "wer": 0.11120689655172414,
+      "deletion_rate": 0.01810344827586207,
+      "insertion_rate": 0.025,
+      "substitution_rate": 0.06810344827586207,
+      "stop_reasons": {
+        "eos": 45
+      },
+      "truncation_rate": 0.0,
+      "exception_rate": 0.0,
+      "generation_seconds": 227.4062007884495,
+      "audio_seconds": 456.65,
+      "asr_seconds": 161.5225367504172
+    }
+  },
+  "interpretation": "WER is ASR disagreement; edits are not human-verified omissions/repetitions. Human listening and MOS have not been performed."
+}

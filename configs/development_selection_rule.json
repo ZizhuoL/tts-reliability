@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "written_utc": "2026-10-20T05:00:14.457780+00:00",
+  "stage": "Before the five new A/B development synthesis runs; B training in progress; final text set unopened.",
+  "baseline": "A standard: original starter with standardized fixed-reference transcript",
+  "candidates": [
+    "A no-LM-prefix",
+    "A sentence-split",
+    "B standard",
+    "B no-LM-prefix",
+    "B sentence-split"
+  ],
+  "required_attempts_per_system": 90,
+  "preferred_candidate_point_estimate_requirements": [
+    "All 45 development texts and both seeds must have attempted records; never select from a conveniently incomplete run.",
+    "Overall micro WER is strictly lower than A standard.",
+    "Short-group micro WER is no higher than A standard.",
+    "Long-group micro WER is no higher than A standard.",
+    "Output/context-limit rate and exception rate are each no higher than A standard.",
+    "If scoring availability differs, report common-success paired and missing-as-deletions sensitivity; do not declare preference when the conclusion depends on excluding failures."
+  ],
+  "eligible_tie_breaks": [
+    "Lowest overall development micro WER",
+    "Lowest total generation seconds on the same attempted jobs",
+    "Standard generation, then prefix removal, then sentence splitting"
+  ],
+  "fallback": "If no candidate meets all constraints, retain A standard as the provisional default and report the observed tradeoffs or negative results.",
+  "uncertainty": "These are conservative development point-estimate selection constraints, not a statistical non-inferiority test or a guarantee of unchanged short-text quality. Report text-cluster paired confidence intervals and seed-specific outcomes.",
+  "training_checkpoint": "Budget endpoint is the primary B checkpoint. Any best-validation checkpoint is a separately labeled secondary experiment with actual consumed tokens, never substituted silently.",
+  "final_policy": "Freeze chosen primary comparison, all checkpoints and generation settings before opening final. Evaluate the six prespecified A/B strategy cells if measured remaining budget permits; selected-versus-A is primary, other contrasts exploratory. Do not retune or reselect on final outcomes.",
+  "reference_voice_limit": "Identical acoustic reference does not establish equal perceived voice similarity or naturalness. These remain unmeasured without real listening or a separately justified measurement.",
+  "split_budget_limit": "Report actual segments, summed per-segment generation limits, tokens, added pauses and runtime. Per-segment adaptive budgets do not imply an equal total generation budget to unsplit synthesis."
+}

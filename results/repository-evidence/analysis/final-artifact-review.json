@@ -1,0 +1,4498 @@
+{
+  "format_version": 1,
+  "reviewed_utc": "2026-10-20T16:54:35.648735+00:00",
+  "scope": "Read-only review of original final artifacts, separate delivery-only rerender, and requested documentation updates. No model loading, synthesis, ASR rerun or human listening.",
+  "status": "pass_with_original_layout_issues_corrected_in_separate_delivery_directory",
+  "protocol_sha256": "1784f64b2ed3ddf1094b5b0795faffa86c99812dfdbfba8924db01be0b59aa38",
+  "stage_marker_checks": [
+    {
+      "name": "analysis-overview.json",
+      "sha256": "82fe77172cc2924360b475c7b4f0db221f07f10c609b474d754e74ff45b4e4e2",
+      "matches_completion": true
+    },
+    {
+      "name": "analysis-seed-sensitivity-no-lm.json",
+      "sha256": "1f21760730123135470bd892459c2ce2441ea903ff6bcaaded60ad7fa4874db1",
+      "matches_completion": true
+    },
+    {
+      "name": "analysis-seed-sensitivity-split.json",
+      "sha256": "eed0e2c20e8ae7913152b84ef1125ace3b88e1ea9b77ec019c77f75f41248e0b",
+      "matches_completion": true
+    },
+    {
+      "name": "analysis-seed-sensitivity-standard.json",
+      "sha256": "b0604d5b7e167782be812349978128788294723a2559937648360ec88d5c1046",
+      "matches_completion": true
+    },
+    {
+      "name": "analysis-training-no-lm.json",
+      "sha256": "7aa641414c60fc370ca70a0a46179388e2e7f6e71873c129156fae5ccea3812e",
+      "matches_completion": true
+    },
+    {
+      "name": "analysis-training-split.json",
+      "sha256": "da867aada6b97ccfa87cbc8ed72eed7e53e6f78bd9daad4a40e43c1de0dbce9b",
+      "matches_completion": true
+    },
+    {
+      "name": "analysis-within-B183.json",
+      "sha256": "3f5db02f795edc56c167a58130409b0360891dc864562e44a080cd4b85d9c7a0",
+      "matches_completion": true
+    },
+    {
+      "name": "analysis-within-B184.json",
+      "sha256": "13cfe3a46c86e32f636fff899f3b9193d8bb1033958f8a8b0fc881f3d959667d",
+      "matches_completion": true
+    },
+    {
+      "name": "costs-all.json",
+      "sha256": "b7e34aa5de21162b4e065e787950cc67a121a5188d09b7c56f5a1121256203e9",
+      "matches_completion": true
+    },
+    {
+      "name": "costs-within-B183.json",
+      "sha256": "f40928320a92a32f7370a98c6422962f52835907fea0ff072ece350fddb11a7e",
+      "matches_completion": true
+    },
+    {
+      "name": "eval-A.json",
+      "sha256": "49626d87f7594cec591a4c46123f402b233727759ca989659d151e6874dcce13",
+      "matches_completion": true
+    },
+    {
+      "name": "eval-ANoLM.json",
+      "sha256": "c24519c79b385d70a1403292a332885b7793af0d21401c4a44eb3ba964d004e3",
+      "matches_completion": true
+    },
+    {
+      "name": "eval-ASplit.json",
+      "sha256": "8384b2a34d4ae7e16a87aea72313a438079a5e52b835c584c1606ebdc05c3875",
+      "matches_completion": true
+    },
+    {
+      "name": "eval-B.json",
+      "sha256": "f995e8c2fd62b3880d224e67b445ebd40712cb13438b61e8e613573fc0096396",
+      "matches_completion": true
+    },
+    {
+      "name": "eval-B184.json",
+      "sha256": "35bd59a8706d5f0bca74842676e7f8abbcb03e33a5572d81ca6a50ab717e9abc",
+      "matches_completion": true
+    },
+    {
+      "name": "eval-B184NoLM.json",
+      "sha256": "2320e0859cbc2600c68c60fa160e4474a9a4cd66268df8060cd71ecf368dff04",
+      "matches_completion": true
+    },
+    {
+      "name": "eval-B184Split.json",
+      "sha256": "dee7a86534697c5a5ff400379ed93fec0c2e5e0ea207986c15495e2fabb03ec1",
+      "matches_completion": true
+    },
+    {
+      "name": "eval-BNoLM.json",
+      "sha256": "316580c720b32cedbc3e4c6a8614e751e4887df3aca94c4577b90b8d9e3b474c",
+      "matches_completion": true
+    },
+    {
+      "name": "eval-BSplit.json",
+      "sha256": "a96b12eb74342e6a8385cae1cc40d41cd5da85faec5c3f4f9bed0a55a5e4d3f9",
+      "matches_completion": true
+    },
+    {
+      "name": "failures-A.json",
+      "sha256": "a861c15a0a0e05ceb58f05fdee79971e805fb7e92606f644043bf536b2efe753",
+      "matches_completion": true
+    },
+    {
+      "name": "failures-ANoLM.json",
+      "sha256": "53174a194d60ae3e1c3cf68b80f99d29a281e453534282d12a076bd364345d32",
+      "matches_completion": true
+    },
+    {
+      "name": "failures-ASplit.json",
+      "sha256": "b4f6217a90442a896bebc4b8bf56d2299e8725c239de77fcbfbf56c69c55577c",
+      "matches_completion": true
+    },
+    {
+      "name": "failures-B.json",
+      "sha256": "c83e4d1035cce08bc87c9778d53224c3c93565d5a6fd8e59bbc08c125b032d91",
+      "matches_completion": true
+    },
+    {
+      "name": "failures-B184.json",
+      "sha256": "aaf04a61261387457b7114f84cd14d2c631221c2a8de27cadecf8288a2a8f94b",
+      "matches_completion": true
+    },
+    {
+      "name": "failures-B184NoLM.json",
+      "sha256": "a6e8f5d80ac43a66da032353337140d66274f9b643de3c7524585db753e164e9",
+      "matches_completion": true
+    },
+    {
+      "name": "failures-B184Split.json",
+      "sha256": "d32a0425d9e6a0f1da32a41a2a4bb7383940d7d9f6f3bb6dddd68678ae8e4b54",
+      "matches_completion": true
+    },
+    {
+      "name": "failures-BNoLM.json",
+      "sha256": "f9be17b53b489b370c6613b3c8b5449791fca44581da2d663da806e52d4fef0e",
+      "matches_completion": true
+    },
+    {
+      "name": "failures-BSplit.json",
+      "sha256": "e82ce110cf9921b7ba8b1366aefc76d6bbf57d61626f1e9702eb4a51576a4cfe",
+      "matches_completion": true
+    },
+    {
+      "name": "listening.json",
+      "sha256": "85cad3cae5db2737f49e2c70b8ca55eb3f98fa90bda6d76b8bdc24e11e63134f",
+      "matches_completion": true
+    },
+    {
+      "name": "runtime-resources.json",
+      "sha256": "4a1f1738b462adddc4a8b0a2173119556d5e64a068579af5802168c16114abe7",
+      "matches_completion": true
+    }
+  ],
+  "stage_artifacts_rehashed": 1478,
+  "integrity_errors": [],
+  "figures": [
+    {
+      "analysis": "overview",
+      "png_sha256": "e804c35027ce817ddec3a610e00fcccb27262b457bf286f60ddb63231f9e2e05",
+      "pdf_sha256": "2628688602f8aba0d86bd233b2f080eddb5526045f6682c9ab899ab5ae82eae7",
+      "summary_sha256": "c2a2d952379d03918f55e1935f54dfd0788f81cea14715fcd3191bf43c04cd10",
+      "visual_inspection": {
+        "png_viewed": true,
+        "pdf_render_viewed": true,
+        "pdf_renderer": "pdftoppm -png -singlefile -scale-to 1800",
+        "bars_with_headroom": true,
+        "legend_complete_and_clear_of_bars": true,
+        "issues": []
+      },
+      "status": "pass"
+    },
+    {
+      "analysis": "seed-sensitivity-no-lm",
+      "png_sha256": "26523b759227a1f337795eae9c83b6ef7ef1557b481ba4867498ab71c9ff4c93",
+      "pdf_sha256": "8b1fbd4ae47f677153498314adcaa8e2c451ef7c04a2027a0c74198b2c173b8f",
+      "summary_sha256": "6c363e6d23b46065817b0fe3856a6bb49f90b69315450ed4c3f4363a0c878c97",
+      "visual_inspection": {
+        "png_viewed": true,
+        "pdf_render_viewed": true,
+        "pdf_renderer": "pdftoppm -png -singlefile -scale-to 1800",
+        "bars_with_headroom": true,
+        "legend_complete_and_clear_of_bars": true,
+        "issues": []
+      },
+      "status": "pass"
+    },
+    {
+      "analysis": "seed-sensitivity-split",
+      "png_sha256": "69794b11eee8b71c67134cbfc0c7835412a7ca36ae14edcae8b4415511340870",
+      "pdf_sha256": "f3f0ef134e156fa6969e0c958884d1a04701a3d7bc141c584ccdf6ae8c6b94e2",
+      "summary_sha256": "7bb71702919c325ca4d24c63ef44daba2aa9e944722390ff01a6cd99e4261e76",
+      "visual_inspection": {
+        "png_viewed": true,
+        "pdf_render_viewed": true,
+        "pdf_renderer": "pdftoppm -png -singlefile -scale-to 1800",
+        "bars_with_headroom": true,
+        "legend_complete_and_clear_of_bars": true,
+        "issues": [
+          {
+            "format": "pdf",
+            "issue": "Left y-axis title extends beyond left page boundary and is clipped in Poppler raster."
+          }
+        ]
+      },
+      "status": "layout_issue"
+    },
+    {
+      "analysis": "seed-sensitivity-standard",
+      "png_sha256": "aa50c01ce21b9725ba376d8cd58b7de9c5bf1ec76c1fcc57bf77196ccf577399",
+      "pdf_sha256": "c2a6289dcb2d2aad476334b36d5d688bc7728efafd85a0dd40de43d541e83b23",
+      "summary_sha256": "afc7aa4404a20f3aa9ed79a89881186190e97f2ce202702ffd96d44b69bbd6e8",
+      "visual_inspection": {
+        "png_viewed": true,
+        "pdf_render_viewed": true,
+        "pdf_renderer": "pdftoppm -png -singlefile -scale-to 1800",
+        "bars_with_headroom": true,
+        "legend_complete_and_clear_of_bars": true,
+        "issues": [
+          {
+            "format": "pdf",
+            "issue": "Left y-axis title extends beyond left page boundary and is clipped in Poppler raster."
+          }
+        ]
+      },
+      "status": "layout_issue"
+    },
+    {
+      "analysis": "training-no-lm",
+      "png_sha256": "d7126771c7f8bf576ed6a6101495167b93ee61a49a58a6fd5f924b9f9412a694",
+      "pdf_sha256": "67684f2875e4e709ca379b2cdce2299db00367ea6ea1de8140ccb9d44af03940",
+      "summary_sha256": "9ac14f4a80bbfecd37fbd364e9b45cb35560dc34cd8538792e75d97ca6afb202",
+      "visual_inspection": {
+        "png_viewed": true,
+        "pdf_render_viewed": true,
+        "pdf_renderer": "pdftoppm -png -singlefile -scale-to 1800",
+        "bars_with_headroom": true,
+        "legend_complete_and_clear_of_bars": true,
+        "issues": []
+      },
+      "status": "pass"
+    },
+    {
+      "analysis": "training-split",
+      "png_sha256": "49b7c269fbe8dacc9b77de0a25cceafd930b78f066c7f0aed80cd2f55bc2e099",
+      "pdf_sha256": "c7332319ddade9aae9d011f2dc6dc9833c53b038059c24051c6b7fd207c6928b",
+      "summary_sha256": "cc359cf76e708a6d1c1234b1e7092555039d1bccea4df19f18a476958290b376",
+      "visual_inspection": {
+        "png_viewed": true,
+        "pdf_render_viewed": true,
+        "pdf_renderer": "pdftoppm -png -singlefile -scale-to 1800",
+        "bars_with_headroom": true,
+        "legend_complete_and_clear_of_bars": true,
+        "issues": [
+          {
+            "format": "pdf",
+            "issue": "Left y-axis title extends beyond left page boundary and is clipped in Poppler raster."
+          }
+        ]
+      },
+      "status": "layout_issue"
+    },
+    {
+      "analysis": "within-B183",
+      "png_sha256": "2951f6a460846204004af0c2a0319f42b6acd787ba047db2a0c284b4b28d11a5",
+      "pdf_sha256": "0b5be934224bfb4d840ced5e9137e60d55484ff00d3b8adead696edd7a8ac260",
+      "summary_sha256": "fa4f58cce9f2c25da904dd325ee24a437bdf881e50f5607bbd258d4cf14ad6b9",
+      "visual_inspection": {
+        "png_viewed": true,
+        "pdf_render_viewed": true,
+        "pdf_renderer": "pdftoppm -png -singlefile -scale-to 1800",
+        "bars_with_headroom": true,
+        "legend_complete_and_clear_of_bars": true,
+        "issues": [
+          {
+            "format": "pdf",
+            "issue": "Left y-axis title extends beyond left page boundary and is clipped in Poppler raster."
+          },
+          {
+            "format": "png_and_pdf",
+            "issue": "Right y-axis title is mostly occluded/clipped; only parts of letter strokes remain visible in inter-panel gutter."
+          }
+        ]
+      },
+      "status": "layout_issue"
+    },
+    {
+      "analysis": "within-B184",
+      "png_sha256": "1fcb6c10b4879df0dadf1c6ad2f7631d66a0743a4432fcb61e8866980f013483",
+      "pdf_sha256": "1f58f7d356162c9e6b51ad138423927c91a15d47ca41450b80d57e3cb7a41387",
+      "summary_sha256": "7bd431082951c67aa937504d0c752a50fc5d1e77428ed78905221e7ea62b1cb5",
+      "visual_inspection": {
+        "png_viewed": true,
+        "pdf_render_viewed": true,
+        "pdf_renderer": "pdftoppm -png -singlefile -scale-to 1800",
+        "bars_with_headroom": true,
+        "legend_complete_and_clear_of_bars": true,
+        "issues": []
+      },
+      "status": "pass"
+    }
+  ],
+  "listening": {
+    "human_listening_performed": false,
+    "samples": 180,
+    "pairs": 102,
+    "categories": 156,
+    "selection_rank_checks": 156,
+    "markdown_links_checked": 744,
+    "broken_links": [],
+    "missing_audio_manifest": [],
+    "coverage": {
+      "A": {
+        "selected": 29,
+        "available": 120,
+        "selected_by_length": {
+          "short": 9,
+          "medium": 8,
+          "long": 12
+        },
+        "selected_by_seed": {
+          "42": 13,
+          "17": 16
+        },
+        "selected_actual_multi_segment": 0,
+        "available_actual_multi_segment": 0,
+        "selected_stop_reasons": {
+          "eos": 29
+        },
+        "available_stop_reasons": {
+          "eos": 119,
+          "output_limit": 1
+        }
+      },
+      "ANoLM": {
+        "selected": 14,
+        "available": 120,
+        "selected_by_length": {
+          "short": 6,
+          "medium": 4,
+          "long": 4
+        },
+        "selected_by_seed": {
+          "42": 4,
+          "17": 10
+        },
+        "selected_actual_multi_segment": 0,
+        "available_actual_multi_segment": 0,
+        "selected_stop_reasons": {
+          "eos": 14
+        },
+        "available_stop_reasons": {
+          "eos": 120
+        }
+      },
+      "ASplit": {
+        "selected": 15,
+        "available": 120,
+        "selected_by_length": {
+          "short": 3,
+          "medium": 6,
+          "long": 6
+        },
+        "selected_by_seed": {
+          "17": 10,
+          "42": 5
+        },
+        "selected_actual_multi_segment": 11,
+        "available_actual_multi_segment": 52,
+        "selected_stop_reasons": {
+          "eos": 15
+        },
+        "available_stop_reasons": {
+          "eos": 120
+        }
+      },
+      "B": {
+        "selected": 21,
+        "available": 120,
+        "selected_by_length": {
+          "short": 5,
+          "medium": 8,
+          "long": 8
+        },
+        "selected_by_seed": {
+          "17": 13,
+          "42": 8
+        },
+        "selected_actual_multi_segment": 0,
+        "available_actual_multi_segment": 0,
+        "selected_stop_reasons": {
+          "eos": 19,
+          "output_limit": 2
+        },
+        "available_stop_reasons": {
+          "eos": 115,
+          "output_limit": 5
+        }
+      },
+      "BNoLM": {
+        "selected": 24,
+        "available": 120,
+        "selected_by_length": {
+          "short": 8,
+          "medium": 8,
+          "long": 8
+        },
+        "selected_by_seed": {
+          "42": 11,
+          "17": 13
+        },
+        "selected_actual_multi_segment": 0,
+        "available_actual_multi_segment": 0,
+        "selected_stop_reasons": {
+          "eos": 23,
+          "output_limit": 1
+        },
+        "available_stop_reasons": {
+          "eos": 119,
+          "output_limit": 1
+        }
+      },
+      "BSplit": {
+        "selected": 22,
+        "available": 120,
+        "selected_by_length": {
+          "short": 8,
+          "medium": 6,
+          "long": 8
+        },
+        "selected_by_seed": {
+          "42": 8,
+          "17": 14
+        },
+        "selected_actual_multi_segment": 13,
+        "available_actual_multi_segment": 52,
+        "selected_stop_reasons": {
+          "eos": 21,
+          "output_limit": 1
+        },
+        "available_stop_reasons": {
+          "eos": 119,
+          "output_limit": 1
+        }
+      },
+      "B184": {
+        "selected": 19,
+        "available": 120,
+        "selected_by_length": {
+          "short": 6,
+          "medium": 7,
+          "long": 6
+        },
+        "selected_by_seed": {
+          "17": 9,
+          "42": 10
+        },
+        "selected_actual_multi_segment": 0,
+        "available_actual_multi_segment": 0,
+        "selected_stop_reasons": {
+          "eos": 19
+        },
+        "available_stop_reasons": {
+          "eos": 119,
+          "output_limit": 1
+        }
+      },
+      "B184NoLM": {
+        "selected": 17,
+        "available": 120,
+        "selected_by_length": {
+          "short": 8,
+          "medium": 4,
+          "long": 5
+        },
+        "selected_by_seed": {
+          "17": 10,
+          "42": 7
+        },
+        "selected_actual_multi_segment": 0,
+        "available_actual_multi_segment": 0,
+        "selected_stop_reasons": {
+          "eos": 15,
+          "output_limit": 2
+        },
+        "available_stop_reasons": {
+          "eos": 116,
+          "output_limit": 4
+        }
+      },
+      "B184Split": {
+        "selected": 19,
+        "available": 120,
+        "selected_by_length": {
+          "short": 5,
+          "medium": 7,
+          "long": 7
+        },
+        "selected_by_seed": {
+          "17": 11,
+          "42": 8
+        },
+        "selected_actual_multi_segment": 10,
+        "available_actual_multi_segment": 52,
+        "selected_stop_reasons": {
+          "eos": 19
+        },
+        "available_stop_reasons": {
+          "eos": 120
+        }
+      }
+    },
+    "copy_checks": [
+      {
+        "sample_id": "S11b3baa76460",
+        "system": "A",
+        "relative_path": "audio/A/S11b3baa76460.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/9ba81ea1853edf76f04ab5dc.wav",
+        "sha256": "e91272d19724cf3224f10a10c3c46472eb194c789f04bedcf6e60d496487c069",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_BNoLM/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S2adf532f01bd",
+        "system": "A",
+        "relative_path": "audio/A/S2adf532f01bd.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/452a566a32336bf1b54f728d.wav",
+        "sha256": "db60710b8417dfd0c9b0ac26bbae591dd6558ea3266b70b9d56fe818e792d05c",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_ASplit/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S2d79f1cabfcd",
+        "system": "A",
+        "relative_path": "audio/A/S2d79f1cabfcd.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/83b289e8de8a7589f3bd0c5d.wav",
+        "sha256": "a36f70935dcb096d43a68af544b7569e0cb45f9ab9074da2ea081be2bb2201bf",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_ANoLM/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S328091bfad08",
+        "system": "A",
+        "relative_path": "audio/A/S328091bfad08.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/943a315657d31135648ed090.wav",
+        "sha256": "2987f40b6d799935cdf5641765d4fb6ae6edc750b53eb9c85be86ef28125b0f9",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A/short/lower_WER"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S58db6f308603",
+        "system": "A",
+        "relative_path": "audio/A/S58db6f308603.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/93fa0ec58adb2ace12e7edce.wav",
+        "sha256": "8394c8c4597fe86597c236b46512ad9780080cd276051cae830eac09707ac8f0",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_B184/short/regression",
+          "A_vs_B184Split/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S842196059130",
+        "system": "A",
+        "relative_path": "audio/A/S842196059130.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/c903938bfe8520768ba4832a.wav",
+        "sha256": "40988f0ea89f7547b6ae0a9009ea7c5beb54e7733ea6e94035b3071a9ad4aeec",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_B/short/regression",
+          "A_vs_B184NoLM/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sb7be01e6c756",
+        "system": "A",
+        "relative_path": "audio/A/Sb7be01e6c756.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/781fa2d00cedfb35e31dfba1.wav",
+        "sha256": "b7156a43b02eda0d7a4982fd8ed5126ee9e6000bbebbf231b91e8ed396553fd3",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_BSplit/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sb7ef96872348",
+        "system": "A",
+        "relative_path": "audio/A/Sb7ef96872348.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/6417d66f4410c79100c8c920.wav",
+        "sha256": "7fdc425de89e24a2548812795d3c5182ef75aaff857d175cba9cc51ae1e74409",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_BSplit/short/improvement"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sec42c599ac7e",
+        "system": "A",
+        "relative_path": "audio/A/Sec42c599ac7e.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/7fc01a32fd9ec187718b22b9.wav",
+        "sha256": "502c175d3a58170b60d93191d2d27411ba022f36127ac2062c2420c3a2aa5c97",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A/short/higher_WER",
+          "A_vs_ANoLM/short/improvement",
+          "A_vs_ASplit/short/improvement",
+          "A_vs_B/short/improvement",
+          "A_vs_BNoLM/short/improvement",
+          "A_vs_B184/short/improvement",
+          "A_vs_B184NoLM/short/improvement",
+          "A_vs_B184Split/short/improvement"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S2b597279b8e9",
+        "system": "A",
+        "relative_path": "audio/A/S2b597279b8e9.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/12d2fcf42a3cccac99ae3304.wav",
+        "sha256": "47c9e4e05f48bf8822b816a0f1f2a5c3da88f9e8156c1961c11ada60f8e64812",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A/medium/lower_WER"
+        ],
+        "length_group": "medium",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S3fd0c4c99b8e",
+        "system": "A",
+        "relative_path": "audio/A/S3fd0c4c99b8e.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/f90d22887e23cc1c9caac863.wav",
+        "sha256": "01a37d36fe6aa5d2bbd4a6a15b410d45e5e641b4876b8b6940bc3d7b3928b475",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A/medium/higher_WER",
+          "A_vs_ANoLM/medium/improvement",
+          "A_vs_B184/medium/improvement",
+          "A_vs_B184NoLM/medium/improvement",
+          "A_vs_B184Split/medium/improvement"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S4422eddc2fb3",
+        "system": "A",
+        "relative_path": "audio/A/S4422eddc2fb3.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/a6ec8071f0bf3a22c8d74b73.wav",
+        "sha256": "1ace85ab3d2ae48815309e14e0a709a59a88e291208973fee0ea27d18448add0",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_B/medium/improvement",
+          "A_vs_BSplit/medium/improvement",
+          "A_vs_B184NoLM/medium/regression"
+        ],
+        "length_group": "medium",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S545150091223",
+        "system": "A",
+        "relative_path": "audio/A/S545150091223.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/cc6182fcc35377f483b92d2a.wav",
+        "sha256": "109675e7bac2187a1021c8ff10c3b6ba151d610c5f674dfcb635cf5c313af916",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_ANoLM/medium/regression",
+          "A_vs_ASplit/medium/regression",
+          "A_vs_BSplit/medium/regression"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sac44c82b61b9",
+        "system": "A",
+        "relative_path": "audio/A/Sac44c82b61b9.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/9a75a360c7d9a9eb178076df.wav",
+        "sha256": "ae03aaac90691c9f50e1a7ba44dfeb9100541efd7de4bd8d0c812593f3bda5dc",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_B/medium/regression",
+          "A_vs_BNoLM/medium/regression"
+        ],
+        "length_group": "medium",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "Scf1f1ac00e1e",
+        "system": "A",
+        "relative_path": "audio/A/Scf1f1ac00e1e.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/cf0ac5d873a38de694d7c152.wav",
+        "sha256": "60bc0ffaf110bf3d473f511068bfd2701b983ac29afc3734299ee3197b6c1d2f",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_BNoLM/medium/improvement"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sd497318e1a1e",
+        "system": "A",
+        "relative_path": "audio/A/Sd497318e1a1e.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/6253c648ac0d050077e7f0e4.wav",
+        "sha256": "9b2733663ffcb2a9021740b62000c5cb61101745c36aee2167aa0b3b0eeadba6",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_ASplit/medium/improvement"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sf1ed90248c3b",
+        "system": "A",
+        "relative_path": "audio/A/Sf1ed90248c3b.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/46dcb344af11e529e436888c.wav",
+        "sha256": "3acaf8eb83479a69e6a61ef1a4a893e0688735de747d50a19a0aa027cc0ce7ce",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_B184/medium/regression",
+          "A_vs_B184Split/medium/regression"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S3bf1c691f014",
+        "system": "A",
+        "relative_path": "audio/A/S3bf1c691f014.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/9161b3707ff84efef38266e1.wav",
+        "sha256": "ba626bffa274946be5a6f70229837c4529dc8f035b4f7d79c3b739784f3a3d7d",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_BNoLM/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S49b45a3dbfbe",
+        "system": "A",
+        "relative_path": "audio/A/S49b45a3dbfbe.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/569a779e36fe4437bb333b8b.wav",
+        "sha256": "ad7921694694247845e06e9891c9dc6ac780c96cf47d335f47b87a71e8395ec2",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A/long/higher_WER"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S5701d23261e6",
+        "system": "A",
+        "relative_path": "audio/A/S5701d23261e6.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/507153d544406581ebcff084.wav",
+        "sha256": "231c14906025a81b02d8265dc354dea564b659390397d99b641914937e81e34e",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_ASplit/long/improvement",
+          "A_vs_B184NoLM/long/improvement",
+          "A_vs_B184Split/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S80547859b219",
+        "system": "A",
+        "relative_path": "audio/A/S80547859b219.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/79d08be1bb004006005d50d3.wav",
+        "sha256": "b851b937de2c6ac5a775d414ad1e4d538e85f49f4006db5ac3bc8523d57b8bc6",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_ANoLM/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S85383d2c91f0",
+        "system": "A",
+        "relative_path": "audio/A/S85383d2c91f0.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/179a8a85e957413d51735b60.wav",
+        "sha256": "57aabf69a35fc4a9cf91b5d2c5251d2d126862cc93d6fc083392efc48a30a724",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_B/long/improvement",
+          "A_vs_BSplit/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sa47263380678",
+        "system": "A",
+        "relative_path": "audio/A/Sa47263380678.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/ddc0bee6bef097d603611fe8.wav",
+        "sha256": "213a1e471d0058db02c21ba17f73f77c2e6220431eefa353679016ced5132fb8",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_ASplit/long/regression",
+          "A_vs_BSplit/long/regression",
+          "A_vs_B184/long/regression",
+          "A_vs_B184Split/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sb91e70cd04ab",
+        "system": "A",
+        "relative_path": "audio/A/Sb91e70cd04ab.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/96af011496d78ace1e547a46.wav",
+        "sha256": "aad560de3805149291e331e9a6aeca2fab93411aaa5c8aa780b6f6f8d525d441",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_BNoLM/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sc1753702b74e",
+        "system": "A",
+        "relative_path": "audio/A/Sc1753702b74e.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/a925d763ce9b20d349528f25.wav",
+        "sha256": "602363225cdb234a4fd3e709efb2e5403050e49a3fa671497841ef02b1d30120",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_B184NoLM/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sd5f6341d6b35",
+        "system": "A",
+        "relative_path": "audio/A/Sd5f6341d6b35.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/1c884d30a182b4ecad8b4671.wav",
+        "sha256": "495486a2e2fde0ea62e7c50a223662cc336c1a3a5309ca29844cb2ba24499f0c",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_B/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sdff08c1ef8a9",
+        "system": "A",
+        "relative_path": "audio/A/Sdff08c1ef8a9.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/2f0edd4a3a95385df135bc8f.wav",
+        "sha256": "126b95df4cb0615ae9c7070c339f519835d49ab6c275933c1ff4e1b60625b95f",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A/long/lower_WER"
+        ],
+        "length_group": "long",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sf67482250a2a",
+        "system": "A",
+        "relative_path": "audio/A/Sf67482250a2a.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/dce250f2e822c10706cfc821.wav",
+        "sha256": "c05e557cf39c3149b63f6591d4a650889bc92c9b38a9b8a7fb9f34896c8edc2a",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_B184/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sf7f6dbf051a2",
+        "system": "A",
+        "relative_path": "audio/A/Sf7f6dbf051a2.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/A/wav/90d6b4b59818d993f1b46d63.wav",
+        "sha256": "92fb85b3c2d7ee45316b96e11a4d13ea8cd4b9ab979b6dd5e68d6c4eb3dcb9bd",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_ANoLM/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S00997d3f00e8",
+        "system": "ANoLM",
+        "relative_path": "audio/ANoLM/S00997d3f00e8.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ANoLM/wav/b11d0d954ca700d62de267a2.wav",
+        "sha256": "02a44574280688a95c71b02cf88dd56ab4c82511096d257e68ca95ab35a05b96",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ANoLM_vs_BNoLM/short/improvement"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S077d0e66ebe4",
+        "system": "ANoLM",
+        "relative_path": "audio/ANoLM/S077d0e66ebe4.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ANoLM/wav/b8c0875e87105b76dd1d018c.wav",
+        "sha256": "55fd40db1752bd831c8d999c613346e93463f51cfb88807cb25e66d6bd6bed26",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ANoLM/short/lower_WER"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S506d0f49375e",
+        "system": "ANoLM",
+        "relative_path": "audio/ANoLM/S506d0f49375e.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ANoLM/wav/49e5f881a27346d7031dc993.wav",
+        "sha256": "4514faf09557e52e2bc8d57daaf6cdea59267b93f91f43b23d46269002812216",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ANoLM/short/higher_WER"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S5b96716fb186",
+        "system": "ANoLM",
+        "relative_path": "audio/ANoLM/S5b96716fb186.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ANoLM/wav/63e9bec63f30e43a7b1746e3.wav",
+        "sha256": "4c66030db66861ea3b54e4c8c6c1e78f1288443a9302064f07d0deff9e239f2e",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ANoLM_vs_BNoLM/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S9e5779519462",
+        "system": "ANoLM",
+        "relative_path": "audio/ANoLM/S9e5779519462.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ANoLM/wav/83b289e8de8a7589f3bd0c5d.wav",
+        "sha256": "0ffbddd738bdf0840672781268d7b58569d892f8206e16f59dc379c9cf20ebf7",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_ANoLM/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sa9232955ec13",
+        "system": "ANoLM",
+        "relative_path": "audio/ANoLM/Sa9232955ec13.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ANoLM/wav/7fc01a32fd9ec187718b22b9.wav",
+        "sha256": "37c6ff25c843bde9de50ec9d8a7fff61b897bb2cbcf807eb926c178acfcca3d6",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_ANoLM/short/improvement"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S0f793a3c53d1",
+        "system": "ANoLM",
+        "relative_path": "audio/ANoLM/S0f793a3c53d1.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ANoLM/wav/78b39a6465d9621a78fa0f5e.wav",
+        "sha256": "c817a929705b1fb8be913479200b90c2b67a54d6e5dc09f17c0fae8d4f46de1e",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ANoLM_vs_BNoLM/medium/regression"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S20963acefeff",
+        "system": "ANoLM",
+        "relative_path": "audio/ANoLM/S20963acefeff.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ANoLM/wav/f90d22887e23cc1c9caac863.wav",
+        "sha256": "eef14feaf8737b2a45d3b128a188dfd5a90ecd1d56907a910604523787c9d655",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ANoLM/medium/higher_WER",
+          "A_vs_ANoLM/medium/improvement"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S786b01220a45",
+        "system": "ANoLM",
+        "relative_path": "audio/ANoLM/S786b01220a45.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ANoLM/wav/cc6182fcc35377f483b92d2a.wav",
+        "sha256": "97bf9d3ffb89a9553acb2ad5c3749f753ac684d9909faa2f56ee221ca89fdc46",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ANoLM_vs_BNoLM/medium/improvement",
+          "A_vs_ANoLM/medium/regression"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S7e0b25507ac0",
+        "system": "ANoLM",
+        "relative_path": "audio/ANoLM/S7e0b25507ac0.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ANoLM/wav/02fc09af31e259c8242dbca9.wav",
+        "sha256": "5cd59c03d04ae0498e18d3081a21d0fda9082b53c9c402c2d5fe7141cca79893",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ANoLM/medium/lower_WER"
+        ],
+        "length_group": "medium",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S3b63bd179ab2",
+        "system": "ANoLM",
+        "relative_path": "audio/ANoLM/S3b63bd179ab2.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ANoLM/wav/90d6b4b59818d993f1b46d63.wav",
+        "sha256": "9803e67a53d1b8beadd11e20c4ee95f993773a7b6e1065881ea564bf66bdef7e",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_ANoLM/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S55b611e4746b",
+        "system": "ANoLM",
+        "relative_path": "audio/ANoLM/S55b611e4746b.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ANoLM/wav/79d08be1bb004006005d50d3.wav",
+        "sha256": "68a37f6ee7fc3cb0aeb35fe82ad31ca88331024b5a1531bb6c22b21134917e0f",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ANoLM/long/higher_WER",
+          "ANoLM_vs_BNoLM/long/improvement",
+          "A_vs_ANoLM/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sde353d202a99",
+        "system": "ANoLM",
+        "relative_path": "audio/ANoLM/Sde353d202a99.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ANoLM/wav/f656e3027f1d88e77831a7d9.wav",
+        "sha256": "56c1d4a22038ccde8ae56a42828456229ca034b453b106c04ecc54aef4663b0d",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ANoLM_vs_BNoLM/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sf97b0fe7b888",
+        "system": "ANoLM",
+        "relative_path": "audio/ANoLM/Sf97b0fe7b888.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ANoLM/wav/3dea793bed7d42848ba90485.wav",
+        "sha256": "37d3e7af910f227f387d199f148037528ac6f37fb9a3bd8de9089124076bd28d",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ANoLM/long/lower_WER"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S0a818b35881b",
+        "system": "ASplit",
+        "relative_path": "audio/ASplit/S0a818b35881b.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ASplit/wav/7fc01a32fd9ec187718b22b9.wav",
+        "sha256": "955ea8d55507d709fefe252a4497225738789429141c23b350e0bc3d380851df",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ASplit_vs_BSplit/short/regression",
+          "A_vs_ASplit/short/improvement"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 2
+      },
+      {
+        "sample_id": "S891edc0937e7",
+        "system": "ASplit",
+        "relative_path": "audio/ASplit/S891edc0937e7.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ASplit/wav/943a315657d31135648ed090.wav",
+        "sha256": "2987f40b6d799935cdf5641765d4fb6ae6edc750b53eb9c85be86ef28125b0f9",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ASplit/short/lower_WER"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Saf3945b69fdb",
+        "system": "ASplit",
+        "relative_path": "audio/ASplit/Saf3945b69fdb.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ASplit/wav/452a566a32336bf1b54f728d.wav",
+        "sha256": "8eee5f56c18a16571ce941ad27cd4593e1448dd6af70719fdd6cc09c88bfec9e",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ASplit/short/higher_WER",
+          "ASplit_vs_BSplit/short/improvement",
+          "A_vs_ASplit/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 2
+      },
+      {
+        "sample_id": "S09be1b9e9c47",
+        "system": "ASplit",
+        "relative_path": "audio/ASplit/S09be1b9e9c47.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ASplit/wav/cc6182fcc35377f483b92d2a.wav",
+        "sha256": "cca20d7b0c6536a8b6080c0c2c501b5a60b1d25a730ccae6503d2ed6f1808cdd",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_ASplit/medium/regression"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 2
+      },
+      {
+        "sample_id": "S394a8b310a31",
+        "system": "ASplit",
+        "relative_path": "audio/ASplit/S394a8b310a31.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ASplit/wav/6253c648ac0d050077e7f0e4.wav",
+        "sha256": "4a4518530f2e68df0d370f68e48a423a71e4ac2c23c7c1b1a164b4a0cc6d6c06",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_ASplit/medium/improvement"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 2
+      },
+      {
+        "sample_id": "S473c96b5fe01",
+        "system": "ASplit",
+        "relative_path": "audio/ASplit/S473c96b5fe01.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ASplit/wav/f90d22887e23cc1c9caac863.wav",
+        "sha256": "01a37d36fe6aa5d2bbd4a6a15b410d45e5e641b4876b8b6940bc3d7b3928b475",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ASplit/medium/higher_WER"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sc1db66c75668",
+        "system": "ASplit",
+        "relative_path": "audio/ASplit/Sc1db66c75668.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ASplit/wav/a6ec8071f0bf3a22c8d74b73.wav",
+        "sha256": "a209fc694b60b100f417f00659ddc1c376a1f580743766d08ff8a4e9de6331a3",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ASplit_vs_BSplit/medium/improvement"
+        ],
+        "length_group": "medium",
+        "seed": 42,
+        "segments": 2
+      },
+      {
+        "sample_id": "Sd3aa72f72aff",
+        "system": "ASplit",
+        "relative_path": "audio/ASplit/Sd3aa72f72aff.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ASplit/wav/12d2fcf42a3cccac99ae3304.wav",
+        "sha256": "32dc4103d32148c8a212d2e461eb5e3107e5069433a83ba4eb76f7d0c409e3ca",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ASplit/medium/lower_WER"
+        ],
+        "length_group": "medium",
+        "seed": 42,
+        "segments": 2
+      },
+      {
+        "sample_id": "Sfe2bfa1c6549",
+        "system": "ASplit",
+        "relative_path": "audio/ASplit/Sfe2bfa1c6549.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ASplit/wav/00d7152d588360b44b152335.wav",
+        "sha256": "1f083b68710086a52b84715ac22aa197ca904077076477fb2350914bba58e286",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ASplit_vs_BSplit/medium/regression"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 2
+      },
+      {
+        "sample_id": "S3ac884e0f9d2",
+        "system": "ASplit",
+        "relative_path": "audio/ASplit/S3ac884e0f9d2.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ASplit/wav/507153d544406581ebcff084.wav",
+        "sha256": "60642bdede54a133a1d7ffbba6fcedbd5ce835de0e3024edb0ddb2fba1159a48",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_ASplit/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 42,
+        "segments": 2
+      },
+      {
+        "sample_id": "S664c22436712",
+        "system": "ASplit",
+        "relative_path": "audio/ASplit/S664c22436712.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ASplit/wav/ddc0bee6bef097d603611fe8.wav",
+        "sha256": "4b65cf6f12f6d54ba149339604105af552ac933b93a97a2b915c467de7548b8d",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_ASplit/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 2
+      },
+      {
+        "sample_id": "S6c68caa09b35",
+        "system": "ASplit",
+        "relative_path": "audio/ASplit/S6c68caa09b35.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ASplit/wav/bc0ac3d1bdc535982e708d28.wav",
+        "sha256": "a45c5b2d9027a2d732593469ef08bc5f1ca70064147138357fac20c9d981ab6a",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ASplit/long/lower_WER"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 2
+      },
+      {
+        "sample_id": "Sc688e73900ee",
+        "system": "ASplit",
+        "relative_path": "audio/ASplit/Sc688e73900ee.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ASplit/wav/006bdf9a88cfb1324969e5b9.wav",
+        "sha256": "bb21c341004db6f3778710c56ad483b89e3b12541f7501bbbabebaecf1581a58",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ASplit_vs_BSplit/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 3
+      },
+      {
+        "sample_id": "Sdaeef04b33ec",
+        "system": "ASplit",
+        "relative_path": "audio/ASplit/Sdaeef04b33ec.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ASplit/wav/90d6b4b59818d993f1b46d63.wav",
+        "sha256": "92fb85b3c2d7ee45316b96e11a4d13ea8cd4b9ab979b6dd5e68d6c4eb3dcb9bd",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ASplit/long/higher_WER"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sedcfe46bd637",
+        "system": "ASplit",
+        "relative_path": "audio/ASplit/Sedcfe46bd637.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/ASplit/wav/51542a66582017778974d73c.wav",
+        "sha256": "97c309f645072f4807322962053945cad523b9d29d8e25769dbfb812e1d32f3c",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ASplit_vs_BSplit/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S06fd4cabd796",
+        "system": "B",
+        "relative_path": "audio/B/S06fd4cabd796.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B/wav/93fa0ec58adb2ace12e7edce.wav",
+        "sha256": "ed0da9f0e1b6be617e2b738797354b34488eae83ef07593addbf05b10d381ff2",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_B184/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S3489f24ae2e3",
+        "system": "B",
+        "relative_path": "audio/B/S3489f24ae2e3.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B/wav/63e9bec63f30e43a7b1746e3.wav",
+        "sha256": "bc2d52534b37dc85738eae874db02f2430397cef51a574e27f73e3b9d33c7288",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_BNoLM/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S4ea37846f145",
+        "system": "B",
+        "relative_path": "audio/B/S4ea37846f145.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B/wav/b8c0875e87105b76dd1d018c.wav",
+        "sha256": "1f826e71635c89ce5bb1954bd3986d3d623ac7ee2db7b6c20e1f0a6ba6a0ea29",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B/short/lower_WER"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Se991f09071fd",
+        "system": "B",
+        "relative_path": "audio/B/Se991f09071fd.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B/wav/7fc01a32fd9ec187718b22b9.wav",
+        "sha256": "e8708d7f16cd56dc91348e56f289028c7eef65a1b65d9afbe5ceb3d54883538a",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_BSplit/short/regression",
+          "A_vs_B/short/improvement"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sf2c490b8b3ff",
+        "system": "B",
+        "relative_path": "audio/B/Sf2c490b8b3ff.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B/wav/c903938bfe8520768ba4832a.wav",
+        "sha256": "d3573d44b37d19ea67cf2385b99bf8903fe55de315e882ed563446d06d59a890",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B/short/higher_WER",
+          "B_vs_BNoLM/short/improvement",
+          "B_vs_BSplit/short/improvement",
+          "B_vs_B184/short/improvement",
+          "A_vs_B/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S045b486287a0",
+        "system": "B",
+        "relative_path": "audio/B/S045b486287a0.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B/wav/a6ec8071f0bf3a22c8d74b73.wav",
+        "sha256": "f426a6e4fe126ee5209600ecb17afa4b39d5a714e27105d32cb8fd8931d7166c",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_B184/medium/regression",
+          "A_vs_B/medium/improvement"
+        ],
+        "length_group": "medium",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S362f55bca131",
+        "system": "B",
+        "relative_path": "audio/B/S362f55bca131.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B/wav/00d7152d588360b44b152335.wav",
+        "sha256": "e4c3c50b338c704b4335862b44520e609a7cf706345a3d81dd84862ef7f72a2c",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_BSplit/medium/regression"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S3ee6a57ec77a",
+        "system": "B",
+        "relative_path": "audio/B/S3ee6a57ec77a.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B/wav/4882a9a59721aa63682cedb0.wav",
+        "sha256": "7552620c958c5afebf8213694c1fa4b957b1dbf0f6b595afba15ad10a5ed2d6c",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_BNoLM/medium/improvement"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S68f9cbeb662a",
+        "system": "B",
+        "relative_path": "audio/B/S68f9cbeb662a.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B/wav/f90d22887e23cc1c9caac863.wav",
+        "sha256": "0c260716a1e2fb6815efc6719ba0c9c193071c481a10e76a8b7a6fc18a73785d",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B/medium/higher_WER",
+          "B_vs_B184/medium/improvement"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S6b20716b2f93",
+        "system": "B",
+        "relative_path": "audio/B/S6b20716b2f93.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B/wav/9a75a360c7d9a9eb178076df.wav",
+        "sha256": "16bfe8a937b5e8d0186d4024bba5c96e22bb8b0c59001aceafadf080f0c1f4e0",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_B/medium/regression"
+        ],
+        "length_group": "medium",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sb25e911727cc",
+        "system": "B",
+        "relative_path": "audio/B/Sb25e911727cc.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B/wav/78b39a6465d9621a78fa0f5e.wav",
+        "sha256": "0c7bdabd393100988f5ed20d6d3b6482e32f2e07952255e2e3fb82a08564fecb",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_BNoLM/medium/regression"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sd6b08afd522e",
+        "system": "B",
+        "relative_path": "audio/B/Sd6b08afd522e.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B/wav/358e6328c2f042747f7f2465.wav",
+        "sha256": "57fd7c1bfd06e33218bdd9d6d9ec7aa8d2aa319ef33a0e1df68e7606253785c0",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_BSplit/medium/improvement"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sf1530d0f11ef",
+        "system": "B",
+        "relative_path": "audio/B/Sf1530d0f11ef.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B/wav/f21745d94a1bcd5e26d5386e.wav",
+        "sha256": "66bb9a1c38ceec2907cf1c6553a008449a0b1d0b26693047427eb9c9e4ca3c23",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B/medium/lower_WER"
+        ],
+        "length_group": "medium",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S2e609c514aee",
+        "system": "B",
+        "relative_path": "audio/B/S2e609c514aee.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B/wav/96af011496d78ace1e547a46.wav",
+        "sha256": "d33a709376cc1dc82ce7daf3396bdd94f21db827962be3d6d4816b2935276b1f",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_BNoLM/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S369906237977",
+        "system": "B",
+        "relative_path": "audio/B/S369906237977.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B/wav/179a8a85e957413d51735b60.wav",
+        "sha256": "5e7bab147879e030073203e97e91668cc80936f7a2b480e74782eea0e995729d",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_B/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S691b30606acd",
+        "system": "B",
+        "relative_path": "audio/B/S691b30606acd.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B/wav/1b93cc271171f90e50c729ac.wav",
+        "sha256": "059d42a739782097abc7db53835117756e8ad10bb29603749f7e7736a1e0022e",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_BSplit/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S9ab0fc31fcfd",
+        "system": "B",
+        "relative_path": "audio/B/S9ab0fc31fcfd.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B/wav/a925d763ce9b20d349528f25.wav",
+        "sha256": "1bc885cea15a5c625f27ea15830e63e7dc08b66a8672554b4354a380a373e27d",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B/long/higher_WER",
+          "B_vs_BNoLM/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sb55d329219d8",
+        "system": "B",
+        "relative_path": "audio/B/Sb55d329219d8.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B/wav/507153d544406581ebcff084.wav",
+        "sha256": "08a2efdd285fb2b3a37d6bf0f35186d62de3d348bbba98a89bd8ad0265237bd8",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_B184/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sc4b63737a4f2",
+        "system": "B",
+        "relative_path": "audio/B/Sc4b63737a4f2.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B/wav/1c884d30a182b4ecad8b4671.wav",
+        "sha256": "147dbd79900093e4ea3434efe625abcdf0d17eb4a61da3e83c5dbe9c722a6203",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_B/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sd971b66fcd75",
+        "system": "B",
+        "relative_path": "audio/B/Sd971b66fcd75.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B/wav/ddc0bee6bef097d603611fe8.wav",
+        "sha256": "6ff4a2b9dd0b9611b6fa18be5a0690bf3d9e24cbfba401c6d1f19abac86130e9",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_BSplit/long/regression",
+          "B_vs_B184/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sf80e93814245",
+        "system": "B",
+        "relative_path": "audio/B/Sf80e93814245.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B/wav/3dea793bed7d42848ba90485.wav",
+        "sha256": "959a50f7bfd858b0e3dbe5e1a8841f66b76e18b3a846555d9cbc160fd05369fd",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B/long/lower_WER"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S13224642bbc3",
+        "system": "B184",
+        "relative_path": "audio/B184/S13224642bbc3.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184/wav/93fa0ec58adb2ace12e7edce.wav",
+        "sha256": "27f20906e99db3fcabd0a658df6518a7990103e5b0feff2f9cb8fcb546eb76bc",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184/short/higher_WER",
+          "B_vs_B184/short/regression",
+          "B184_vs_B184NoLM/short/improvement",
+          "A_vs_B184/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S72a8821ab12e",
+        "system": "B184",
+        "relative_path": "audio/B184/S72a8821ab12e.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184/wav/c903938bfe8520768ba4832a.wav",
+        "sha256": "1b116f3b05a0c59c81380a10404b8981d7f6d79f1b42cc85f4c3cabef38329f6",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_B184/short/improvement"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S8fb5aaf9ccc3",
+        "system": "B184",
+        "relative_path": "audio/B184/S8fb5aaf9ccc3.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184/wav/67cd70f1c017372767bced9c.wav",
+        "sha256": "ec06063882f9f4f6ecc1aa668c1a54fe41de386e12dc27ca14095deae84daa0f",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184/short/lower_WER",
+          "B184_vs_B184NoLM/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sd012c2619fa0",
+        "system": "B184",
+        "relative_path": "audio/B184/Sd012c2619fa0.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184/wav/22de028f13026cc183628ad8.wav",
+        "sha256": "a19e6849c5a788ff78d471f23789e9dcd2f861bdf0ae4bdfb3bbfd2f7dd753f5",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184_vs_B184Split/short/improvement"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sd503fc7f58cd",
+        "system": "B184",
+        "relative_path": "audio/B184/Sd503fc7f58cd.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184/wav/bc61ae0725baea1bfad1a9c7.wav",
+        "sha256": "48aecaff952ffd20ae1b5decafcd38f31e47589d9764bb874ecb192c8d96a2e9",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184_vs_B184Split/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sf2eb1bd1ff17",
+        "system": "B184",
+        "relative_path": "audio/B184/Sf2eb1bd1ff17.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184/wav/7fc01a32fd9ec187718b22b9.wav",
+        "sha256": "42dfc78eb933d1f39e57da19f768b373bc5a94db326f879baaab6b33b4df1e2b",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_B184/short/improvement"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S256e43c9b89f",
+        "system": "B184",
+        "relative_path": "audio/B184/S256e43c9b89f.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184/wav/a6ec8071f0bf3a22c8d74b73.wav",
+        "sha256": "a653c58017c48139ee7b5dd31c42103f6b33ccdc79dfb9ca5a3ad671e3ff2c15",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_B184/medium/regression",
+          "B184_vs_B184NoLM/medium/regression"
+        ],
+        "length_group": "medium",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S26c2fbcd85b0",
+        "system": "B184",
+        "relative_path": "audio/B184/S26c2fbcd85b0.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184/wav/cc6182fcc35377f483b92d2a.wav",
+        "sha256": "08973f26b38304d0178c9ba5a3961301b6d7461a1873c86420373ce21c5ac7bb",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184_vs_B184Split/medium/regression"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S347c21a30bb4",
+        "system": "B184",
+        "relative_path": "audio/B184/S347c21a30bb4.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184/wav/c468584af6859fde42db429b.wav",
+        "sha256": "967cea8425f186740f16f0019e2b4360c83fe959002ba7919ceeb2bf75daee80",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184_vs_B184Split/medium/improvement"
+        ],
+        "length_group": "medium",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S90312dca1f70",
+        "system": "B184",
+        "relative_path": "audio/B184/S90312dca1f70.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184/wav/f90d22887e23cc1c9caac863.wav",
+        "sha256": "0147e6d8b83bbaaec2a4dece7ced9dec00c10103279e2fe4bec67fd03e19ad70",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_B184/medium/improvement",
+          "A_vs_B184/medium/improvement"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sa535a27a583e",
+        "system": "B184",
+        "relative_path": "audio/B184/Sa535a27a583e.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184/wav/1d98f5e06c9f019dd30af4f3.wav",
+        "sha256": "59a34b9a71a87342c5a5a25e41513fa9321f9d160bc9d07a877f73d4c1d5663b",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184/medium/lower_WER"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sc25aae33d41b",
+        "system": "B184",
+        "relative_path": "audio/B184/Sc25aae33d41b.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184/wav/9a75a360c7d9a9eb178076df.wav",
+        "sha256": "ea151482d4a5ca9023cdb81bdeb52ca5fb6310fd979060a34599657f96697fda",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184/medium/higher_WER"
+        ],
+        "length_group": "medium",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sd291d6e11953",
+        "system": "B184",
+        "relative_path": "audio/B184/Sd291d6e11953.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184/wav/46dcb344af11e529e436888c.wav",
+        "sha256": "ff7b80eace8d44af4409efaba8ea80e480b83426b1c0c2672d56bea1e1095cb2",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184_vs_B184NoLM/medium/improvement",
+          "A_vs_B184/medium/regression"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S2ad4ba37d355",
+        "system": "B184",
+        "relative_path": "audio/B184/S2ad4ba37d355.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184/wav/507153d544406581ebcff084.wav",
+        "sha256": "2aa619b734b802aaefbd707d1f4c7cf0a5e6bb1450e205abca281c369fa3c9c5",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_B184/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S3b2ede6fda96",
+        "system": "B184",
+        "relative_path": "audio/B184/S3b2ede6fda96.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184/wav/be43bfbf1c22e30e59989de7.wav",
+        "sha256": "a7c54c93b1c3e81a4254710389b27e0b8996c24c6956affea1d2093292bc9402",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184_vs_B184Split/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S5b185903e914",
+        "system": "B184",
+        "relative_path": "audio/B184/S5b185903e914.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184/wav/ddc0bee6bef097d603611fe8.wav",
+        "sha256": "f34a977b8fce5b9fe1dafb0c1f3968696db23806659edd24a39e5b0b4226b864",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184/long/higher_WER",
+          "B_vs_B184/long/regression",
+          "B184_vs_B184NoLM/long/improvement",
+          "B184_vs_B184Split/long/improvement",
+          "A_vs_B184/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sb40b6ca6aace",
+        "system": "B184",
+        "relative_path": "audio/B184/Sb40b6ca6aace.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184/wav/dce250f2e822c10706cfc821.wav",
+        "sha256": "036d630b38e959293fd28ce6d6d9ea6395f40debb2357379fdbd3b61cb7ff392",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_B184/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sbf72812cb416",
+        "system": "B184",
+        "relative_path": "audio/B184/Sbf72812cb416.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184/wav/a925d763ce9b20d349528f25.wav",
+        "sha256": "7923abbd64f4cd45dfd441788e2ea8b3072514ab984cba9ebad2bf7b599ae8a9",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184_vs_B184NoLM/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sd9bca4cf50dc",
+        "system": "B184",
+        "relative_path": "audio/B184/Sd9bca4cf50dc.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184/wav/51542a66582017778974d73c.wav",
+        "sha256": "a842dc574bef70b889487fcd8e86bcfda6fad23fa146974c6ed093c6d6c64691",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184/long/lower_WER"
+        ],
+        "length_group": "long",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S72decb4f7d38",
+        "system": "B184NoLM",
+        "relative_path": "audio/B184NoLM/S72decb4f7d38.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184NoLM/wav/7fc01a32fd9ec187718b22b9.wav",
+        "sha256": "e7a07c8f8cd65aa377d02a50756cd95dce60cf7bc27d5adcefc929dba280e51f",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_B184NoLM/short/improvement"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S79955035761d",
+        "system": "B184NoLM",
+        "relative_path": "audio/B184NoLM/S79955035761d.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184NoLM/wav/67cd70f1c017372767bced9c.wav",
+        "sha256": "620d68783781fdf28810396bff8b68fe9a53b174bde9ca30d711c14f688e449e",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184_vs_B184NoLM/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S8198aa5f49a7",
+        "system": "B184NoLM",
+        "relative_path": "audio/B184NoLM/S8198aa5f49a7.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184NoLM/wav/e5bbcdd557716ace1e442f63.wav",
+        "sha256": "c35eb0ae8713e61c32bf9e27151cfae0c91a76306fb50459990c640062ba1906",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BNoLM_vs_B184NoLM/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sb4bc326bfc27",
+        "system": "B184NoLM",
+        "relative_path": "audio/B184NoLM/Sb4bc326bfc27.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184NoLM/wav/49e5f881a27346d7031dc993.wav",
+        "sha256": "6679633aa446f56003ade7b5470d883aaa5f2457be1cc14af4e3d8950ebd78e3",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184NoLM/short/higher_WER"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sc818c5384993",
+        "system": "B184NoLM",
+        "relative_path": "audio/B184NoLM/Sc818c5384993.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184NoLM/wav/63e9bec63f30e43a7b1746e3.wav",
+        "sha256": "426d8b165dca778a57850147bda3ff18866416d2428e544b5e86d2983b087984",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BNoLM_vs_B184NoLM/short/improvement"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "Scae207028b98",
+        "system": "B184NoLM",
+        "relative_path": "audio/B184NoLM/Scae207028b98.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184NoLM/wav/c903938bfe8520768ba4832a.wav",
+        "sha256": "80e2994be3f56ff2378c4ee61eab40c246b80d6ef7627d2bd136a626fad911f8",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_B184NoLM/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sf33094f2dea5",
+        "system": "B184NoLM",
+        "relative_path": "audio/B184NoLM/Sf33094f2dea5.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184NoLM/wav/93fa0ec58adb2ace12e7edce.wav",
+        "sha256": "ab549295183df9b83d3ef25b2e276d4454198c3e4b8d55865ef4420c307d7e60",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184_vs_B184NoLM/short/improvement"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sf93acf7fbce3",
+        "system": "B184NoLM",
+        "relative_path": "audio/B184NoLM/Sf93acf7fbce3.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184NoLM/wav/b8c0875e87105b76dd1d018c.wav",
+        "sha256": "4b580e116f16e484e987851ead2092107151364a260adb4182b3bbd5c72d8604",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184NoLM/short/lower_WER"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S16e662d617a9",
+        "system": "B184NoLM",
+        "relative_path": "audio/B184NoLM/S16e662d617a9.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184NoLM/wav/a6ec8071f0bf3a22c8d74b73.wav",
+        "sha256": "235c11aca616cdaea08d3118085402713725e2f381d1f1614633a1ae0fcc7b52",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184NoLM/medium/higher_WER",
+          "BNoLM_vs_B184NoLM/medium/regression",
+          "B184_vs_B184NoLM/medium/regression",
+          "A_vs_B184NoLM/medium/regression"
+        ],
+        "length_group": "medium",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S34275b502021",
+        "system": "B184NoLM",
+        "relative_path": "audio/B184NoLM/S34275b502021.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184NoLM/wav/f90d22887e23cc1c9caac863.wav",
+        "sha256": "dda5a9e53649368f9a2390644a0fa6a4c41e9ef3d97e7b0578a5e5022fc4a74f",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BNoLM_vs_B184NoLM/medium/improvement",
+          "A_vs_B184NoLM/medium/improvement"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sab67f7ce75e9",
+        "system": "B184NoLM",
+        "relative_path": "audio/B184NoLM/Sab67f7ce75e9.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184NoLM/wav/3885a63b806a0baf781e65ce.wav",
+        "sha256": "73e888a8441beff8c36b31e5717e42dcb83f47d010abbe5e1054d9dfa972b18c",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184NoLM/medium/lower_WER"
+        ],
+        "length_group": "medium",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sb39ccbe08c25",
+        "system": "B184NoLM",
+        "relative_path": "audio/B184NoLM/Sb39ccbe08c25.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184NoLM/wav/46dcb344af11e529e436888c.wav",
+        "sha256": "fb0f625a52e2366fcb8c6cef154ddc69654e4c06429086f2763637dccc246d22",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184_vs_B184NoLM/medium/improvement"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S04ce57fcb1f3",
+        "system": "B184NoLM",
+        "relative_path": "audio/B184NoLM/S04ce57fcb1f3.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184NoLM/wav/a925d763ce9b20d349528f25.wav",
+        "sha256": "34ef65da3429b3facc58cf3a76a2165cbd8712220b87675a6eaacc7e737abd51",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184NoLM/long/higher_WER",
+          "BNoLM_vs_B184NoLM/long/regression",
+          "B184_vs_B184NoLM/long/regression",
+          "A_vs_B184NoLM/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S224e2e506876",
+        "system": "B184NoLM",
+        "relative_path": "audio/B184NoLM/S224e2e506876.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184NoLM/wav/6155d1c58e9697f2b71a07e3.wav",
+        "sha256": "ac98bd35bc8913e512f4c2fbc3eb9e2d027d4927a92224a32a7b0c76c4e54494",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184NoLM/long/lower_WER"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S3f6d09d08bd9",
+        "system": "B184NoLM",
+        "relative_path": "audio/B184NoLM/S3f6d09d08bd9.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184NoLM/wav/ddc0bee6bef097d603611fe8.wav",
+        "sha256": "0e5b1cc6ceccb04414d306aea85e1e86ea96b1087ed8319e5b5f20c452abce3d",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184_vs_B184NoLM/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S885613791a4b",
+        "system": "B184NoLM",
+        "relative_path": "audio/B184NoLM/S885613791a4b.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184NoLM/wav/507153d544406581ebcff084.wav",
+        "sha256": "a0c4727582dc8566e1b2ab31d792a4082dfb626e2cd60a1f8550f432294c33d5",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_B184NoLM/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S90ce1ce67eb7",
+        "system": "B184NoLM",
+        "relative_path": "audio/B184NoLM/S90ce1ce67eb7.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184NoLM/wav/9ca9234765c6b11dd81f19af.wav",
+        "sha256": "0f4c8316dab4182e0158af7a80280b584d782ee9569ea9c05072403a49dd86c1",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BNoLM_vs_B184NoLM/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S02fd9df5c88d",
+        "system": "B184Split",
+        "relative_path": "audio/B184Split/S02fd9df5c88d.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184Split/wav/93fa0ec58adb2ace12e7edce.wav",
+        "sha256": "27f20906e99db3fcabd0a658df6518a7990103e5b0feff2f9cb8fcb546eb76bc",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184Split/short/higher_WER",
+          "BSplit_vs_B184Split/short/regression",
+          "A_vs_B184Split/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S38af3fff00a2",
+        "system": "B184Split",
+        "relative_path": "audio/B184Split/S38af3fff00a2.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184Split/wav/22de028f13026cc183628ad8.wav",
+        "sha256": "4545493475b9fde21583601d77a60e976c3739aa3cbaed3f86164311621a27b4",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184_vs_B184Split/short/improvement"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 2
+      },
+      {
+        "sample_id": "S6fea9421eec3",
+        "system": "B184Split",
+        "relative_path": "audio/B184Split/S6fea9421eec3.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184Split/wav/bc61ae0725baea1bfad1a9c7.wav",
+        "sha256": "9ee94f2cffcb745246fa33b9a6d5aadfd35b882020a7b2055dd323416341ba35",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184_vs_B184Split/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 2
+      },
+      {
+        "sample_id": "S83e83da01dc5",
+        "system": "B184Split",
+        "relative_path": "audio/B184Split/S83e83da01dc5.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184Split/wav/67cd70f1c017372767bced9c.wav",
+        "sha256": "ec06063882f9f4f6ecc1aa668c1a54fe41de386e12dc27ca14095deae84daa0f",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184Split/short/lower_WER"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sf72a9e944e05",
+        "system": "B184Split",
+        "relative_path": "audio/B184Split/Sf72a9e944e05.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184Split/wav/7fc01a32fd9ec187718b22b9.wav",
+        "sha256": "a966cccbe246c0adb723f3ca86d528db08a8785c1c7c197fee7c6862386fb71a",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BSplit_vs_B184Split/short/improvement",
+          "A_vs_B184Split/short/improvement"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 2
+      },
+      {
+        "sample_id": "S4deb2101e9bb",
+        "system": "B184Split",
+        "relative_path": "audio/B184Split/S4deb2101e9bb.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184Split/wav/9a75a360c7d9a9eb178076df.wav",
+        "sha256": "ea151482d4a5ca9023cdb81bdeb52ca5fb6310fd979060a34599657f96697fda",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184Split/medium/higher_WER"
+        ],
+        "length_group": "medium",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S526288cd87c2",
+        "system": "B184Split",
+        "relative_path": "audio/B184Split/S526288cd87c2.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184Split/wav/a6ec8071f0bf3a22c8d74b73.wav",
+        "sha256": "6e4c8c37c7f0f5efe1417a13d80ab158d33bfae9f2e8ed62e514bdbedc1d398e",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BSplit_vs_B184Split/medium/regression"
+        ],
+        "length_group": "medium",
+        "seed": 42,
+        "segments": 2
+      },
+      {
+        "sample_id": "S5fa4b0760f53",
+        "system": "B184Split",
+        "relative_path": "audio/B184Split/S5fa4b0760f53.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184Split/wav/f90d22887e23cc1c9caac863.wav",
+        "sha256": "0147e6d8b83bbaaec2a4dece7ced9dec00c10103279e2fe4bec67fd03e19ad70",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BSplit_vs_B184Split/medium/improvement",
+          "A_vs_B184Split/medium/improvement"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S75a52d70a79e",
+        "system": "B184Split",
+        "relative_path": "audio/B184Split/S75a52d70a79e.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184Split/wav/cc6182fcc35377f483b92d2a.wav",
+        "sha256": "8db16330f5e7604409bfe7aeac1af4a4b1a8774c538ed150d97b4d99ff9cbdf3",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184_vs_B184Split/medium/regression"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 2
+      },
+      {
+        "sample_id": "S9ed137405e7f",
+        "system": "B184Split",
+        "relative_path": "audio/B184Split/S9ed137405e7f.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184Split/wav/c468584af6859fde42db429b.wav",
+        "sha256": "f535f38f6051d97cb462f0a283af06a5397e5c1c10a07f0e1069366e51c0e068",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184_vs_B184Split/medium/improvement"
+        ],
+        "length_group": "medium",
+        "seed": 42,
+        "segments": 2
+      },
+      {
+        "sample_id": "Sd59baff82f22",
+        "system": "B184Split",
+        "relative_path": "audio/B184Split/Sd59baff82f22.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184Split/wav/46dcb344af11e529e436888c.wav",
+        "sha256": "ff7b80eace8d44af4409efaba8ea80e480b83426b1c0c2672d56bea1e1095cb2",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_B184Split/medium/regression"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Se3635ddbd623",
+        "system": "B184Split",
+        "relative_path": "audio/B184Split/Se3635ddbd623.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184Split/wav/1d98f5e06c9f019dd30af4f3.wav",
+        "sha256": "59a34b9a71a87342c5a5a25e41513fa9321f9d160bc9d07a877f73d4c1d5663b",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184Split/medium/lower_WER"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S53736e4b334e",
+        "system": "B184Split",
+        "relative_path": "audio/B184Split/S53736e4b334e.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184Split/wav/be43bfbf1c22e30e59989de7.wav",
+        "sha256": "043bf2a78bdc25eae69192e8dcea7aaa105d51ed599456212649dc68ec38b281",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184_vs_B184Split/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 42,
+        "segments": 3
+      },
+      {
+        "sample_id": "S544e65040f7b",
+        "system": "B184Split",
+        "relative_path": "audio/B184Split/S544e65040f7b.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184Split/wav/507153d544406581ebcff084.wav",
+        "sha256": "f151d07edb0a8b5b32d3d6b96c90b2250dee6ce6abb6ad2d9124103cde6f8eba",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_B184Split/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 42,
+        "segments": 2
+      },
+      {
+        "sample_id": "S6650e23f2d8b",
+        "system": "B184Split",
+        "relative_path": "audio/B184Split/S6650e23f2d8b.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184Split/wav/51542a66582017778974d73c.wav",
+        "sha256": "a842dc574bef70b889487fcd8e86bcfda6fad23fa146974c6ed093c6d6c64691",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184Split/long/lower_WER"
+        ],
+        "length_group": "long",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S7ed40eca188e",
+        "system": "B184Split",
+        "relative_path": "audio/B184Split/S7ed40eca188e.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184Split/wav/79d08be1bb004006005d50d3.wav",
+        "sha256": "89d8587e62dee41d249d9df44e812b7c7b54ec8e9fece6e016b5e1f9d63459a8",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BSplit_vs_B184Split/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S83c0450b9909",
+        "system": "B184Split",
+        "relative_path": "audio/B184Split/S83c0450b9909.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184Split/wav/ddc0bee6bef097d603611fe8.wav",
+        "sha256": "5f783255cd078f811497e7d8296f19a34d58e81bd7f4acd35552f1bf7f9b3dc0",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184_vs_B184Split/long/improvement",
+          "A_vs_B184Split/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 2
+      },
+      {
+        "sample_id": "S86f73d2f9785",
+        "system": "B184Split",
+        "relative_path": "audio/B184Split/S86f73d2f9785.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184Split/wav/90d6b4b59818d993f1b46d63.wav",
+        "sha256": "4126e0730c32c6f4a61a7526ac6634ca287c3cb0311665e7f70b02aa60c3857c",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B184Split/long/higher_WER"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sd185560c5627",
+        "system": "B184Split",
+        "relative_path": "audio/B184Split/Sd185560c5627.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/B184Split/wav/569a779e36fe4437bb333b8b.wav",
+        "sha256": "e54f2ec0289dfd8c666e991736e4b0d69c3f2ced8fd0e2b1817f83f71798a8bd",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BSplit_vs_B184Split/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 4
+      },
+      {
+        "sample_id": "S0a2158112f7b",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/S0a2158112f7b.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/c903938bfe8520768ba4832a.wav",
+        "sha256": "23f1417769af9c7bff6ea86ec8a41f55aaf3b8c1a53ff5891ed96c4359068c0b",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_BNoLM/short/improvement"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S49c55b5f67a3",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/S49c55b5f67a3.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/49e5f881a27346d7031dc993.wav",
+        "sha256": "d75f53e27e618ba7f968c937af49e4465e59debda9c197b2ad5ac2c13f1b39d1",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BNoLM/short/higher_WER"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S634b540db75d",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/S634b540db75d.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/63e9bec63f30e43a7b1746e3.wav",
+        "sha256": "a0d17467acce50b8ec0a411b24cbb1fab21d934ab07cd5bfdc9128fcfe9d5fa1",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_BNoLM/short/regression",
+          "ANoLM_vs_BNoLM/short/regression",
+          "BNoLM_vs_B184NoLM/short/improvement"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S7a1edbaf5075",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/S7a1edbaf5075.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/e5bbcdd557716ace1e442f63.wav",
+        "sha256": "f44ab673f3d5259d520f3f805b2643fc88fc04188d717fce43e855b7bff3b93c",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BNoLM_vs_B184NoLM/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S8f101f7c1e0f",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/S8f101f7c1e0f.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/b11d0d954ca700d62de267a2.wav",
+        "sha256": "c9ddb6bf9c186640163a87cd94f9cdcafd039ac2400c5628434d9eef9adca5eb",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ANoLM_vs_BNoLM/short/improvement"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S94c648567e07",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/S94c648567e07.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/b8c0875e87105b76dd1d018c.wav",
+        "sha256": "721e0e2f771b1fdc15d076ff35513a4865801c9e028dd321048cff9dd2eabba6",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BNoLM/short/lower_WER"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sf69f38face25",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/Sf69f38face25.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/7fc01a32fd9ec187718b22b9.wav",
+        "sha256": "dc9fcaa6d302462610055a258325b05d5deb1ace394e17fc5f2d6280b0e0bf7d",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_BNoLM/short/improvement"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sf7f7c8feb942",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/Sf7f7c8feb942.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/9ba81ea1853edf76f04ab5dc.wav",
+        "sha256": "e48c2bc830bd1a9fa7388f95212d5b04e3f82f536fb462be68b81c91faea1668",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_BNoLM/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S2d57d910ce91",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/S2d57d910ce91.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/f90d22887e23cc1c9caac863.wav",
+        "sha256": "e7401c59b2a9d6ec9a3f4e3796155b79a863db6ad780083bca2bf6c0d6cc4ad4",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BNoLM/medium/higher_WER",
+          "BNoLM_vs_B184NoLM/medium/improvement"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S2f96aa568a24",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/S2f96aa568a24.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/a6ec8071f0bf3a22c8d74b73.wav",
+        "sha256": "dbaf753777359c9aad15fd83fbb7972b43e02f4f478716e95d9662a7c2ea3c10",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BNoLM_vs_B184NoLM/medium/regression"
+        ],
+        "length_group": "medium",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S4a817ad7ff30",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/S4a817ad7ff30.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/9a75a360c7d9a9eb178076df.wav",
+        "sha256": "059dafac16a6df95ce753135dcd6781e3daa5cc79906bb777687a17e9232f6da",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_BNoLM/medium/regression"
+        ],
+        "length_group": "medium",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S4c5ba25290d8",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/S4c5ba25290d8.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/cf0ac5d873a38de694d7c152.wav",
+        "sha256": "c547c969280447558f91f3eb89a47dd1708dcf581caf3af038e4bd3601577b6f",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_BNoLM/medium/improvement"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S68cd13aa64f9",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/S68cd13aa64f9.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/78b39a6465d9621a78fa0f5e.wav",
+        "sha256": "4ab32a534d105d83eaa8d7d7d0c84280656be4b3336800eb9374d9a370e611e5",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_BNoLM/medium/regression",
+          "ANoLM_vs_BNoLM/medium/regression"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S8cf512c71738",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/S8cf512c71738.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/cc6182fcc35377f483b92d2a.wav",
+        "sha256": "ba73d4c841d170755d92ee8e1422cb4c56830e686893e2a73f18d390baed66a7",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ANoLM_vs_BNoLM/medium/improvement"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S8d5262aab5d7",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/S8d5262aab5d7.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/4882a9a59721aa63682cedb0.wav",
+        "sha256": "92b476876b930c45d8d5c6e238fee8bd315952963f490062ba562bd93dcd5855",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_BNoLM/medium/improvement"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S9c1796d305b2",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/S9c1796d305b2.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/f21745d94a1bcd5e26d5386e.wav",
+        "sha256": "b330d3535bbfc368d69fe7d0c5688c20c299f7101d689a5ca18f8ec43d461ce2",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BNoLM/medium/lower_WER"
+        ],
+        "length_group": "medium",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S00d5c0759f59",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/S00d5c0759f59.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/bf30a9a49c8ad347316216c6.wav",
+        "sha256": "9da81319b6504aee78253636705765ed8c5bfac9444bdcd98621a4667ba4a0f7",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BNoLM/long/lower_WER"
+        ],
+        "length_group": "long",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S03bba9d7ee58",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/S03bba9d7ee58.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/79d08be1bb004006005d50d3.wav",
+        "sha256": "4cb1f62cd762797376613a6ab5e1e5bd4a3055f9b28711a428f3a294b8ebb065",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ANoLM_vs_BNoLM/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S40a473def35b",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/S40a473def35b.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/96af011496d78ace1e547a46.wav",
+        "sha256": "250409fc5a8439e456484fa907144e639acde513be767a18e8c0631e5837bbe6",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_BNoLM/long/regression",
+          "A_vs_BNoLM/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S4d77207a43ed",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/S4d77207a43ed.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/9161b3707ff84efef38266e1.wav",
+        "sha256": "7cc8eb7f50583ce11d6728e74ee8895ff969ac15e7c9161f26719dfbdd32e45d",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_BNoLM/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S84cf0e3c77fd",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/S84cf0e3c77fd.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/a925d763ce9b20d349528f25.wav",
+        "sha256": "65a1303ba37b47ff85eeb98883d6410035f94cbbe6da7ca5de9b90a3688841d5",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_BNoLM/long/improvement",
+          "BNoLM_vs_B184NoLM/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S979a7c3857cf",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/S979a7c3857cf.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/649405d5237127a8f7fdee43.wav",
+        "sha256": "c1525d050e093cc661088963e77aa70d6fa4edaf0b3b98ddbb0875ad36e01cf9",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BNoLM/long/higher_WER"
+        ],
+        "length_group": "long",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sadbe841473ca",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/Sadbe841473ca.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/f656e3027f1d88e77831a7d9.wav",
+        "sha256": "d6f6932f654aa7bf09d58456ad127b4a018810b60700b4195bb66d1e7824fbf3",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ANoLM_vs_BNoLM/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sc3e93b4b1281",
+        "system": "BNoLM",
+        "relative_path": "audio/BNoLM/Sc3e93b4b1281.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BNoLM/wav/9ca9234765c6b11dd81f19af.wav",
+        "sha256": "ecec5a9f37ec391292498d5ba99422ee6d0091fc67f6cc8a87fb11bdeff4958e",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BNoLM_vs_B184NoLM/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S0e94827d89dd",
+        "system": "BSplit",
+        "relative_path": "audio/BSplit/S0e94827d89dd.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BSplit/wav/c903938bfe8520768ba4832a.wav",
+        "sha256": "cc6f672ebe4c9d3f28332f5256c9b0f9b159788bf606dcb506957cdf4dfb4818",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_BSplit/short/improvement"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 2
+      },
+      {
+        "sample_id": "S206b8281595f",
+        "system": "BSplit",
+        "relative_path": "audio/BSplit/S206b8281595f.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BSplit/wav/7fc01a32fd9ec187718b22b9.wav",
+        "sha256": "f9fdaca7cad119189e40bf0e01c370ea1495bc452b0d464ca76263fd246e6968",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_BSplit/short/regression",
+          "ASplit_vs_BSplit/short/regression",
+          "BSplit_vs_B184Split/short/improvement"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 2
+      },
+      {
+        "sample_id": "S29bff297ec07",
+        "system": "BSplit",
+        "relative_path": "audio/BSplit/S29bff297ec07.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BSplit/wav/e087a0026a81c0b7d444162f.wav",
+        "sha256": "ee26f76a87912205feda2eed0e7c62bde45c94073e8ac401667460ea3029c75e",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BSplit/short/higher_WER"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S3b2784e6cf75",
+        "system": "BSplit",
+        "relative_path": "audio/BSplit/S3b2784e6cf75.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BSplit/wav/452a566a32336bf1b54f728d.wav",
+        "sha256": "188b1067576e65630ba70739b6aa16b9d4ea79d4d9d5151f265b71f19c82813f",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ASplit_vs_BSplit/short/improvement"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 2
+      },
+      {
+        "sample_id": "S443fc3e91480",
+        "system": "BSplit",
+        "relative_path": "audio/BSplit/S443fc3e91480.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BSplit/wav/6417d66f4410c79100c8c920.wav",
+        "sha256": "80670f93a1e87bb3bed856c2839f30386792afb59139bbc659a310f58d5f96de",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_BSplit/short/improvement"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S87829313db79",
+        "system": "BSplit",
+        "relative_path": "audio/BSplit/S87829313db79.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BSplit/wav/781fa2d00cedfb35e31dfba1.wav",
+        "sha256": "dd2312a10e834841b45b639111792fa2bee6e90da9b62c5679dc911638accc94",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_BSplit/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sf1cdd2f9f3f0",
+        "system": "BSplit",
+        "relative_path": "audio/BSplit/Sf1cdd2f9f3f0.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BSplit/wav/b8c0875e87105b76dd1d018c.wav",
+        "sha256": "1f826e71635c89ce5bb1954bd3986d3d623ac7ee2db7b6c20e1f0a6ba6a0ea29",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BSplit/short/lower_WER"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "Sf33de794537a",
+        "system": "BSplit",
+        "relative_path": "audio/BSplit/Sf33de794537a.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BSplit/wav/93fa0ec58adb2ace12e7edce.wav",
+        "sha256": "ed0da9f0e1b6be617e2b738797354b34488eae83ef07593addbf05b10d381ff2",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BSplit_vs_B184Split/short/regression"
+        ],
+        "length_group": "short",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S10b6d08bc80f",
+        "system": "BSplit",
+        "relative_path": "audio/BSplit/S10b6d08bc80f.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BSplit/wav/00d7152d588360b44b152335.wav",
+        "sha256": "e0f7d408a4b29de5e8b35da946b4501ca4cae20a5aef69a1f2c5c53ae6b23374",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_BSplit/medium/regression",
+          "ASplit_vs_BSplit/medium/regression"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 2
+      },
+      {
+        "sample_id": "S35f670f2d0e6",
+        "system": "BSplit",
+        "relative_path": "audio/BSplit/S35f670f2d0e6.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BSplit/wav/358e6328c2f042747f7f2465.wav",
+        "sha256": "c11400138374e3a4161f7a3a87c73da595e83b1d84171a1ec6c4810e5887cc0b",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_BSplit/medium/improvement"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 2
+      },
+      {
+        "sample_id": "S4871fdfd32be",
+        "system": "BSplit",
+        "relative_path": "audio/BSplit/S4871fdfd32be.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BSplit/wav/a6ec8071f0bf3a22c8d74b73.wav",
+        "sha256": "b42eb2ba50d57a2632e61228e81a875fddf2d8e8dab1f0cc05e5690937335d71",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ASplit_vs_BSplit/medium/improvement",
+          "BSplit_vs_B184Split/medium/regression",
+          "A_vs_BSplit/medium/improvement"
+        ],
+        "length_group": "medium",
+        "seed": 42,
+        "segments": 2
+      },
+      {
+        "sample_id": "S5a3e19cedc7a",
+        "system": "BSplit",
+        "relative_path": "audio/BSplit/S5a3e19cedc7a.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BSplit/wav/f90d22887e23cc1c9caac863.wav",
+        "sha256": "0c260716a1e2fb6815efc6719ba0c9c193071c481a10e76a8b7a6fc18a73785d",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BSplit/medium/higher_WER",
+          "BSplit_vs_B184Split/medium/improvement"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S5dea243344e0",
+        "system": "BSplit",
+        "relative_path": "audio/BSplit/S5dea243344e0.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BSplit/wav/cc6182fcc35377f483b92d2a.wav",
+        "sha256": "e17584f999107f4fcb113e296b0bc8ef73e040f36c55c9912f249efde0a427be",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_BSplit/medium/regression"
+        ],
+        "length_group": "medium",
+        "seed": 17,
+        "segments": 2
+      },
+      {
+        "sample_id": "Sd63c58768b58",
+        "system": "BSplit",
+        "relative_path": "audio/BSplit/Sd63c58768b58.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BSplit/wav/f21745d94a1bcd5e26d5386e.wav",
+        "sha256": "4e86c335e790531c339be1b2cc1b59971c7db547bfc2cedf8825f1d492e5602d",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BSplit/medium/lower_WER"
+        ],
+        "length_group": "medium",
+        "seed": 42,
+        "segments": 2
+      },
+      {
+        "sample_id": "S037b1fbb4802",
+        "system": "BSplit",
+        "relative_path": "audio/BSplit/S037b1fbb4802.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BSplit/wav/ddc0bee6bef097d603611fe8.wav",
+        "sha256": "955c36e9dd1c8d001936c464a7d4ee640de743c62d3653f54587cdf1306b460f",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_BSplit/long/regression",
+          "A_vs_BSplit/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 2
+      },
+      {
+        "sample_id": "S44ec02881713",
+        "system": "BSplit",
+        "relative_path": "audio/BSplit/S44ec02881713.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BSplit/wav/79d08be1bb004006005d50d3.wav",
+        "sha256": "8a97af625048c3797bee5f0dddae35cfe3be35ab97e653baed946dcbc968bfbf",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BSplit/long/higher_WER",
+          "BSplit_vs_B184Split/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S58f947927221",
+        "system": "BSplit",
+        "relative_path": "audio/BSplit/S58f947927221.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BSplit/wav/3dea793bed7d42848ba90485.wav",
+        "sha256": "959a50f7bfd858b0e3dbe5e1a8841f66b76e18b3a846555d9cbc160fd05369fd",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BSplit/long/lower_WER"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 1
+      },
+      {
+        "sample_id": "S6249e7b697e1",
+        "system": "BSplit",
+        "relative_path": "audio/BSplit/S6249e7b697e1.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BSplit/wav/51542a66582017778974d73c.wav",
+        "sha256": "d13f068254b2f9cc5bd13b8c5c62aa314148c3138803f3067dcbf0694a322673",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ASplit_vs_BSplit/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 42,
+        "segments": 1
+      },
+      {
+        "sample_id": "S81227c0c96cc",
+        "system": "BSplit",
+        "relative_path": "audio/BSplit/S81227c0c96cc.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BSplit/wav/1b93cc271171f90e50c729ac.wav",
+        "sha256": "054995e8705ed0507b922a12b1102175a1a7e5379e542b0c34c1c9c011c075e8",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "B_vs_BSplit/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 42,
+        "segments": 4
+      },
+      {
+        "sample_id": "S84c177b8939f",
+        "system": "BSplit",
+        "relative_path": "audio/BSplit/S84c177b8939f.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BSplit/wav/569a779e36fe4437bb333b8b.wav",
+        "sha256": "73825d4b1d6e62b3c3b13b54286de3a4038d290d90abdd57fc7b4ad045a6565d",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "BSplit_vs_B184Split/long/regression"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 4
+      },
+      {
+        "sample_id": "Sb8cf65910b10",
+        "system": "BSplit",
+        "relative_path": "audio/BSplit/Sb8cf65910b10.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BSplit/wav/006bdf9a88cfb1324969e5b9.wav",
+        "sha256": "aaa1fb3089bf6885356530a5217482cbc2f6b23cc8ef28be59ec3740c22586fa",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "ASplit_vs_BSplit/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 3
+      },
+      {
+        "sample_id": "Sfb873b39d67e",
+        "system": "BSplit",
+        "relative_path": "audio/BSplit/Sfb873b39d67e.wav",
+        "source_wav": "<repository>/results/final-evaluation-v1/runs/BSplit/wav/179a8a85e957413d51735b60.wav",
+        "sha256": "9e3f88015acb93b04f28e17d01d65058fd4a3ce5f2cee9e2d11de8a3f59bedac",
+        "checks": {
+          "copy_sha_matches_manifest": true,
+          "source_sha_matches_copy": true,
+          "row_sha_matches_copy": true,
+          "absolute_path_matches": true,
+          "header_matches": true,
+          "selection_reason_present": true
+        },
+        "selection_reasons": [
+          "A_vs_BSplit/long/improvement"
+        ],
+        "length_group": "long",
+        "seed": 17,
+        "segments": 2
+      }
+    ],
+    "limitations": [
+      "Illustrative low/high WER and signed pair extremes, not a random or representative listening sample.",
+      "Two generation seeds are covered, but selections are not balanced by seed or text.",
+      "Actual multi-segment examples are present for all three split systems; strategy name alone does not mean an individual example was split.",
+      "Audio bytes and headers are verified; naturalness, timbre, prosody, semantic completeness and human preference were not judged.",
+      "Selected bundle omits the one output_limit case from A and the one from B184; not all failure modes are represented. B selects 2/5 output_limit cases, BNoLM 1/1, BSplit 1/1, B184NoLM 2/4."
+    ]
+  },
+  "primary_comparison": {
+    "baseline": "A",
+    "method": "BNoLM",
+    "training_seed": 183,
+    "seed184_role": "secondary sensitivity only",
+    "overall": {
+      "paired_items": 120,
+      "text_clusters": 60,
+      "clusters_per_length": {
+        "long": 20,
+        "medium": 20,
+        "short": 20
+      },
+      "reference_words": 3016,
+      "baseline_wer": 0.2539787798408488,
+      "method_wer": 0.09482758620689655,
+      "delta_wer": -0.15915119363395225,
+      "delta_wer_ci95": [
+        -0.18450729851432654,
+        -0.1304772858164497
+      ],
+      "bootstrap_repeats": 2000,
+      "bootstrap_seed": 1832026,
+      "method": "Percentile bootstrap: sample text clusters with replacement within length stratum; retain every paired seed in the sampled cluster; recompute micro WER.",
+      "bootstrap_valid_replicates": 2000,
+      "ci_note": "Conditional on these text sources, observed seed pairs, and available scores; excludes uncertainty from training randomness and the ASR model."
+    },
+    "long": {
+      "paired_items": 40,
+      "text_clusters": 20,
+      "clusters_per_length": {
+        "long": 20
+      },
+      "reference_words": 1864,
+      "baseline_wer": 0.2762875536480687,
+      "method_wer": 0.09388412017167382,
+      "delta_wer": -0.18240343347639484,
+      "delta_wer_ci95": [
+        -0.22103902124717123,
+        -0.14192795353049562
+      ],
+      "bootstrap_repeats": 2000,
+      "bootstrap_seed": 1832026,
+      "method": "Percentile bootstrap: sample text clusters with replacement within length stratum; retain every paired seed in the sampled cluster; recompute micro WER.",
+      "bootstrap_valid_replicates": 2000,
+      "ci_note": "Conditional on these text sources, observed seed pairs, and available scores; excludes uncertainty from training randomness and the ASR model."
+    }
+  },
+  "sources_sha256": {
+    "results/final-evaluation-v1/completion.json": "716f05795c35038a0bd7d96ca65e11fa1e0553e8a8f219a30017cb1af9bd6bb3",
+    "results/final-evaluation-v1/comparison-roles.json": "e6940f75d2dd6394309a08db4339cdbf34a73c0bcd52e3892b4e0953501617b4",
+    "results/final-evaluation-v1/analysis/overview/wer_by_length.png": "e804c35027ce817ddec3a610e00fcccb27262b457bf286f60ddb63231f9e2e05",
+    "results/final-evaluation-v1/analysis/overview/wer_by_length.pdf": "2628688602f8aba0d86bd233b2f080eddb5526045f6682c9ab899ab5ae82eae7",
+    "results/final-evaluation-v1/analysis/overview/summary.json": "c2a2d952379d03918f55e1935f54dfd0788f81cea14715fcd3191bf43c04cd10",
+    "results/final-evaluation-v1/analysis/seed-sensitivity-no-lm/wer_by_length.png": "26523b759227a1f337795eae9c83b6ef7ef1557b481ba4867498ab71c9ff4c93",
+    "results/final-evaluation-v1/analysis/seed-sensitivity-no-lm/wer_by_length.pdf": "8b1fbd4ae47f677153498314adcaa8e2c451ef7c04a2027a0c74198b2c173b8f",
+    "results/final-evaluation-v1/analysis/seed-sensitivity-no-lm/summary.json": "6c363e6d23b46065817b0fe3856a6bb49f90b69315450ed4c3f4363a0c878c97",
+    "results/final-evaluation-v1/analysis/seed-sensitivity-split/wer_by_length.png": "69794b11eee8b71c67134cbfc0c7835412a7ca36ae14edcae8b4415511340870",
+    "results/final-evaluation-v1/analysis/seed-sensitivity-split/wer_by_length.pdf": "f3f0ef134e156fa6969e0c958884d1a04701a3d7bc141c584ccdf6ae8c6b94e2",
+    "results/final-evaluation-v1/analysis/seed-sensitivity-split/summary.json": "7bb71702919c325ca4d24c63ef44daba2aa9e944722390ff01a6cd99e4261e76",
+    "results/final-evaluation-v1/analysis/seed-sensitivity-standard/wer_by_length.png": "aa50c01ce21b9725ba376d8cd58b7de9c5bf1ec76c1fcc57bf77196ccf577399",
+    "results/final-evaluation-v1/analysis/seed-sensitivity-standard/wer_by_length.pdf": "c2a6289dcb2d2aad476334b36d5d688bc7728efafd85a0dd40de43d541e83b23",
+    "results/final-evaluation-v1/analysis/seed-sensitivity-standard/summary.json": "afc7aa4404a20f3aa9ed79a89881186190e97f2ce202702ffd96d44b69bbd6e8",
+    "results/final-evaluation-v1/analysis/training-no-lm/wer_by_length.png": "d7126771c7f8bf576ed6a6101495167b93ee61a49a58a6fd5f924b9f9412a694",
+    "results/final-evaluation-v1/analysis/training-no-lm/wer_by_length.pdf": "67684f2875e4e709ca379b2cdce2299db00367ea6ea1de8140ccb9d44af03940",
+    "results/final-evaluation-v1/analysis/training-no-lm/summary.json": "9ac14f4a80bbfecd37fbd364e9b45cb35560dc34cd8538792e75d97ca6afb202",
+    "results/final-evaluation-v1/analysis/training-split/wer_by_length.png": "49b7c269fbe8dacc9b77de0a25cceafd930b78f066c7f0aed80cd2f55bc2e099",
+    "results/final-evaluation-v1/analysis/training-split/wer_by_length.pdf": "c7332319ddade9aae9d011f2dc6dc9833c53b038059c24051c6b7fd207c6928b",
+    "results/final-evaluation-v1/analysis/training-split/summary.json": "cc359cf76e708a6d1c1234b1e7092555039d1bccea4df19f18a476958290b376",
+    "results/final-evaluation-v1/analysis/within-B183/wer_by_length.png": "2951f6a460846204004af0c2a0319f42b6acd787ba047db2a0c284b4b28d11a5",
+    "results/final-evaluation-v1/analysis/within-B183/wer_by_length.pdf": "0b5be934224bfb4d840ced5e9137e60d55484ff00d3b8adead696edd7a8ac260",
+    "results/final-evaluation-v1/analysis/within-B183/summary.json": "fa4f58cce9f2c25da904dd325ee24a437bdf881e50f5607bbd258d4cf14ad6b9",
+    "results/final-evaluation-v1/analysis/within-B184/wer_by_length.png": "1fcb6c10b4879df0dadf1c6ad2f7631d66a0743a4432fcb61e8866980f013483",
+    "results/final-evaluation-v1/analysis/within-B184/wer_by_length.pdf": "1f58f7d356162c9e6b51ad138423927c91a15d47ca41450b80d57e3cb7a41387",
+    "results/final-evaluation-v1/analysis/within-B184/summary.json": "7bd431082951c67aa937504d0c752a50fc5d1e77428ed78905221e7ea62b1cb5",
+    "results/final-evaluation-v1/listening/manifest.json": "31075626fe0aeacc65922f71bf7fd74a92a25a65b36251937b5df390899e8290",
+    "results/final-evaluation-v1/listening/INDEX.md": "a28f9b9ec14d356545c360b21c776a92fb90779feec3dcf69ae58c51169183b5",
+    "results/final-evaluation-v1/analysis/overview/A.rescored.jsonl": "343799210cb8f16326b96a42a60238f112c3042940510a5ae082cc1c2877b909",
+    "results/final-evaluation-v1/analysis/overview/ANoLM.rescored.jsonl": "a7a5efb8399edb3e43f832cb7147bd79dcc847a11d72c6bbebd9a60fe7affaab",
+    "results/final-evaluation-v1/analysis/overview/ASplit.rescored.jsonl": "822631ffe7b0ead6d6852861afa171a99290deeee947103ad57afbd5fb930054",
+    "results/final-evaluation-v1/analysis/overview/B.rescored.jsonl": "f3f7d844ccd8722b078c7c68f763d536b82f7b6e98056558742977feee329b0e",
+    "results/final-evaluation-v1/analysis/overview/BNoLM.rescored.jsonl": "dd78208cb8ac19341f1c6acd7b5fad429077ff037e8ffcc4895a29964464bbd0",
+    "results/final-evaluation-v1/analysis/overview/BSplit.rescored.jsonl": "ce50c48e81947edd0bb36efb408f28bf53d57cf56f59374f33735172a1d1a568",
+    "results/final-evaluation-v1/analysis/overview/B184.rescored.jsonl": "cdf915c7e46156e009f1fdacf0d4dcee05398f14f3ff784b1e708e297ad9db45",
+    "results/final-evaluation-v1/analysis/overview/B184NoLM.rescored.jsonl": "09faece3035291f198687815933839c45c2f08b99711b387dba483ce2817159f",
+    "results/final-evaluation-v1/analysis/overview/B184Split.rescored.jsonl": "9945e59046f1870efd6f4bf3cc2444691f4313e22410ceacfacbe13919a14196",
+    "results/final-evaluation-v1/analysis/within-B183/B_vs_BNoLM.examples.jsonl": "abe4a27c5fbad61610c974f7bdbe6a62546787c3f7f6c5c30d9aaf157db04a6a",
+    "results/final-evaluation-v1/analysis/within-B183/B_vs_BSplit.examples.jsonl": "36435bb08b962641c45a4a2de1ec7ae2b7d36738cb3d7a7c371e47ccbcba5035",
+    "results/final-evaluation-v1/analysis/training-no-lm/ANoLM_vs_BNoLM.examples.jsonl": "03837f5161244e95014a9c3dfa5eaa7d296ceddebc0f81b4c3e6d83b31387904",
+    "results/final-evaluation-v1/analysis/training-split/ASplit_vs_BSplit.examples.jsonl": "daca151e385376b83ef8391cec9c4d54afc33a231ce5fa8d27c29dc8a88082de",
+    "results/final-evaluation-v1/analysis/seed-sensitivity-standard/B_vs_B184.examples.jsonl": "ba73216bef236d2601424e50579de8dfa97ae1b9d7630ceac4e13f4ac62ff717",
+    "results/final-evaluation-v1/analysis/seed-sensitivity-no-lm/BNoLM_vs_B184NoLM.examples.jsonl": "300b62589f41f06eda16202448a294660461784f7ab4d8e7715c937c0034c178",
+    "results/final-evaluation-v1/analysis/seed-sensitivity-split/BSplit_vs_B184Split.examples.jsonl": "9866b6789b1a8fb5edef26234bae65d51204496f0c1c3a18ba34834e1f3880db",
+    "results/final-evaluation-v1/analysis/within-B184/B184_vs_B184NoLM.examples.jsonl": "a36cab02130a348df0877790e4fda7e48c514c13cf0d9b42e3c0ecc78db36611",
+    "results/final-evaluation-v1/analysis/within-B184/B184_vs_B184Split.examples.jsonl": "3055ed254165831b5959f32fffae469a803486c1df2bdca1f052781497be0bf5",
+    "results/final-evaluation-v1/analysis/overview/A_vs_ANoLM.examples.jsonl": "a75f8abb4e7f5ef277f3d73552734a482cbed9bd3a3095b288c2127b449acc28",
+    "results/final-evaluation-v1/analysis/overview/A_vs_ASplit.examples.jsonl": "0ada13653ec6efc86de024875da498424ea46468d9be36fc8af70da90711b8d5",
+    "results/final-evaluation-v1/analysis/overview/A_vs_B.examples.jsonl": "a54268a27bf22b2a062b4448d8fa4659b7e7589e911e51e60b934277af65e9e2",
+    "results/final-evaluation-v1/analysis/overview/A_vs_BNoLM.examples.jsonl": "7639aba318b6565113dcccdcff563d004a415b9ed8b5971a230ba51274021669",
+    "results/final-evaluation-v1/analysis/overview/A_vs_BSplit.examples.jsonl": "2a81ddfaa93cacdf08c9109d481f32cf702521b6eed426e9004f760448f24968",
+    "results/final-evaluation-v1/analysis/overview/A_vs_B184.examples.jsonl": "ca10f12ffd5bf9cc4ad28e323faaf76b23ab9956a9f5afe11e74d2b5be902c1d",
+    "results/final-evaluation-v1/analysis/overview/A_vs_B184NoLM.examples.jsonl": "d78e39b495ad666436165b2d360a94499bb17657386b3f203d4000a07dc50523",
+    "results/final-evaluation-v1/analysis/overview/A_vs_B184Split.examples.jsonl": "1f16a846507983bbe5af7891a6f6684490ccd00a7f9860eafbc6c3e21099cb3f"
+  },
+  "original_artifacts_modified": false,
+  "delivery_plots": {
+    "directory": "<repository>/results/analysis/final-delivery-plots-v2",
+    "manifest_sha256": "2ea9c6e9caefed62a10aede22676d9cbef89129d92dcda391201fa1e1d4e41a6",
+    "validation_sha256": "fa12b3c3b9ac628f1fe789b7ba04a74b75e94c15a36799e56d8274b73411ff4c",
+    "script_sha256": "b7333dd611bb824dde7ee20f25b811aa42330a64cb1caf88b5063a31aff435bc",
+    "all_8_png_and_8_pdf_viewed_and_pass": true,
+    "numerical_values_unchanged": true
+  }
+}

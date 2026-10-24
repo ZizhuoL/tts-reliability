@@ -1,0 +1,367 @@
+{
+  "schema_version": 1,
+  "status": "FROZEN_BEFORE_FINAL_READ",
+  "frozen_utc": "2026-10-20T14:18:25.560054+00:00",
+  "candidate": {
+    "schema_version": 1,
+    "status": "TEMPLATE_NOT_FROZEN",
+    "notice": "Candidate selected from the six primary development cells only. Seed184 replication is now complete and remains secondary; it does not reselect the primary seed or method. This candidate is not a frozen protocol: use the freeze command before reading or running the final set.",
+    "output": "results/final-evaluation-v1",
+    "selection": {
+      "selected_system": "BNoLM",
+      "rationale": "The complete six-cell development comparison has only BNoLM meeting every prespecified constraint: overall 10.1724%, short 7.4803%, long 10.6686% WER, no output/context caps or exceptions. Every other candidate has more output-limit stops than A; ASplit also worsens short WER. Selection uses seed183 only; seed184 is a subsequent sensitivity check and will not select a different primary training seed or method.",
+      "missingness_review": "All six systems have the same 45 texts x generation seeds 17 and 42, 90 scored terminal attempts each. Paired common-success and shared-attempted counts are 90, with no unmatched pairs or missing scores; full-deletion sensitivity equals scored results. Caps remain included. ASR and text-source uncertainty, selection optimism, and unmeasured human quality remain limitations.",
+      "failure_robust_eligible_systems": null
+    },
+    "include_seed184_sensitivity": true,
+    "omit_seed184_final_reason": null,
+    "generation": {
+      "seeds": [
+        17,
+        42
+      ],
+      "length_budget": "adaptive",
+      "max_length": 500,
+      "tokens_per_text": 11.0,
+      "temperature": 1.0,
+      "top_k": 50,
+      "min_length_ratio": 2.0,
+      "pause_seconds": 0.15,
+      "use_cache": true,
+      "lm_device": "mps",
+      "flow_device": "mps",
+      "vocoder_device": "cpu",
+      "asr_device": "cpu",
+      "threads": 8
+    },
+    "analysis": {
+      "bootstrap": 2000,
+      "seed": 1832026,
+      "failure_bootstrap": 10000,
+      "failure_seed": 20261020,
+      "tail_minimum": 3,
+      "listening_per_category": 1
+    },
+    "policy": {
+      "primary_training_seed": 183,
+      "training_endpoint": "full_epoch_latest",
+      "primary_outcomes": [
+        "overall_micro_WER",
+        "long_group_micro_WER"
+      ],
+      "mandatory_training_comparison": [
+        "A",
+        "B"
+      ],
+      "other_contrasts": "exploratory; seed184 cells are training-seed sensitivity",
+      "no_reselection_from_final": true,
+      "asr_is_not_human_quality": true,
+      "automatic_retry_errors": false,
+      "preserve_raw_wav_and_provenance": true
+    }
+  },
+  "selection_check": {
+    "eligible_systems_in_order": [
+      "BNoLM"
+    ],
+    "selected_system": "BNoLM",
+    "missing_scores_require_human_review": false,
+    "unequal_scoring_counts": [],
+    "review_limitation": "Mechanical point checks cannot prove the supplied missingness review. Inspect common-success pairs and missing-as-deletions before freezing."
+  },
+  "checkpoints": {
+    "A": {
+      "path": "models/hw4-tts-starter.pt",
+      "sha256": "4cb40a7140b1055b7e077232a202f5600ce4a33eb955e8ff8ff1825b5fd54463",
+      "endpoint": "starter",
+      "training_seed": null
+    },
+    "B": {
+      "path": "checkpoints/B-ordinary-seed183/latest.pt",
+      "sha256": "6d1b26bdc679ed32e81884d98f61eb621d574107ea6e24b0c57ffa653735b660",
+      "endpoint": "full_epoch_latest",
+      "training_seed": 183
+    },
+    "B184": {
+      "path": "checkpoints/B-ordinary-seed184/latest.pt",
+      "sha256": "1529b9ab7dcd7c0bfb33a938247635f6acdd4bd0ec58fef30ae4708efeb4df8b",
+      "endpoint": "full_epoch_latest",
+      "training_seed": 184
+    }
+  },
+  "cells": [
+    {
+      "name": "A",
+      "checkpoint": "A",
+      "strategy": "standard",
+      "role": "prespecified_six_cell"
+    },
+    {
+      "name": "ANoLM",
+      "checkpoint": "A",
+      "strategy": "no-lm",
+      "role": "prespecified_six_cell"
+    },
+    {
+      "name": "ASplit",
+      "checkpoint": "A",
+      "strategy": "split",
+      "role": "prespecified_six_cell"
+    },
+    {
+      "name": "B",
+      "checkpoint": "B",
+      "strategy": "standard",
+      "role": "prespecified_six_cell"
+    },
+    {
+      "name": "BNoLM",
+      "checkpoint": "B",
+      "strategy": "no-lm",
+      "role": "prespecified_six_cell"
+    },
+    {
+      "name": "BSplit",
+      "checkpoint": "B",
+      "strategy": "split",
+      "role": "prespecified_six_cell"
+    },
+    {
+      "name": "B184",
+      "checkpoint": "B184",
+      "strategy": "standard",
+      "role": "training_seed_sensitivity"
+    },
+    {
+      "name": "B184NoLM",
+      "checkpoint": "B184",
+      "strategy": "no-lm",
+      "role": "training_seed_sensitivity"
+    },
+    {
+      "name": "B184Split",
+      "checkpoint": "B184",
+      "strategy": "split",
+      "role": "training_seed_sensitivity"
+    }
+  ],
+  "expected": {
+    "texts": 60,
+    "seeds": [
+      17,
+      42
+    ],
+    "attempts_per_cell": 120,
+    "length_counts": {
+      "short": 20,
+      "medium": 20,
+      "long": 20
+    }
+  },
+  "final_input": {
+    "path": "data/eval/final.sealed.jsonl",
+    "sha256_from_preexisting_metadata": "661cbc52694c29ae5e00105810acfd9b37094243b6a3c0435356f3ff921e9908",
+    "contents_read_during_freeze": false
+  },
+  "bindings": {
+    "configs/final_evaluation.candidate.json": "40d3307ab32e8d99ca3b939c0d365119a56eba696743123f14474abe0cc04e02",
+    "configs/final_evaluation.template.json": "25785413ddb4d0562062313c9c1ca00bfa3af630b1214059c7dfcbac72cfff53",
+    "scripts/run_final_evaluation.py": "e06bf6e5c8e2089927c9fd3280dd88906d1982065a42f6c24d2e2ec3dd0be18a",
+    "scripts/evaluate.py": "37481aec09cdaffb5def8aebf810f7ae819da03f24c3d7f70c78699aa5867db3",
+    "scripts/analyze_results.py": "93b1b58575b03fb6f84bdc21f5531f4ea1f50cb7a84e9954c25b87cd26c9d6de",
+    "scripts/analyze_strategy_costs.py": "a9131ae8f253cd7dca169d729f6ced41974a5440efa556aee4ea3533f81ea1d8",
+    "scripts/analyze_failure_profiles.py": "1c5dc76102152d756df12a3bd2175047692ae8af4790e4cc99577c2e6269bcc3",
+    "scripts/prepare_listening_bundle.py": "3b46c75a66b18e44776cd7b4fe34dc72aa53a692800852c85eeef0af5ca8645b",
+    "scripts/analyze_runtime_resources.py": "e784adf65a3ad5e8f5e6bea537156639a715483cbc854888882f0be19bb2b47c",
+    "src/tts_reliability/evaluation.py": "09fe802dca127d4de87753108750d23141ada057e0bdf36a308bf4e0db0b2fae",
+    "src/tts_reliability/model.py": "438d774a37b5a255a9582776c48ed2ed8d7e67067997db572a7813f57b5f9e84",
+    "upstream/eecs183-hw4/hw4_util.py": "b6bd550ff18ec8ce2f7f3f8cde4bc0a35a778c2554d66860db95ce035c32e3b0",
+    "upstream/eecs183-hw4/hw4_runtime.py": "fbf2309471ba8efdc0427a33790a55b6cd31a5ba754919b3a5ffa8c0baa44923",
+    "configs/development_selection_rule.json": "386e7aed6a1de083a9a12cf90e1e0174a1eb5b343f502be0208c43bc765a01f2",
+    "configs/protocol.json": "70fe2edd8b8ad40a0370c886ac75d202d777078282f37f3250db31268a25030d",
+    "data/eval/manifest.json": "f97201e46f1f1a896261f668d064ebd868e157aaa83b71974e55623a6d5cd724",
+    "data/eval/dev.jsonl": "1a518ffb531b662aafe92247de01357cb20fd26d620b209134431d0fe55f9b91",
+    "configs/reference_prompt.json": "0f79d559e2021f5d9be882ffe7ef37aa49742192f73896c4c5814197decc87e3",
+    "data/reference/prompt.wav": "799f78ed4beb4de7ceae3a809262d4ce242394342ccd1d58cef7d49dbc2def46",
+    "results/starter-full-validation/validation.json": "e779248a6d149aea51a998fdfd13381f1ad422581a8a3469b38b9c32fb096679",
+    "results/starter-full-validation/config.json": "05e7ded2af609139ad708332da3075ce94f14f34a7d1458e93c4881332c9476c",
+    "models/hw4-tts-starter.pt": "4cb40a7140b1055b7e077232a202f5600ce4a33eb955e8ff8ff1825b5fd54463",
+    "results/B-full-validation/validation.json": "592ad93cf0bad95acfadee0c08c4cd035306aff7dd4ddaec9457cb706cb56702",
+    "results/B-full-validation/config.json": "2ecfc3091ee0cf434e8e0a5b6b05a8da1ddc6a263f8efe7420257a8372b4501f",
+    "checkpoints/B-ordinary-seed183/summary.json": "ca31bd988f12c2c6f535e57eca9c582e490284d89eff92342fb93227474ccb9e",
+    "checkpoints/B-ordinary-seed183/config.json": "d87aa995cf9c3af0887dc623d551635dc8db0d4631e4fe8eb714b728e7ae7392",
+    "checkpoints/B-ordinary-seed183/latest.pt": "6d1b26bdc679ed32e81884d98f61eb621d574107ea6e24b0c57ffa653735b660",
+    "results/B184-full-validation/validation.json": "a9e42be68cb677eaf8d3eb2aa040afbc56c21704e8c66ac3c3879a273b2b75b1",
+    "results/B184-full-validation/config.json": "62952bae9e85de58781e8d9e116296a9f076e371aef7d5aba9bf1d20305cfe36",
+    "checkpoints/B-ordinary-seed184/summary.json": "b786838f6704358ddcbad3ee0051012c6d21106a3fae679192e7130dbc483010",
+    "checkpoints/B-ordinary-seed184/config.json": "1596a1ce2c86fc07933b070a279a5a44cc4f97c63bf2f99ffe1d2989a0529099",
+    "checkpoints/B-ordinary-seed184/latest.pt": "1529b9ab7dcd7c0bfb33a938247635f6acdd4bd0ec58fef30ae4708efeb4df8b",
+    "models/cosy/CosyVoice-BlankEN/config.json": "168aa1bd401abc3bc262ba15ba4e499627a8b4e006e9d050b47c22de20660185",
+    "models/cosy/CosyVoice-BlankEN/generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+    "models/cosy/CosyVoice-BlankEN/merges.txt": "ac8ff86a72bee70828fbc1119bc4398c6f3a9a6e490d7b0dbe917be025478bd0",
+    "models/cosy/CosyVoice-BlankEN/tokenizer_config.json": "482bd979881423375ca5414e4e0d94cd7c5349dbb17fffd46b4d36d71e62a1bc",
+    "models/cosy/CosyVoice-BlankEN/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    "models/cosy/campplus.onnx": "a6ac6a63997761ae2997373e2ee1c47040854b4b759ea41ec48e4e42df0f4d73",
+    "models/cosy/flow.pt": "ff4c2f867674411e0a08cee702996df13fa67c1cd864c06108da88d16d088541",
+    "models/cosy/hift.pt": "3386cc880324d4e98e05987b99107f49e40ed925b8ecc87c1f4939432d429879",
+    "models/cosy/speech_tokenizer_v2.onnx": "d43342aa12163a80bf07bffb94c9de2e120a8df2f9917cd2f642e7f4219c6f71",
+    "models/whisper/added_tokens.json": "3c51f66c4c21f9e126970078f11ae77a78c74aee8df606ee9daba86e467108e0",
+    "models/whisper/config.json": "c5b526b3e3cd64cd8940dabb45e8ba726629e22d8ed389c29b552f9140daf04a",
+    "models/whisper/generation_config.json": "cce11bfe3aaa6ae9e072ea2637caaec8795e68d9b67e655a5af16ee509681a4c",
+    "models/whisper/merges.txt": "2df2990a395e35e8dfbc7511e08c12d56018d8d04691e0133e5d63b21e154dc6",
+    "models/whisper/model.safetensors": "542566a422ae4f3fd23f1ba11add198fca01bbf82e66e6a2857b3f608b1eb9d1",
+    "models/whisper/normalizer.json": "bf1c507dc8724ca9cf9903640dacfb69dae2f00edee4f21ceba106a7392f26dd",
+    "models/whisper/preprocessor_config.json": "7ccc62c6f2765af1f3b46c00c9b5894426835a05021c8b9c01eecb6dfb542711",
+    "models/whisper/special_tokens_map.json": "baea4ea09372eb4fca86b4e4346139fd73cb807d5087e9de0948e971739c3e74",
+    "models/whisper/tokenizer.json": "297b13372ac43916285644fb9687add3cc62ee2a1adb60da3dc25cc94c1871fd",
+    "models/whisper/tokenizer_config.json": "844b642c73a91359722f47b35705f7174686df33d252695d8572cf9ac03a6389",
+    "models/whisper/vocab.json": "e2aa043ef015641d363d8288e7c241c85e36a5c761fb303598e0710233344387",
+    "results/starter-standard-dev/raw.jsonl": "0ccaf495510f58ab6b4ad2fba0f90dd74f294a3f90fdc67c61e4dccabd1c019a",
+    "results/starter-standard-dev/manifest.json": "75b4b931bc9f67698a801dc8a183484cd079587d8bbad570bfbb14d34b258b5a",
+    "results/starter-standard-dev/summary.json": "add93c17753d5a3d31ac8375a6c82ce17d782c9c3e376f60f8d05e742cfc2403",
+    "results/starter-no-lm-dev/raw.jsonl": "e24d0639d48ff23ec62ce14480df893bfef71e206d4e96f33501bfb9a1b8144e",
+    "results/starter-no-lm-dev/manifest.json": "fa19b7327fdbda63d0975ef287164310211ea3067716829ef6cffa3f616ae9a1",
+    "results/starter-no-lm-dev/summary.json": "c875fde2ecf351687e370e8a8346046cae0cd4fed048c099875d94e4357ee474",
+    "results/starter-split-dev/raw.jsonl": "aa0cd5c2ee57e0e6630bb4e686c957fe41285a5a0d515838917c45d6fe1e71a5",
+    "results/starter-split-dev/manifest.json": "101ad532fe17f46e774436b0d638b860b60fb40a98fccaa83096c00712f04be2",
+    "results/starter-split-dev/summary.json": "3885f8c5445fb6ca207e687a758f640eb217aaa58fbf8b947782db1391e66093",
+    "results/B-standard-dev/raw.jsonl": "4e09360e434b4274e9c3ac359ca4e222b8edc7ebd6766e900a08a34cdd0c1cea",
+    "results/B-standard-dev/manifest.json": "77e97b1e5d5ae55fb73456ca4ae48b9bb0b19f5b4ec9273615902f8bd56f915f",
+    "results/B-standard-dev/summary.json": "a22149c8fdc3c64fa52b87eef11780995e8a7038fb8f5d474f9ec80eb31ef9e1",
+    "results/B-no-lm-dev/raw.jsonl": "014c3b4a092b83dcadf2fb9281ea4cc47167c900302fcfd72af50fd58889ead2",
+    "results/B-no-lm-dev/manifest.json": "cdc65ed7e1334bb6d8c2466a31eb333ded99d0478f47431e367dd555ca382649",
+    "results/B-no-lm-dev/summary.json": "30fe9be1511a81d6ceb4c31fb28fc9d62182ff5f73f880997fa2ad1e5d9fdf00",
+    "results/B-split-dev/raw.jsonl": "ac4d9a9ad4c0960e56366cc21e973ed97e4bfb958999f742c6a81d1edf3e25f0",
+    "results/B-split-dev/manifest.json": "186b7c9aa6fed76140c4acbe7da5312da6e86ed4e0a081d27ee7cad814dbced3",
+    "results/B-split-dev/summary.json": "f2a8c4d4a02570e3b3333eb9dd3552e994d6b39d3b27a7560c6b2d7574580357",
+    "results/B184-standard-dev/raw.jsonl": "b886114891d9b367b33e293cd440aed42048522ef04e2cc97ddb90e408f444c4",
+    "results/B184-standard-dev/manifest.json": "0571695ef3c6e97a4dce1ee1ad6a83665be5f358bb9c7c76ef9aeac9093ea4cf",
+    "results/B184-standard-dev/summary.json": "d7387a1dae816832b35a1919119a2584a59f7dcd11a5da1dbb3a8ac63c5a8b60",
+    "results/B184-no-lm-dev/raw.jsonl": "bf52b3f9c62629d3f3824b46665c7f781c3f15582cc6531aebdcfd4539ad20eb",
+    "results/B184-no-lm-dev/manifest.json": "651066f3c855a4e1ffc72fae38a24434ad6ea4285cfacd790812ba82861f7985",
+    "results/B184-no-lm-dev/summary.json": "2e684485a2333c22d2c57e77812d88ac7700172433c3e9a1562fec429d9642bf",
+    "results/B184-split-dev/raw.jsonl": "c96f422ba154e4596bcd94e2361adb76d17b6a003550cb1df99b2efe5890bbc4",
+    "results/B184-split-dev/manifest.json": "95e42475139c19837819b79778b7199e748374aee34569b5576ae10b2809c822",
+    "results/B184-split-dev/summary.json": "3d96f469a06e526b62e137c0aa14261011c8bc98c363ee76475b42e8b2350aef",
+    "results/analysis/development-comparisons/summary.json": "0e70c5ee94575ae4c581ec7891b98a609bb21a9dfe426e8f23a02becb4bc6cae",
+    "results/analysis/development-comparisons/wer_by_length.png": "702ec7323dfd0f7cae3b4c627a4f20bf05bd69ec5a972c43a0de1019ceb0ca55",
+    "results/analysis/development-comparisons/A.rescored.jsonl": "b97c7b7c5c5c83b3cd7691f9ad70629065e6bec68b405c452d2588dcc35e6f13",
+    "results/analysis/development-comparisons/wer_by_length.pdf": "549783984fc673f0d17211f3cfd4d7926e9fe9fe8adb747ec04a967ed8844339",
+    "results/analysis/development-comparisons/paired.csv": "725b900093e41ed5b3a27d58ed622aced3c1ee22ee6bcdda8500c09db2bc9220",
+    "results/analysis/development-comparisons/A_vs_BSplit.examples.jsonl": "88ba2d5bf244b9d8e528bbd2a083cd514295efd858ca80ac9192dba8b20b1191",
+    "results/analysis/development-comparisons/A_vs_ASplit.examples.jsonl": "8e6ca361e29b2edd2b589d1135561d0596bedb55a0a386823b8f32de96e63828",
+    "results/analysis/development-comparisons/BSplit.rescored.jsonl": "eadecd3bf77834f892ab7b1ab552e4cd44da9ce6e9c988c718ad4f64987ce306",
+    "results/analysis/development-comparisons/ANoLM.rescored.jsonl": "a09aae2ffeb4d95e958358656859f7e8cdfaf26692086fa3651ec24d49cf1246",
+    "results/analysis/development-comparisons/ASplit.rescored.jsonl": "c6a433c30717aacef66cc1a936c14aeeb5e53dcb9ee30bcd0bfda1b01c25fbbd",
+    "results/analysis/development-comparisons/B.rescored.jsonl": "5ef8438a6138f73b39f1483a05e66e492d9c49ef75e8078f216815ff79ec03dc",
+    "results/analysis/development-comparisons/metrics.csv": "042ff57a542275824af6fcab05da584765da0750d5d5e2ce9f6e4c6c05fa0e85",
+    "results/analysis/development-comparisons/BNoLM.rescored.jsonl": "bf1c1c5b024129d85001b60dc7c891cad1508759808e26bec0df7180aab20c07",
+    "results/analysis/development-comparisons/analysis_manifest.json": "e19df6d9002ad3d92a4fd0bcf30fa52cd96bc0a256ca0e002987d2cf71e22886",
+    "results/analysis/development-comparisons/A_vs_BNoLM.examples.jsonl": "48dacb816ae6dbe0e61c598842af9bd5c4faaa9506ea9b734a8965cdfe280fab",
+    "results/analysis/development-comparisons/A_vs_B.examples.jsonl": "476de680a7528371df6c7287a70ab702d67d81dc08bc5d4fb661446267b431f3",
+    "results/analysis/development-comparisons/A_vs_ANoLM.examples.jsonl": "b6d71832a189e8e5f4c2ff20c269703e42e6c9508afad0533277d62e6883e89d",
+    "results/analysis/development-comparisons/completion.json": "ba1be2ef372d01c294bbbf82a64bb465452ba8218cfc1bd533c24d047d0e5c08",
+    "results/analysis/development-within-B/summary.json": "250dc3573997ab90946f3848a6c8351fd7f5c16684219b27975e83c13639b576",
+    "results/analysis/development-within-B/paired.csv": "67bdbdef489b31ac70ae9b07ad571c99b1b86b9e514422a10a11c23365e9fba3",
+    "results/analysis/development-within-B/BSplit.rescored.jsonl": "eadecd3bf77834f892ab7b1ab552e4cd44da9ce6e9c988c718ad4f64987ce306",
+    "results/analysis/development-within-B/B.rescored.jsonl": "5ef8438a6138f73b39f1483a05e66e492d9c49ef75e8078f216815ff79ec03dc",
+    "results/analysis/development-within-B/metrics.csv": "8eb647f57205f0658ae4d94549c63ef72a7f41567fe6f3cc8967cedf70ed4332",
+    "results/analysis/development-within-B/BNoLM.rescored.jsonl": "bf1c1c5b024129d85001b60dc7c891cad1508759808e26bec0df7180aab20c07",
+    "results/analysis/development-within-B/analysis_manifest.json": "fbe4c2e9a2da04676b5a0c015b2ec646a4ea578d2ee7ec68cdfd289e3c4d3e7b",
+    "results/analysis/development-within-B/B_vs_BSplit.examples.jsonl": "ee7cfef8896bce57bf4c1e4c148cf69812dc571e657dfe1fd127cace3d03c8db",
+    "results/analysis/development-within-B/completion.json": "0927ba3c987531a210fd5781277e687044460760318ac4a6362abca0e48814f5",
+    "results/analysis/development-within-B/B_vs_BNoLM.examples.jsonl": "678fd82b2b6c1516b74c087e615b40803757ff90afcbc4c20c6761fd0a33f2ff",
+    "results/analysis/development-training-no-lm/summary.json": "4b338205c4ec7163d3acd7ee4f37c2b8fd7b03b8c4b783897150a5ccec78ab8f",
+    "results/analysis/development-training-no-lm/paired.csv": "b2da4bd45b33664fef876f90cb972df50a87ea57168d6339df0fd840178d4f48",
+    "results/analysis/development-training-no-lm/ANoLM_vs_BNoLM.examples.jsonl": "8f0bfd7384a34043b6fe418a5fd71c35c85afbce217b2e933ee1701b27e07d2e",
+    "results/analysis/development-training-no-lm/ANoLM.rescored.jsonl": "a09aae2ffeb4d95e958358656859f7e8cdfaf26692086fa3651ec24d49cf1246",
+    "results/analysis/development-training-no-lm/metrics.csv": "99093842a3a66bb5e8016b1e04e26eefd59551aa34415cd86640191135e8ce22",
+    "results/analysis/development-training-no-lm/BNoLM.rescored.jsonl": "bf1c1c5b024129d85001b60dc7c891cad1508759808e26bec0df7180aab20c07",
+    "results/analysis/development-training-no-lm/analysis_manifest.json": "9e2019c899120987c778d5a2441de22dccff6eea97679d1f9c49680c4fbed216",
+    "results/analysis/development-training-no-lm/completion.json": "daf3179b1104f50cfef8309a29d1771aadfb48c520912e42c33458dc5c0e5bae",
+    "results/analysis/development-training-split/summary.json": "6c3cb0627d62944e51fe61e6e92aafd856dd31da7457d08428a448352145d54d",
+    "results/analysis/development-training-split/paired.csv": "0af202cd7cbfb66cac3d3fff7e8937a4a9bc772560a2e7238039ee35604263d4",
+    "results/analysis/development-training-split/BSplit.rescored.jsonl": "eadecd3bf77834f892ab7b1ab552e4cd44da9ce6e9c988c718ad4f64987ce306",
+    "results/analysis/development-training-split/ASplit.rescored.jsonl": "c6a433c30717aacef66cc1a936c14aeeb5e53dcb9ee30bcd0bfda1b01c25fbbd",
+    "results/analysis/development-training-split/metrics.csv": "2521d1d0ffe2d235fcb82a1a8fc1a87682775bfe9170f18e42cc9161a5c73e26",
+    "results/analysis/development-training-split/analysis_manifest.json": "2d178a2d232b0be4a20ee42b2640d23d3368118a36d034e56af11f34513098f7",
+    "results/analysis/development-training-split/ASplit_vs_BSplit.examples.jsonl": "1a5c6c8f73c40a32e9555248c5449156cc76efb96ab9d1863b45da9d7e8da7ec",
+    "results/analysis/development-training-split/completion.json": "5a681b1800adc5c418f0793a386e9f96eabe2456eeeac7154e4b056b9f629fba",
+    "results/analysis/replication-standard/B183_vs_B184.examples.jsonl": "f0b4a2f9a1613b568b0aedec73ea754c0efbace37d21781b2ae3fc8bf66bd531",
+    "results/analysis/replication-standard/summary.json": "5486b579f972cd6be2a2e6c10675b8b1ede1a9d4812935f4e5938ab76b7975db",
+    "results/analysis/replication-standard/wer_by_length.png": "31ae34717cbaf82996b21b58106102d55025d4438aa5f1a41236727ad855ae89",
+    "results/analysis/replication-standard/wer_by_length.pdf": "b566d68a3dc8fd99726a06f3ff8a0e93f5e7763847c07e883f1938466cd2819a",
+    "results/analysis/replication-standard/paired.csv": "df01495d4fd4f5787d74979441e344ec53817bae9ecd4e41b660daa534f1f4d8",
+    "results/analysis/replication-standard/metrics.csv": "102c6ba5be1a0350cad70b8e60647f0755e897b1a31a2f94ad765d98b2f8a246",
+    "results/analysis/replication-standard/analysis_manifest.json": "8b53e6ab8516e29e6a598f600fd92b4e02f33a812f5b7aecf371554be05c3b71",
+    "results/analysis/replication-standard/B183.rescored.jsonl": "f55204f7a698544d020f6ade83057251d5692676b33a8482419beb69c156b132",
+    "results/analysis/replication-standard/B184.rescored.jsonl": "099491dcb672379c4a3ed48699343fbb7c0661ea637070f548a645f921491af2",
+    "results/analysis/replication-standard/completion.json": "10b911ea6aafee8ba021f5bace45e0a097fc7a64b36f31c07c926ef0f4c4fd19",
+    "results/analysis/replication-no-lm/B183_vs_B184.examples.jsonl": "d3b397fb70dcd1571d67dc0b28374b6b069310a6272e7a04e873e3812691e061",
+    "results/analysis/replication-no-lm/summary.json": "b0b2cf9d8fc530cce7129477945cf89b755b188a6efe75e5b0745231b1c7ccbb",
+    "results/analysis/replication-no-lm/wer_by_length.png": "89dbd8596ad7b00f9b1285bc2a6ae5d9cc40c7cf8baf5d45e8668c7fc1842399",
+    "results/analysis/replication-no-lm/wer_by_length.pdf": "2d13a6d5f18d7fc3beb2d217e43b8bd88b7d4ea791aaae34b527bada512f382c",
+    "results/analysis/replication-no-lm/paired.csv": "0de33e7d70a2ca26c265a77c28a5fabceaf91147debe821148c2793929002510",
+    "results/analysis/replication-no-lm/metrics.csv": "f902186149d43a803509830eff867f14ec9f77bdf640f791c24ff1b947eee931",
+    "results/analysis/replication-no-lm/analysis_manifest.json": "8a90827343e5a761400314e7df53e9c0a6f55be4810a08bada6b3538a039978a",
+    "results/analysis/replication-no-lm/B183.rescored.jsonl": "466c444c5bab62be2adad8edb63608866812dce1e8850f354e528fa9a5a20694",
+    "results/analysis/replication-no-lm/B184.rescored.jsonl": "81628eafdc2c7ec3ecbe046a3a2e672282c686bfdfb91a3715cbfb639e583597",
+    "results/analysis/replication-no-lm/completion.json": "77ffa721f62a5e4bfeb1e97fd0310acb2f4bd2f0df6622bbde190811192c9ec4",
+    "results/analysis/replication-split/B183_vs_B184.examples.jsonl": "bda84c19cf4af59a32640176028a52a6fa94a332536da7acdf287e11ac9d6a29",
+    "results/analysis/replication-split/summary.json": "193c2230d5dc120e568e8c53664d78d9d4219b1dd5fedaecbd730675eb39f13e",
+    "results/analysis/replication-split/wer_by_length.png": "611928df30f819223ccfe982f1af4ee49c242f0d1950c2632e2284f51ba1a929",
+    "results/analysis/replication-split/wer_by_length.pdf": "ad4b596f7a33a3aa0afac28cb5c4b7e36fab8dcb64f3093ed920adb481ef12df",
+    "results/analysis/replication-split/paired.csv": "ebefa17fbf320d70b18ed7d386ad96baff1a88524c35c31eac85d4c59e223816",
+    "results/analysis/replication-split/metrics.csv": "3283a7a1a404889e7f9f72b40e385a4a529e97f11f2553759a69bcdfe9c509d0",
+    "results/analysis/replication-split/analysis_manifest.json": "12084495a79598659a703766f7c736e24299550c971bc787ac15cbde350c48b1",
+    "results/analysis/replication-split/B183.rescored.jsonl": "64cb0d7263192f6156e3745d3752eae3bb2e40a3355c498bccb3d4ac7ccbad5a",
+    "results/analysis/replication-split/B184.rescored.jsonl": "9522af197396b753305e115736bdb4c24772bfe621d3f7429612bb5c13904f0b",
+    "results/analysis/replication-split/completion.json": "7e944a8323a5f0841b7d63fb88e2470f7b1e7026b75cd09236d716b9078cf733",
+    "results/B-seed184-execution/completion.json": "2a4b927f5e693049325088bed6e8fcc1a1ad00bd9c4b10356d1850de690fa6f7"
+  },
+  "packages": {
+    "torch": "2.8.0",
+    "torchaudio": "2.8.0",
+    "transformers": "4.57.6",
+    "numpy": "2.5.4",
+    "soundfile": "0.14.0",
+    "onnxruntime": "1.31.0"
+  },
+  "asset_inventory": {
+    "models/cosy": [
+      "CosyVoice-BlankEN/config.json",
+      "CosyVoice-BlankEN/generation_config.json",
+      "CosyVoice-BlankEN/merges.txt",
+      "CosyVoice-BlankEN/tokenizer_config.json",
+      "CosyVoice-BlankEN/vocab.json",
+      "campplus.onnx",
+      "flow.pt",
+      "hift.pt",
+      "speech_tokenizer_v2.onnx"
+    ],
+    "models/whisper": [
+      "added_tokens.json",
+      "config.json",
+      "generation_config.json",
+      "merges.txt",
+      "model.safetensors",
+      "normalizer.json",
+      "preprocessor_config.json",
+      "special_tokens_map.json",
+      "tokenizer.json",
+      "tokenizer_config.json",
+      "vocab.json"
+    ]
+  },
+  "primary_comparison": [
+    "A",
+    "BNoLM"
+  ],
+  "always_report_training_comparison": [
+    "A",
+    "B"
+  ],
+  "training_comparison_role": "prespecified_research_comparison_exploratory",
+  "all_other_contrasts": "exploratory; training-seed sensitivity is secondary",
+  "fallback": "If selected A, report fallback/no selected improvement; do not invent an A-vs-A test."
+}

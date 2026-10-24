@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-10-20T09:48:12.330897+00:00",
+  "producer_session": 27155,
+  "producer_exit_code": 127,
+  "observer_session": 59300,
+  "observer_exit_code": 0,
+  "status": "intended_stages_complete_verified_outer_shell_trailer_failed",
+  "terminal_error": "scripts/run_development_comparisons.sh:132: command not found: ithin-B",
+  "prerequisite_check": {
+    "command": "zsh scripts/run_B_seed184_replication.sh --check-only",
+    "session": 59773,
+    "exit_code": 0,
+    "output": "Prerequisites verified. Check only: no training, model loading, or output creation."
+  },
+  "diagnosis": "Script comment modification occurred after launch. A live-shell file-offset/read-buffer artifact is consistent with the trailing fragment, but original bytes as opened by the shell were not preserved, so root cause is not conclusively proven.",
+  "script_mtime_utc": "2026-10-20T08:40:33.264075+00:00",
+  "log_birth_utc": "2026-10-20T08:39:25.862006+00:00",
+  "resolution": "Do not rerun completed generation. Retain original nonzero exit and audit all required stage artifacts; proceed to seed184 only after independent complete preflight. Do not edit executing scripts, including comments.",
+  "evidence_sha256": {
+    "run_development_comparisons.sh": "5270ec3e8834ef283253c9a81d95de329f681dd859a79f287dd3542ade96e152",
+    "development_comparisons.log": "5b7cd6f573aba3ad9c1c783298a6789fa17a4485ee02918caecfb2ec5ccb28e8"
+  }
+}

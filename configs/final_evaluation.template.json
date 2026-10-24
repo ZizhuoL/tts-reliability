@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "status": "TEMPLATE_NOT_FROZEN",
+  "notice": "Preparation only. Do not read the sealed final set or run final evaluation from this template. Fill the decision after six-cell development and seed184 replication complete, then use the freeze command.",
+  "output": "results/final-evaluation-v1",
+  "selection": {
+    "selected_system": null,
+    "rationale": null,
+    "missingness_review": null,
+    "failure_robust_eligible_systems": null
+  },
+  "include_seed184_sensitivity": true,
+  "omit_seed184_final_reason": null,
+  "generation": {
+    "seeds": [17, 42],
+    "length_budget": "adaptive",
+    "max_length": 500,
+    "tokens_per_text": 11.0,
+    "temperature": 1.0,
+    "top_k": 50,
+    "min_length_ratio": 2.0,
+    "pause_seconds": 0.15,
+    "use_cache": true,
+    "lm_device": "mps",
+    "flow_device": "mps",
+    "vocoder_device": "cpu",
+    "asr_device": "cpu",
+    "threads": 8
+  },
+  "analysis": {
+    "bootstrap": 2000,
+    "seed": 1832026,
+    "failure_bootstrap": 10000,
+    "failure_seed": 20261020,
+    "tail_minimum": 3,
+    "listening_per_category": 1
+  },
+  "policy": {
+    "primary_training_seed": 183,
+    "training_endpoint": "full_epoch_latest",
+    "primary_outcomes": ["overall_micro_WER", "long_group_micro_WER"],
+    "mandatory_training_comparison": ["A", "B"],
+    "other_contrasts": "exploratory; seed184 cells are training-seed sensitivity",
+    "no_reselection_from_final": true,
+    "asr_is_not_human_quality": true,
+    "automatic_retry_errors": false,
+    "preserve_raw_wav_and_provenance": true
+  }
+}

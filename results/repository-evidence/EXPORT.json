@@ -1,0 +1,96 @@
+{
+  "purpose": "Path-redacted metadata for repository review; not the original hash-bound run artifacts.",
+  "files": [
+    {
+      "source": "results/analysis/B-final-exposure.json",
+      "source_sha256": "338c67a7e3887d93a49ce63106b65a2d10485c2d86027c953830560bde318ae6",
+      "export": "results/repository-evidence/analysis/B-final-exposure.json",
+      "export_sha256": "81cbeac33442572ce747d271338e52b7f53add2b4de56f261d39c72743de50da",
+      "change": "Replace personal absolute repository root with <repository>; all other content preserved."
+    },
+    {
+      "source": "results/analysis/B184-final-exposure.json",
+      "source_sha256": "ba3199a9dd3125dbd3099355f79ae63fde12146503a2b607e911dca813255ed0",
+      "export": "results/repository-evidence/analysis/B184-final-exposure.json",
+      "export_sha256": "16414bda31bf71aebc63d557e57c53eb5d2af709e56311baa6e28f9fef03c238",
+      "change": "Replace personal absolute repository root with <repository>; all other content preserved."
+    },
+    {
+      "source": "results/analysis/final-artifact-review.json",
+      "source_sha256": "02d437fb20d7a27d9363d70136e6f5ce41a193df6e1cc4d5192e152ed5bcaca5",
+      "export": "results/repository-evidence/analysis/final-artifact-review.json",
+      "export_sha256": "6dcbd0fa99e2bd970cf1853eb6649af99ebcf4f3d74ed6bbcad6ed3cbc6fdd82",
+      "change": "Replace personal absolute repository root with <repository>; all other content preserved."
+    },
+    {
+      "source": "results/final-evaluation-v1/runs/A/manifest.json",
+      "source_sha256": "9c7547e54567eafecafbb0d705e33a743ae8e0b88a4bf2d2c47520b8bf09010e",
+      "export": "results/repository-evidence/final-evaluation-v1/runs/A/manifest.json",
+      "export_sha256": "3dadb4d624cdee211ff3e739749490a45571a4566e4ff9726b67150d46ffa8b5",
+      "change": "Replace personal absolute repository root with <repository>; all other content preserved."
+    },
+    {
+      "source": "results/final-evaluation-v1/runs/ANoLM/manifest.json",
+      "source_sha256": "00ecab9f53bf9692c5833d8be96a5a027ee6067e2ff5fcac4c0e082364211364",
+      "export": "results/repository-evidence/final-evaluation-v1/runs/ANoLM/manifest.json",
+      "export_sha256": "a41a1ff4122d43c53f3f702e6cb0226b128bf2a1c66d9deb03eb25fe87c37dcf",
+      "change": "Replace personal absolute repository root with <repository>; all other content preserved."
+    },
+    {
+      "source": "results/final-evaluation-v1/runs/ASplit/manifest.json",
+      "source_sha256": "8887de5e8a77f660613e09ec6c26257d4f450a65b3b757d7e92f8010a456e677",
+      "export": "results/repository-evidence/final-evaluation-v1/runs/ASplit/manifest.json",
+      "export_sha256": "dd831df82a8e559baf25d5d76a311fef3fe6e7dc7e064de3ad858c652331be69",
+      "change": "Replace personal absolute repository root with <repository>; all other content preserved."
+    },
+    {
+      "source": "results/final-evaluation-v1/runs/B/manifest.json",
+      "source_sha256": "e4c585897a631cad85526a9d73d10c9b75283ec430062e69249eb0c82e56880d",
+      "export": "results/repository-evidence/final-evaluation-v1/runs/B/manifest.json",
+      "export_sha256": "8c3b842520010760f112403896e4b32c93241f8d0bf2e926973153f69ec1bfbd",
+      "change": "Replace personal absolute repository root with <repository>; all other content preserved."
+    },
+    {
+      "source": "results/final-evaluation-v1/runs/B184/manifest.json",
+      "source_sha256": "f8a307f1622f048b8d35cc1a83b489101a3b8d5f48f0d4deda86798f1ff86be7",
+      "export": "results/repository-evidence/final-evaluation-v1/runs/B184/manifest.json",
+      "export_sha256": "bf202622d6f33f34ebfb7f9ed90d5cfd6bc946715ac7211fda111789e8423830",
+      "change": "Replace personal absolute repository root with <repository>; all other content preserved."
+    },
+    {
+      "source": "results/final-evaluation-v1/runs/B184NoLM/manifest.json",
+      "source_sha256": "c6bd51b3f42dddeb3f23a91f9b223101a9983ad2776054a860351af22663a625",
+      "export": "results/repository-evidence/final-evaluation-v1/runs/B184NoLM/manifest.json",
+      "export_sha256": "2c9b231a2a0a7e695d80ecc7f672579abf861c0819e80528d5fb4b52694a1be5",
+      "change": "Replace personal absolute repository root with <repository>; all other content preserved."
+    },
+    {
+      "source": "results/final-evaluation-v1/runs/B184Split/manifest.json",
+      "source_sha256": "644b77316ab342f13891fd07a8370729aa0dd4e716bf46881d7bd63dcfcf2819",
+      "export": "results/repository-evidence/final-evaluation-v1/runs/B184Split/manifest.json",
+      "export_sha256": "2a545c6232334271f8a3d51bfb4e43fe17b1f8d1dfbf44db8d36da4ce464f390",
+      "change": "Replace personal absolute repository root with <repository>; all other content preserved."
+    },
+    {
+      "source": "results/final-evaluation-v1/runs/BNoLM/manifest.json",
+      "source_sha256": "bf5600fec9a34fee1eb330d57277ce32a36693c3cd884e08129d9711b255e72d",
+      "export": "results/repository-evidence/final-evaluation-v1/runs/BNoLM/manifest.json",
+      "export_sha256": "172e98c99583f3e26193a4ff1bf80dc5e49cf5cff2cab2c527ba3f5607778f76",
+      "change": "Replace personal absolute repository root with <repository>; all other content preserved."
+    },
+    {
+      "source": "results/final-evaluation-v1/runs/BSplit/manifest.json",
+      "source_sha256": "fcb471f7bcd3c42bd4ca9c37d4bf7fae2b3c017c5fa7334879e0362cbfa7e346",
+      "export": "results/repository-evidence/final-evaluation-v1/runs/BSplit/manifest.json",
+      "export_sha256": "dc9b9deef8950a400bf1315d7dbbb1ffb9c715f1fd8213d3d711bbe8600d6656",
+      "change": "Replace personal absolute repository root with <repository>; all other content preserved."
+    },
+    {
+      "source": "results/generation_checks.json",
+      "source_sha256": "307ad7a085cb4bb3a7a442c9651dd999e8b4d18623f508213126d8e1948088dd",
+      "export": "results/repository-evidence/generation_checks.json",
+      "export_sha256": "2df9cec986e606d68deaf6a184936d3edc8fac84db7a2f89a627d4bdaaaf56a5",
+      "change": "Replace personal absolute repository root with <repository>; all other content preserved."
+    }
+  ]
+}

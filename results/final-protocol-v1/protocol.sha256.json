@@ -1,0 +1,7 @@
+{
+  "protocol_sha256": "1784f64b2ed3ddf1094b5b0795faffa86c99812dfdbfba8924db01be0b59aa38",
+  "written_utc": "2026-10-20T14:18:25.560855+00:00",
+  "final_input_read": false,
+  "status": "FREEZE_RECEIPT",
+  "note": "Integrity receipt, not a cryptographic timestamp or access control."
+}

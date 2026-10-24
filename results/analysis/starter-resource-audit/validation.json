@@ -1,0 +1,37 @@
+{
+  "missing_fields_remain_unknown": true,
+  "error_kept_as_exception": true,
+  "guards": [
+    {
+      "arguments": [
+        "--expected-items",
+        "89",
+        "--output",
+        "/tmp/tts-resource-audit-mismatch-check"
+      ],
+      "rejected": true,
+      "reason": "requires exactly"
+    },
+    {
+      "arguments": [
+        "--expected-items",
+        "90",
+        "--output",
+        "results/analysis/starter-resource-audit"
+      ],
+      "rejected": true,
+      "reason": "empty or new"
+    },
+    {
+      "arguments": [
+        "--expected-items",
+        "90",
+        "--output",
+        "results/starter-standard-dev/resource-audit-check"
+      ],
+      "rejected": true,
+      "reason": "separate from input"
+    }
+  ],
+  "actual_A_runs_terminal_90_each": true
+}

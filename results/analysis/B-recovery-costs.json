@@ -1,0 +1,615 @@
+{
+  "format_version": 1,
+  "recorded_at": "2026-10-20T00:36:36.768043-07:00",
+  "timezone": "America/Los_Angeles",
+  "scope": "CPU-only accounting of two discarded completed tails and the separate memory0.75 probe; excludes live resume2 and does not modify any training artifact.",
+  "deduplication": {
+    "first_log_rows": 35591,
+    "second_log_rows": 37182,
+    "second_log_prefix_rows_reused": 35591,
+    "second_log_starts_with_first_log_exact_bytes": true,
+    "reset_boundaries": [
+      {
+        "source_line_1based": 35592,
+        "previous_step": 35591,
+        "new_step": 34001
+      }
+    ],
+    "rule": "Split whenever step does not increase. Count initial tail once from log0; count only appended post-reset branch from log1. Do not deduplicate step numbers across real runs or sum the copied original prefix twice."
+  },
+  "discarded_branches": [
+    {
+      "completed_optimizer_updates": 1591,
+      "fields": {
+        "examples": {
+          "sum": 12728,
+          "sum_known": 12728,
+          "known_rows": 1591,
+          "missing_rows": 0,
+          "status": "complete"
+        },
+        "target_tokens": {
+          "sum": 1840500,
+          "sum_known": 1840500,
+          "known_rows": 1591,
+          "missing_rows": 0,
+          "status": "complete"
+        },
+        "compute_seconds": {
+          "sum": 431.39641995122656,
+          "sum_known": 431.39641995122656,
+          "known_rows": 1591,
+          "missing_rows": 0,
+          "status": "complete"
+        },
+        "total_seconds": {
+          "sum": 459.52740650624037,
+          "sum_known": 459.52740650624037,
+          "known_rows": 1591,
+          "missing_rows": 0,
+          "status": "complete"
+        },
+        "empty_cache_seconds": {
+          "sum": 24.695179771631956,
+          "sum_known": 24.695179771631956,
+          "known_rows": 1591,
+          "missing_rows": 0,
+          "status": "complete"
+        },
+        "load_seconds": {
+          "sum": null,
+          "sum_known": null,
+          "known_rows": 0,
+          "missing_rows": 1591,
+          "status": "unknown_total"
+        }
+      },
+      "branch": "initial_unsaved_tail",
+      "source_file": "checkpoints/B-ordinary-seed183/recovery/oom-35592/train.before-resume.jsonl",
+      "source_line_range_inclusive": [
+        34001,
+        35591
+      ],
+      "step_range_inclusive": [
+        34001,
+        35591
+      ],
+      "restored_checkpoint_step": 34000,
+      "cumulative_target_tokens_at_restore": 38601729,
+      "cumulative_target_tokens_last_completed": 40442229,
+      "discarded_examples_interpretation": "Sample exposures in completed unsaved updates; do not add to retained unique training coverage.",
+      "distinct_sample_identity_count": null,
+      "distinct_sample_identity_status": "unknown: train rows contain no per-batch sample IDs",
+      "wall_clock_seconds": null,
+      "wall_clock_status": "unknown: per-step monotonic durations do not timestamp the branch interval",
+      "failed_next_step": 35592,
+      "failed_next_step_compute_seconds": null,
+      "failed_next_step_compute_status": "unknown: failed step did not produce a completed JSONL row"
+    },
+    {
+      "completed_optimizer_updates": 1591,
+      "fields": {
+        "examples": {
+          "sum": 12728,
+          "sum_known": 12728,
+          "known_rows": 1591,
+          "missing_rows": 0,
+          "status": "complete"
+        },
+        "target_tokens": {
+          "sum": 1840500,
+          "sum_known": 1840500,
+          "known_rows": 1591,
+          "missing_rows": 0,
+          "status": "complete"
+        },
+        "compute_seconds": {
+          "sum": 421.6996976933442,
+          "sum_known": 421.6996976933442,
+          "known_rows": 1591,
+          "missing_rows": 0,
+          "status": "complete"
+        },
+        "total_seconds": {
+          "sum": 440.16715102037415,
+          "sum_known": 440.16715102037415,
+          "known_rows": 1591,
+          "missing_rows": 0,
+          "status": "complete"
+        },
+        "empty_cache_seconds": {
+          "sum": 15.2653633300215,
+          "sum_known": 15.2653633300215,
+          "known_rows": 1591,
+          "missing_rows": 0,
+          "status": "complete"
+        },
+        "load_seconds": {
+          "sum": null,
+          "sum_known": null,
+          "known_rows": 0,
+          "missing_rows": 1591,
+          "status": "unknown_total"
+        }
+      },
+      "branch": "retry1_unsaved_tail",
+      "source_file": "checkpoints/B-ordinary-seed183/recovery/oom-35592-retry1/train.before-next-resume.jsonl",
+      "source_line_range_inclusive": [
+        35592,
+        37182
+      ],
+      "step_range_inclusive": [
+        34001,
+        35591
+      ],
+      "restored_checkpoint_step": 34000,
+      "cumulative_target_tokens_at_restore": 38601729,
+      "cumulative_target_tokens_last_completed": 40442229,
+      "discarded_examples_interpretation": "Sample exposures in completed unsaved updates; do not add to retained unique training coverage.",
+      "distinct_sample_identity_count": null,
+      "distinct_sample_identity_status": "unknown: train rows contain no per-batch sample IDs",
+      "wall_clock_seconds": null,
+      "wall_clock_status": "unknown: per-step monotonic durations do not timestamp the branch interval",
+      "failed_next_step": 35592,
+      "failed_next_step_compute_seconds": null,
+      "failed_next_step_compute_status": "unknown: failed step did not produce a completed JSONL row"
+    }
+  ],
+  "discarded_completed_totals": {
+    "completed_optimizer_updates": 3182,
+    "examples": 25456,
+    "target_tokens": 3681000,
+    "compute_seconds": 853.0961176445708,
+    "total_seconds": 899.6945575266145,
+    "empty_cache_seconds": 39.96054310165346
+  },
+  "probe": {
+    "completed_optimizer_updates": 18,
+    "fields": {
+      "examples": {
+        "sum": 144,
+        "sum_known": 144,
+        "known_rows": 18,
+        "missing_rows": 0,
+        "status": "complete"
+      },
+      "target_tokens": {
+        "sum": 25568,
+        "sum_known": 25568,
+        "known_rows": 18,
+        "missing_rows": 0,
+        "status": "complete"
+      },
+      "compute_seconds": {
+        "sum": 7.772019415162504,
+        "sum_known": 7.772019415162504,
+        "known_rows": 18,
+        "missing_rows": 0,
+        "status": "complete"
+      },
+      "total_seconds": {
+        "sum": 8.31118116620928,
+        "sum_known": 8.31118116620928,
+        "known_rows": 18,
+        "missing_rows": 0,
+        "status": "complete"
+      },
+      "empty_cache_seconds": {
+        "sum": 0.49401412857696414,
+        "sum_known": 0.49401412857696414,
+        "known_rows": 18,
+        "missing_rows": 0,
+        "status": "complete"
+      },
+      "load_seconds": {
+        "sum": 0.003245499450713396,
+        "sum_known": 0.003245499450713396,
+        "known_rows": 18,
+        "missing_rows": 0,
+        "status": "complete"
+      }
+    },
+    "source_file": "results/B-recovery-memory075/benchmark.jsonl",
+    "summary_file": "results/B-recovery-memory075/benchmark.json",
+    "phase_costs": {
+      "global_warmup": {
+        "completed_optimizer_updates": 1,
+        "fields": {
+          "examples": {
+            "sum": 8,
+            "sum_known": 8,
+            "known_rows": 1,
+            "missing_rows": 0,
+            "status": "complete"
+          },
+          "target_tokens": {
+            "sum": 885,
+            "sum_known": 885,
+            "known_rows": 1,
+            "missing_rows": 0,
+            "status": "complete"
+          },
+          "compute_seconds": {
+            "sum": 0.5007315832190216,
+            "sum_known": 0.5007315832190216,
+            "known_rows": 1,
+            "missing_rows": 0,
+            "status": "complete"
+          },
+          "total_seconds": {
+            "sum": 0.5187464589253068,
+            "sum_known": 0.5187464589253068,
+            "known_rows": 1,
+            "missing_rows": 0,
+            "status": "complete"
+          },
+          "empty_cache_seconds": {
+            "sum": 0.016291582956910133,
+            "sum_known": 0.016291582956910133,
+            "known_rows": 1,
+            "missing_rows": 0,
+            "status": "complete"
+          },
+          "load_seconds": {
+            "sum": 0.00024625007063150406,
+            "sum_known": 0.00024625007063150406,
+            "known_rows": 1,
+            "missing_rows": 0,
+            "status": "complete"
+          }
+        }
+      },
+      "first_for_batch": {
+        "completed_optimizer_updates": 8,
+        "fields": {
+          "examples": {
+            "sum": 64,
+            "sum_known": 64,
+            "known_rows": 8,
+            "missing_rows": 0,
+            "status": "complete"
+          },
+          "target_tokens": {
+            "sum": 9986,
+            "sum_known": 9986,
+            "known_rows": 8,
+            "missing_rows": 0,
+            "status": "complete"
+          },
+          "compute_seconds": {
+            "sum": 3.2367550814524293,
+            "sum_known": 3.2367550814524293,
+            "known_rows": 8,
+            "missing_rows": 0,
+            "status": "complete"
+          },
+          "total_seconds": {
+            "sum": 3.4074709992855787,
+            "sum_known": 3.4074709992855787,
+            "known_rows": 8,
+            "missing_rows": 0,
+            "status": "complete"
+          },
+          "empty_cache_seconds": {
+            "sum": 0.15125816827639937,
+            "sum_known": 0.15125816827639937,
+            "known_rows": 8,
+            "missing_rows": 0,
+            "status": "complete"
+          },
+          "load_seconds": {
+            "sum": 0.001254041213542223,
+            "sum_known": 0.001254041213542223,
+            "known_rows": 8,
+            "missing_rows": 0,
+            "status": "complete"
+          }
+        }
+      },
+      "steady": {
+        "completed_optimizer_updates": 8,
+        "fields": {
+          "examples": {
+            "sum": 64,
+            "sum_known": 64,
+            "known_rows": 8,
+            "missing_rows": 0,
+            "status": "complete"
+          },
+          "target_tokens": {
+            "sum": 9986,
+            "sum_known": 9986,
+            "known_rows": 8,
+            "missing_rows": 0,
+            "status": "complete"
+          },
+          "compute_seconds": {
+            "sum": 2.4476590836420655,
+            "sum_known": 2.4476590836420655,
+            "known_rows": 8,
+            "missing_rows": 0,
+            "status": "complete"
+          },
+          "total_seconds": {
+            "sum": 2.6122722080908716,
+            "sum_known": 2.6122722080908716,
+            "known_rows": 8,
+            "missing_rows": 0,
+            "status": "complete"
+          },
+          "empty_cache_seconds": {
+            "sum": 0.1499994182959199,
+            "sum_known": 0.1499994182959199,
+            "known_rows": 8,
+            "missing_rows": 0,
+            "status": "complete"
+          },
+          "load_seconds": {
+            "sum": 0.0013077910989522934,
+            "sum_known": 0.0013077910989522934,
+            "known_rows": 8,
+            "missing_rows": 0,
+            "status": "complete"
+          }
+        }
+      },
+      "worst_case": {
+        "completed_optimizer_updates": 1,
+        "fields": {
+          "examples": {
+            "sum": 8,
+            "sum_known": 8,
+            "known_rows": 1,
+            "missing_rows": 0,
+            "status": "complete"
+          },
+          "target_tokens": {
+            "sum": 4711,
+            "sum_known": 4711,
+            "known_rows": 1,
+            "missing_rows": 0,
+            "status": "complete"
+          },
+          "compute_seconds": {
+            "sum": 1.5868736668489873,
+            "sum_known": 1.5868736668489873,
+            "known_rows": 1,
+            "missing_rows": 0,
+            "status": "complete"
+          },
+          "total_seconds": {
+            "sum": 1.7726914999075234,
+            "sum_known": 1.7726914999075234,
+            "known_rows": 1,
+            "missing_rows": 0,
+            "status": "complete"
+          },
+          "empty_cache_seconds": {
+            "sum": 0.17646495904773474,
+            "sum_known": 0.17646495904773474,
+            "known_rows": 1,
+            "missing_rows": 0,
+            "status": "complete"
+          },
+          "load_seconds": {
+            "sum": 0.00043741706758737564,
+            "sum_known": 0.00043741706758737564,
+            "known_rows": 1,
+            "missing_rows": 0,
+            "status": "complete"
+          }
+        }
+      }
+    },
+    "measured_steps_field_in_summary": 8,
+    "summary_total_seconds": 2.6122722080908716,
+    "summary_total_seconds_scope": "Only phase=steady (8 rows); not all 18 completed probe calls and not probe process wall time.",
+    "summary_measurements_match_jsonl": true,
+    "sample_exposures": 144,
+    "distinct_recorded_sample_indices": 80,
+    "update_count_basis": "All 18 successful benchmark records follow train_step, which calls optimizer.step; worst-case row and summary additionally verify changed parameters. A per-row parameters_updated flag exists only for worst_case, not the other 17.",
+    "per_row_explicit_parameters_updated_true": 1,
+    "per_row_parameters_updated_flag_missing": 17,
+    "retained_in_B_checkpoint": false,
+    "retained_in_B_checkpoint_basis": "Dedicated benchmark branch returns without saving benchmark-updated weights; formal resume remains from original step34000 checkpoint.",
+    "wall_clock_seconds": null,
+    "wall_clock_status": "unknown: no recorded process start/end timer; log file metadata span is reported separately."
+  },
+  "observed_discarded_plus_probe_completed_step_totals": {
+    "completed_optimizer_updates": 3200,
+    "examples": 25600,
+    "target_tokens": 3706568,
+    "compute_seconds": 860.8681370597333,
+    "total_seconds": 908.0057386928238,
+    "empty_cache_seconds": 40.45455723023042
+  },
+  "timing_definitions": {
+    "compute_seconds": "Synchronized elapsed forward + finite checks + backward + gradient clipping + optimizer.step. Excludes batch loading and later empty_cache.",
+    "total_seconds": "Each completed iteration timer: collation/loading + train_step + bookkeeping (and empty_cache where enabled); recorded before JSONL write/printing and before validation/checkpoint save. Sum is completed-iteration elapsed time, NOT whole-run wall time.",
+    "empty_cache_seconds": "Subset of total_seconds; do not add to total_seconds again.",
+    "load_seconds": "Training tails have no load_seconds field: unknown, not total_seconds-compute_seconds. Probe records a separate collation timer.",
+    "failed_steps": "Both failed step35592 attempts consumed unmeasured partial work; no completed row/timer; exclude from numeric completed-update totals and report unknown."
+  },
+  "exact_total_project_wall_clock_seconds": null,
+  "exact_total_project_wall_clock_status": "unknown; no complete, nonoverlapping process/event timeline. Do not sum log metadata envelopes with completed-step timers.",
+  "excluded_unmeasured_costs": [
+    "Partial failed steps35592 (two attempts)",
+    "Checkpoint/model/optimizer loading",
+    "Checkpoint saves and validation outside per-step timer",
+    "JSONL/console output overhead outside per-step timer",
+    "OOM diagnosis and recovery orchestration gaps",
+    "Live resume2 and unrelated earlier benchmarks/experiments"
+  ],
+  "incidents": [
+    {
+      "file": "checkpoints/B-ordinary-seed183/recovery/oom-35592/incident.json",
+      "record": {
+        "recorded_at": "2026-10-20T00:13:31.933402-07:00",
+        "event": "MPS OOM; producer session86128 exit1",
+        "last_completed_step": 35591,
+        "last_completed_targets": 40442229,
+        "resume_step": 34000,
+        "resume_targets": 38601729,
+        "discarded_unsaved_updates": 1591,
+        "memory_fraction": 0.6,
+        "error": "MPS allocated18.46GiB; other9.97GiB; max28.80GiB; attempted541.50MiB; failure in attention mask merge",
+        "failed_log_birth_time": 1792468884.1805177,
+        "failed_log_last_write_time": 1792480186.058409,
+        "files": {
+          "validation.before-resume.jsonl": {
+            "bytes": 5821,
+            "sha256": "20c2fdbb16b4c4f872f85ad421ee357baab53cbe432b327453b49fd0b733921a"
+          },
+          "train.before-resume.jsonl": {
+            "bytes": 44064384,
+            "sha256": "4bf4569509b14e9efc060b7fb1af6049435c4828b2f9046f13cf33c21b0baa2e"
+          },
+          "config.before-resume.json": {
+            "bytes": 18327,
+            "sha256": "9267f65ad74aa651ceadf2980719b469652a3c49096c24d41e193fd42bfa950c"
+          },
+          "failed-process.log": {
+            "bytes": 893938,
+            "sha256": "4f91ebffb5ac5a7a307aa3d1ce4a3e395c009837d3da7d68bc79c355f4e3a9e4"
+          },
+          "step34000.pt": {
+            "bytes": 2559753995,
+            "sha256": "3c623345875fee8daf09edbc0aaa17d1528fe69c6ae73a175b1ee3af46461dd8"
+          }
+        },
+        "recovery_decision": "One fresh-process retry from full step34000 checkpoint with unchanged batch, sampler, optimizer, source and memory fraction. Preserve limit; reassess only if failure recurs.",
+        "limitations": "Checkpoint state restored does not by itself prove bitwise MPS equivalence; replay/discarded work must be counted in actual cost."
+      }
+    },
+    {
+      "file": "checkpoints/B-ordinary-seed183/recovery/oom-35592-retry1/incident.json",
+      "record": {
+        "recorded_at": "2026-10-20T00:26:45.969769-07:00",
+        "event": "Same-configuration retry session83967 exit1",
+        "failure_step": 35592,
+        "last_completed_step": 35591,
+        "error_stage": "cross_entropy",
+        "error": "MPS allocated20.29GiB; other8.61GiB; max28.80GiB; requested256 bytes",
+        "resume_checkpoint": "checkpoints/B-ordinary-seed183/recovery/oom-35592/step34000.pt",
+        "next_action": "Measure a bounded memory_fraction0.75 with loaded optimizer and actual worst batch in separate benchmark; keep batch/data/optimizer protocol unchanged; if passed resume with more frequent saves.",
+        "limitations": "Memory/cache mechanism not independently isolated; never disable memory ceiling."
+      }
+    }
+  ],
+  "original_log_time_evidence": [
+    {
+      "file": "logs/train-B-seed183.log",
+      "scope": "Entire initial training attempt, including retained steps 1–34000; NOT discarded-tail-only",
+      "birth_epoch_seconds": 1792468884.1805177,
+      "last_write_epoch_seconds": 1792480186.058409,
+      "birth_local": "2026-10-19T21:01:24.180518-07:00",
+      "last_write_local": "2026-10-20T00:09:46.058409-07:00",
+      "file_metadata_envelope_seconds": 11301.877891302109,
+      "interpretation": "Observed original log creation-to-last-write interval, not an exact process start/end duration and not a completed-step timer. Never sum this with the same steps."
+    },
+    {
+      "file": "logs/train-B-seed183-resume1.log",
+      "scope": "Retry1 process logging envelope; includes startup/loading and failure, not just completed updates",
+      "birth_epoch_seconds": 1792480452.483447,
+      "last_write_epoch_seconds": 1792481045.779223,
+      "birth_local": "2026-10-20T00:14:12.483447-07:00",
+      "last_write_local": "2026-10-20T00:24:05.779223-07:00",
+      "file_metadata_envelope_seconds": 593.2957758903503,
+      "interpretation": "Observed original log creation-to-last-write interval, not an exact process start/end duration and not a completed-step timer. Never sum this with the same steps."
+    },
+    {
+      "file": "logs/B-recovery-memory075.log",
+      "scope": "Probe process logging envelope, including startup/loading; NOT precise process wall time",
+      "birth_epoch_seconds": 1792481223.4330707,
+      "last_write_epoch_seconds": 1792481266.0309074,
+      "birth_local": "2026-10-20T00:27:03.433071-07:00",
+      "last_write_local": "2026-10-20T00:27:46.030907-07:00",
+      "file_metadata_envelope_seconds": 42.59783673286438,
+      "interpretation": "Observed original log creation-to-last-write interval, not an exact process start/end duration and not a completed-step timer. Never sum this with the same steps."
+    }
+  ],
+  "archival_timestamp_caution": "Archived failed-process.log birth times equal late copy/archive times and are not launch times. Original logs were SHA-256 matched to archived logs; use original filesystem birth/mtime only as metadata envelopes. Incident recorded_at is incident documentation time, not exact failure time.",
+  "validation": {
+    "discarded_steps_each": 1591,
+    "all_selected_steps_contiguous": true,
+    "cumulative_targets_deltas_match_sums": true,
+    "unique_counter_deltas_match_example_exposures": true,
+    "probe_json_matches_jsonl": true,
+    "source_tail_per_step_sample_count_target_text_speech_shapes_equal": true,
+    "note": "Matching counts/shapes do not independently prove identical sample IDs or bitwise MPS updates."
+  },
+  "sources": {
+    "checkpoints/B-ordinary-seed183/recovery/oom-35592/train.before-resume.jsonl": {
+      "sha256": "4bf4569509b14e9efc060b7fb1af6049435c4828b2f9046f13cf33c21b0baa2e",
+      "bytes": 44064384,
+      "mtime_epoch_seconds": 1792480184.6895525,
+      "mtime_local": "2026-10-20T00:09:44.689553-07:00"
+    },
+    "checkpoints/B-ordinary-seed183/recovery/oom-35592-retry1/train.before-next-resume.jsonl": {
+      "sha256": "452f9964d0dff22a34146a77cee948863dcb89572026c37661631d6d71ddc4bb",
+      "bytes": 46036703,
+      "mtime_epoch_seconds": 1792481044.2853038,
+      "mtime_local": "2026-10-20T00:24:04.285304-07:00"
+    },
+    "results/B-recovery-memory075/benchmark.jsonl": {
+      "sha256": "2fe1b82b5f697fd7df3ca8dde764e67db1e1b44d0455cbfd3a12ff05e9b8b9bd",
+      "bytes": 25043,
+      "mtime_epoch_seconds": 1792481265.910573,
+      "mtime_local": "2026-10-20T00:27:45.910573-07:00"
+    },
+    "results/B-recovery-memory075/benchmark.json": {
+      "sha256": "0dd22bc065b7e2375ca09b0e2d212ece92779f940ba1684b7c6949d9ff3f2b4c",
+      "bytes": 56459,
+      "mtime_epoch_seconds": 1792481266.0300734,
+      "mtime_local": "2026-10-20T00:27:46.030073-07:00"
+    },
+    "checkpoints/B-ordinary-seed183/recovery/oom-35592/incident.json": {
+      "sha256": "7525bfea01b6b59e8664ce8ff252454921e88a379146c93ba52a6577f0b62a03",
+      "bytes": 1603,
+      "mtime_epoch_seconds": 1792480413.0429175,
+      "mtime_local": "2026-10-20T00:13:33.042917-07:00"
+    },
+    "checkpoints/B-ordinary-seed183/recovery/oom-35592-retry1/incident.json": {
+      "sha256": "34a52367573601a326712f7a06133b851457794d638d93d9e12c013aa776e8f8",
+      "bytes": 693,
+      "mtime_epoch_seconds": 1792481205.9706085,
+      "mtime_local": "2026-10-20T00:26:45.970608-07:00"
+    },
+    "logs/train-B-seed183.log": {
+      "sha256": "4f91ebffb5ac5a7a307aa3d1ce4a3e395c009837d3da7d68bc79c355f4e3a9e4",
+      "bytes": 893938,
+      "mtime_epoch_seconds": 1792480186.058409,
+      "mtime_local": "2026-10-20T00:09:46.058409-07:00"
+    },
+    "logs/train-B-seed183-resume1.log": {
+      "sha256": "420bbab5c3497aa1351e576d316a6ee95610c7cafaabea0d53a7d67411f60c83",
+      "bytes": 40476,
+      "mtime_epoch_seconds": 1792481045.779223,
+      "mtime_local": "2026-10-20T00:24:05.779223-07:00"
+    },
+    "logs/B-recovery-memory075.log": {
+      "sha256": "0b46fdddc9625ed4e7fe20ae47db1a0b10a055a5a2da08e7bcab192fcc7d709d",
+      "bytes": 28182,
+      "mtime_epoch_seconds": 1792481266.0309074,
+      "mtime_local": "2026-10-20T00:27:46.030907-07:00"
+    },
+    "checkpoints/B-ordinary-seed183/recovery/oom-35592/failed-process.log": {
+      "sha256": "4f91ebffb5ac5a7a307aa3d1ce4a3e395c009837d3da7d68bc79c355f4e3a9e4",
+      "bytes": 893938,
+      "mtime_epoch_seconds": 1792480186.058409,
+      "mtime_local": "2026-10-20T00:09:46.058409-07:00"
+    },
+    "checkpoints/B-ordinary-seed183/recovery/oom-35592-retry1/failed-process.log": {
+      "sha256": "420bbab5c3497aa1351e576d316a6ee95610c7cafaabea0d53a7d67411f60c83",
+      "bytes": 40476,
+      "mtime_epoch_seconds": 1792481045.779223,
+      "mtime_local": "2026-10-20T00:24:05.779223-07:00"
+    },
+    "src/tts_reliability/training.py": {
+      "sha256": "ef4a03c6fda8aaadf201fe8a6821b92f7e614076cdb19ed079f1836665598c92",
+      "bytes": 31991,
+      "mtime_epoch_seconds": 1792467817.3276908,
+      "mtime_local": "2026-10-19T20:43:37.327691-07:00"
+    }
+  }
+}

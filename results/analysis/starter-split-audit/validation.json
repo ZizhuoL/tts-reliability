@@ -1,0 +1,9 @@
+{
+  "independent_strategy_scores_match": true,
+  "all_54_unsplit_pairs_identical": true,
+  "all_180_waveforms_hash_and_duration_match": true,
+  "read_implementation_matches_recorded_manifest": true,
+  "no_gpu": true,
+  "no_B_results_read": true,
+  "no_final_evaluation_read": true
+}
