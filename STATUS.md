@@ -153,13 +153,18 @@ The project now has an independent local Git repository on `main`, rooted only
 in `tts-reliability/`, with `origin` set to
 `https://github.com/ZizhuoL/tts-reliability.git`. The remote was confirmed private.
 English documentation, selected result evidence, and path-redacted metadata
-exports are prepared for the initial commit. Personal assets and bulk local
+exports were saved in the initial commit `e43bc25`. Personal assets and bulk local
 artifacts are excluded according to `docs/repository_contents.md`.
 
 The cleanup passed all 47 existing CPU tests. Fourteen frozen source/configuration
 hashes and the protocol receipt still match; all 1,080 final attempt records are
 complete. This work did not start training or rerun synthesis/evaluation.
 
-The initial upload is pending the owner's GitHub CLI authentication, initiated
-from the owner's own terminal. The earlier agent-initiated device request was
-denied; no project files were uploaded by that request.
+The owner completed GitHub CLI authentication from their own terminal as
+`ZizhuoL`. The curated initial commit `e43bc25` was successfully pushed to the
+private remote on 2026-10-23, and local `main` now tracks `origin/main`.
+The repository contains 310 files (approximately 27 MB of file contents).
+A project-local credential helper supports subsequent Git pushes without
+changing other projects' Git configuration. Authentication files and the local
+CLI installation remain ignored. The earlier denied device request did not
+upload any project files.
